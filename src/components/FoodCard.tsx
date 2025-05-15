@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { FoodItem } from "../types/menu";
+import { AspectRatio } from "./ui/aspect-ratio";
 
 interface FoodCardProps {
   food: FoodItem;
@@ -15,11 +16,23 @@ const FoodCard = ({ food, category, type }: FoodCardProps) => {
   return (
     <Link
       to={`/food-details/${food.id}?category=${category}&type=${type}`}
-      className="bg-white rounded-xl shadow-md overflow-hidden flex 
-                 items-center card-hover animate-scale-in"
+      className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col 
+                 card-hover animate-scale-in"
     >
       {/* Food type indicator */}
-      <div className="w-2 h-full self-stretch flex-shrink-0" style={{ backgroundColor: food.type === 'veg' ? '#22C55E' : '#EF4444' }}></div>
+      <div className="w-full h-2" style={{ backgroundColor: food.type === 'veg' ? '#22C55E' : '#EF4444' }}></div>
+      
+      {food.image && (
+        <div className="w-full">
+          <AspectRatio ratio={16 / 9}>
+            <img 
+              src={food.image} 
+              alt={food.name}
+              className="w-full h-full object-cover"
+            />
+          </AspectRatio>
+        </div>
+      )}
       
       <div className="p-4 flex flex-1">
         <div className="mr-4 flex-shrink-0">

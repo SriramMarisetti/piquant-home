@@ -1,4 +1,3 @@
-
 import { CategoryInfo, FoodCategory, FoodItem } from "../types/menu";
 
 export const categories: CategoryInfo[] = [
@@ -63,6 +62,7 @@ export const foodItems: FoodItem[] = [
     category: 'starters',
     type: 'veg',
     popular: true,
+    image: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9',
   },
   {
     id: 'chicken-65',
@@ -73,6 +73,7 @@ export const foodItems: FoodItem[] = [
     category: 'starters',
     type: 'non-veg',
     popular: true,
+    image: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
   },
   {
     id: 'paneer-tikka',
@@ -91,6 +92,7 @@ export const foodItems: FoodItem[] = [
     price: { half: 220, full: 400 },
     category: 'starters',
     type: 'non-veg',
+    image: 'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
   },
   
   // Biryani

@@ -4,6 +4,7 @@ import { useParams, useSearchParams } from "react-router-dom";
 import { getFoodItemById } from "../data/menuData";
 import PageHeader from "../components/PageHeader";
 import { FoodSize } from "../types/menu";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const FoodDetails = () => {
   const { foodId } = useParams<{ foodId: string }>();
@@ -41,8 +42,20 @@ const FoodDetails = () => {
   const typeColor = foodItem.type === 'veg' ? 'bg-food-veg' : 'bg-food-nonveg';
   
   return (
-    <div className="page-container pb-20">
+    <div className="page-container pb-10">
       <PageHeader title={foodItem.name} />
+      
+      {foodItem.image && (
+        <div className="mb-6 rounded-xl overflow-hidden shadow-md">
+          <AspectRatio ratio={16 / 9}>
+            <img 
+              src={foodItem.image} 
+              alt={foodItem.name}
+              className="w-full h-full object-cover"
+            />
+          </AspectRatio>
+        </div>
+      )}
       
       <div className="bg-white rounded-xl shadow-md p-6 mb-6">
         <div className="flex items-center mb-4">
@@ -94,18 +107,10 @@ const FoodDetails = () => {
             </div>
           </div>
         )}
-      </div>
-      
-      {/* Sticky footer for price and add to cart */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white shadow-md p-4 flex items-center justify-between">
-        <div>
-          <div className="text-sm text-muted-foreground">Price</div>
-          <div className="text-xl font-bold">₹{currentPrice}</div>
-        </div>
         
-        <button className="btn-primary">
-          Add to Cart
-        </button>
+        <div className="text-xl font-bold mt-4">
+          Price: ₹{currentPrice}
+        </div>
       </div>
     </div>
   );
