@@ -26,7 +26,7 @@ const PageHeader = ({ title, showBackButton = true }: PageHeaderProps) => {
       
       <h1 className="text-2xl font-bold text-center flex-1">{title}</h1>
       
-      <div className="w-10"></div> // Spacer for alignment
+      <div className="w-10"></div>
     </div>
   );
 };
