@@ -1,5 +1,5 @@
 
-export type FoodCategory = 
+export type FoodCategory =
   | 'starters'
   | 'biryani'
   | 'noodles'
@@ -7,7 +7,27 @@ export type FoodCategory =
   | 'beverages'
   | 'tandoori'
   | 'rice-curry'
-  | 'indian-breads';
+  | 'indian-breads'
+  | 'south-indian'
+  | 'north-indian'
+  | 'chinese'
+  | 'continental'
+  | 'seafood'
+  | 'salads'
+  | 'soups'
+  | 'wraps-rolls'
+  | 'kids-menu'
+  | 'specials'
+  | 'vegan'
+  | 'vegetarian'
+  | 'gluten-free'
+  | 'high-protein'
+  | 'low-carb'
+  | 'festive-specials'
+  | 'combo-meals'
+  | 'family-packs'
+  | 'party-orders'
+  | 'midnight-cravings';
 
 export type FoodType = 'veg' | 'non-veg';
 
@@ -36,4 +56,10 @@ export interface CategoryInfo {
   name: string;
   icon: string;
   description: string;
+}
+
+export type CategoryGroup = 'cuisine' | 'course' | 'dietary' | 'occasion';
+
+export interface ExtendedCategoryInfo extends CategoryInfo {
+  group: CategoryGroup;
 }
