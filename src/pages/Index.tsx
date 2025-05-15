@@ -1,11 +1,19 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { categories } from "../data/menuData";
+import CategoryCard from "../components/CategoryCard";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="page-container">
+      <header className="mb-8 text-center">
+        <h1 className="text-3xl font-bold mb-2">Digital Menu</h1>
+        <p className="text-muted-foreground">Select a food category to begin</p>
+      </header>
+      
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {categories.map((category) => (
+          <CategoryCard key={category.id} category={category} />
+        ))}
       </div>
     </div>
   );
