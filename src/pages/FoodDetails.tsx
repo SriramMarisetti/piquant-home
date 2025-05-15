@@ -109,10 +109,6 @@ const FoodDetails = () => {
                 </div>
               </div>
             )}
-            
-            <div className="text-xl font-bold mt-4">
-              Price: ₹{currentPrice}
-            </div>
           </div>
           
           {/* Image on the right */}
