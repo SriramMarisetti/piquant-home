@@ -17,7 +17,7 @@ const FoodCard = ({ food, category, type }: FoodCardProps) => {
     <Link
       to={`/food-details/${food.id}?category=${category}&type=${type}`}
       className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col 
-                 card-hover animate-scale-in"
+                 card-hover animate-scale-in h-full"
     >
       {/* Food type indicator */}
       <div className="w-full h-2" style={{ backgroundColor: food.type === 'veg' ? '#22C55E' : '#EF4444' }}></div>
@@ -43,7 +43,7 @@ const FoodCard = ({ food, category, type }: FoodCardProps) => {
         
         <div className="flex-1">
           <h3 className="font-semibold">{food.name}</h3>
-          <p className="text-sm text-muted-foreground line-clamp-1">{food.description}</p>
+          <p className="text-sm text-muted-foreground line-clamp-2">{food.description}</p>
           <p className="text-sm font-medium mt-1">From ₹{basePrice}</p>
           
           {food.popular && (

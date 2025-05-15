@@ -17,11 +17,14 @@ const FoodList = () => {
   }
   
   return (
-    <div className="page-container">
+    <div className="page-container relative">
+      {/* Background with food-related pattern */}
+      <div className="fixed inset-0 bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070')] bg-cover bg-center opacity-10 -z-10"></div>
+      
       <PageHeader title={`${category?.name || 'Food'} (${validType === 'veg' ? 'Vegetarian' : 'Non-Vegetarian'})`} />
       
       {foodItems.length > 0 ? (
-        <div className="space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 animate-fade-in">
           {foodItems.map((food) => (
             <FoodCard 
               key={food.id} 
