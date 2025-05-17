@@ -154,7 +154,7 @@ export const foodItems: FoodItem[] = [
     category: 'starters',
     type: 'veg',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9',
+    image: '/food-images/springrolls.jpg',
   },
   {
     id: 'chicken-65',
@@ -165,7 +165,7 @@ export const foodItems: FoodItem[] = [
     category: 'starters',
     type: 'non-veg',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
+    image: '/food-images/chicken65.jpg',
   },
   {
     id: 'paneer-tikka',
@@ -175,6 +175,7 @@ export const foodItems: FoodItem[] = [
     price: { half: 180, full: 320 },
     category: 'starters',
     type: 'veg',
+    image: '/food-images/paneertikka.jpg'
   },
   {
     id: 'fish-amritsari',
@@ -184,7 +185,7 @@ export const foodItems: FoodItem[] = [
     price: { half: 220, full: 400 },
     category: 'starters',
     type: 'non-veg',
-    image: 'https://images.unsplash.com/photo-1493962853295-0fd70327578a',
+    image: '/food-images/amrithafish.jpg',
   },
   {
     id: 'starters-paneer-popcorn',
@@ -195,6 +196,7 @@ export const foodItems: FoodItem[] = [
     category: 'starters',
     type: 'veg',
     popular: true,
+    image: '/food-images/paneerpopcorn.jpg',
   },
   {
     id: 'starters-veg-manchurian',
@@ -204,6 +206,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 100, half: 170, full: 320 },
     category: 'starters',
     type: 'non-veg',
+    image: '/food-images/manchuria.jpg',
   },
   {
     id: 'starters-gobi-65',
@@ -213,6 +216,8 @@ export const foodItems: FoodItem[] = [
     price: { mini: 110, half: 180, full: 340 },
     category: 'starters',
     type: 'veg',
+    image: '/food-images/gobi.jpg',
+
   },
   {
     id: 'starters-chicken-wings',
@@ -222,6 +227,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 120, half: 190, full: 360 },
     category: 'starters',
     type: 'non-veg',
+    image: '/food-images/chickenwings.jpg',
   },
   {
     id: 'starters-mutton-fry',
@@ -231,6 +237,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 130, half: 200, full: 380 },
     category: 'starters',
     type: 'veg',
+    image: '/food-images/muttonfry.jpg',
   },
   {
     id: 'starters-crispy-corn',
@@ -240,6 +247,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 140, half: 210, full: 400 },
     category: 'starters',
     type: 'non-veg',
+    image: '/food-images/crispycorn.jpg',
   },
   
   // Biryani
@@ -251,6 +259,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 140, half: 240, full: 420 },
     category: 'biryani',
     type: 'veg',
+    image: '/food-images/biriyani/vegetablebiriyani.jpg',
   },
   {
     id: 'chicken-biryani',
@@ -261,6 +270,7 @@ export const foodItems: FoodItem[] = [
     category: 'biryani',
     type: 'non-veg',
     popular: true,
+    image: '/food-images/biriyani/chickenbiriyani.jpg',
   },
   {
     id: 'mutton-biryani',
@@ -270,6 +280,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 180, half: 320, full: 540 },
     category: 'biryani',
     type: 'non-veg',
+    image: '/food-images/biriyani/mutton.jpg',
   },
   {
     id: 'biryani-paneer-biryani',
@@ -280,6 +291,7 @@ export const foodItems: FoodItem[] = [
     category: 'biryani',
     type: 'veg',
     popular: true,
+    image: '/food-images/biriyani/pannerbiriyani.jpg',
   },
   {
     id: 'biryani-egg-biryani',
@@ -289,6 +301,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 100, half: 170, full: 320 },
     category: 'biryani',
     type: 'non-veg',
+    image: '/food-images/biriyani/egg.jpg',
   },
   {
     id: 'biryani-keema-biryani',
@@ -298,6 +311,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 110, half: 180, full: 340 },
     category: 'biryani',
     type: 'veg',
+    image: '/food-images/biriyani/dumbriyani.jpg',
   },
   {
     id: 'biryani-fish-biryani',
@@ -307,6 +321,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 120, half: 190, full: 360 },
     category: 'biryani',
     type: 'non-veg',
+    image: '/food-images/biriyani/fish.jpg',
   },
   {
     id: 'biryani-prawn-biryani',
@@ -316,6 +331,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 130, half: 200, full: 380 },
     category: 'biryani',
     type: 'veg',
+    image: '/food-images/biriyani/prawn.jpg',
   },
   {
     id: 'biryani-hyderabadi-biryani',
@@ -325,6 +341,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 140, half: 210, full: 400 },
     category: 'biryani',
     type: 'non-veg',
+    image: '/food-images/biriyani/chickenbiriyani.jpg',
   },
   {
     id: 'biryani-paneer-biryani-7',
@@ -334,6 +351,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 220, full: 420 },
     category: 'biryani',
     type: 'veg',
+    image: '/food-images/biriyani/paneer7.jpg',
   },
   
   // Noodles
@@ -345,6 +363,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 120, half: 200, full: 350 },
     category: 'noodles',
     type: 'veg',
+    image: '/food-images/noodels/veg.jpg',
   },
   {
     id: 'chicken-noodles',
@@ -354,6 +373,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 140, half: 240, full: 400 },
     category: 'noodles',
     type: 'non-veg',
+    image: '/food-images/noodels/dbac98a67cf6fc2523b013b97d9c9531.jpg',
   },
   {
     id: 'noodles-egg-noodles',
@@ -364,6 +384,7 @@ export const foodItems: FoodItem[] = [
     category: 'noodles',
     type: 'veg',
     popular: true,
+    image: '/food-images/noodels/egg.jpg',
   },
   {
     id: 'noodles-schezwan-noodles',
@@ -373,6 +394,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 100, half: 170, full: 320 },
     category: 'noodles',
     type: 'non-veg',
+    image: '/food-images/noodels/IMG_20250517_093903.jpg',
   },
   {
     id: 'noodles-prawn-noodles',
@@ -382,6 +404,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 110, half: 180, full: 340 },
     category: 'noodles',
     type: 'veg',
+    image: '/food-images/noodels/prawn.jpg',
   },
   {
     id: 'noodles-paneer-noodles',
@@ -391,6 +414,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 120, half: 190, full: 360 },
     category: 'noodles',
     type: 'non-veg',
+    image: '/food-images/noodels/dbac98a67cf6fc2523b013b97d9c9531.jpg',
   },
   {
     id: 'noodles-triple-schezwan-noodles',
@@ -400,6 +424,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 130, half: 200, full: 380 },
     category: 'noodles',
     type: 'veg',
+    image: '/food-images/noodels/IMG_20250517_093848.jpg',
   },
   {
     id: 'noodles-egg-noodles-6',
@@ -409,6 +434,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 140, half: 210, full: 400 },
     category: 'noodles',
     type: 'non-veg',
+    image: '/food-images/noodels/egg.jpg',
   },
   {
     id: 'noodles-schezwan-noodles-7',
@@ -418,6 +444,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 220, full: 420 },
     category: 'noodles',
     type: 'veg',
+    image: '/food-images/noodels/IMG_20250517_093903.jpg',
   },
   {
     id: 'noodles-prawn-noodles-8',
@@ -427,6 +454,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 160, half: 230, full: 440 },
     category: 'noodles',
     type: 'non-veg',
+    image: '/food-images/noodels/prawn.jpg',
   },
   
   // Desserts
@@ -439,6 +467,7 @@ export const foodItems: FoodItem[] = [
     category: 'desserts',
     type: 'veg',
     popular: true,
+    image: '/food-images/deserts/IMG_20250517_094052.jpg',
   },
   {
     id: 'rasgulla',
@@ -448,6 +477,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 60, half: 100, full: 180 },
     category: 'desserts',
     type: 'veg',
+    image: '/food-images/deserts/IMG_20250517_094112.jpg',
   },
   {
     id: 'desserts-ice-cream-brownie',
@@ -458,6 +488,7 @@ export const foodItems: FoodItem[] = [
     category: 'desserts',
     type: 'veg',
     popular: true,
+    image: '/food-images/deserts/icecream.jpg',
   },
   {
     id: 'desserts-fruit-salad',
@@ -467,6 +498,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 100, half: 170, full: 320 },
     category: 'desserts',
     type: 'non-veg',
+    image: '/food-images/deserts/fruit.jpg',
   },
   {
     id: 'desserts-carrot-halwa',
@@ -476,6 +508,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 110, half: 180, full: 340 },
     category: 'desserts',
     type: 'veg',
+    image: '/food-images/deserts/IMG_20250517_094151.jpg',
   },
   {
     id: 'desserts-kheer',
@@ -485,6 +518,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 120, half: 190, full: 360 },
     category: 'desserts',
     type: 'non-veg',
+    image: '/food-images/deserts/IMG_20250517_094151.jpg',
   },
   {
     id: 'desserts-kulfi',
@@ -494,6 +528,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 130, half: 200, full: 380 },
     category: 'desserts',
     type: 'veg',
+    image: '/food-images/deserts/kulfi.jpg',
   },
   {
     id: 'desserts-jalebi',
@@ -503,6 +538,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 140, half: 210, full: 400 },
     category: 'desserts',
     type: 'non-veg',
+    image: '/food-images/deserts/jelibi.jpg',
   },
   {
     id: 'desserts-ice-cream-brownie-7',
@@ -512,6 +548,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 220, full: 420 },
     category: 'desserts',
     type: 'veg',
+    image: '/food-images/deserts/icecream.jpg',
   },
   {
     id: 'desserts-fruit-salad-8',
@@ -521,6 +558,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 160, half: 230, full: 440 },
     category: 'desserts',
     type: 'non-veg',
+    image: '/food-images/deserts/fruit.jpg',
   },
 
   // Beverages
@@ -532,6 +570,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 80 },
     category: 'beverages',
     type: 'veg',
+    image: '/food-images/beverges/mangolassy.jpg',
   },
   {
     id: 'masala-chai',
@@ -541,6 +580,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 40 },
     category: 'beverages',
     type: 'veg',
+    image: '/food-images/beverges/d48b16878c3ade7e2861f1b08936b8a6.jpg',
   },
   {
     id: 'beverages-lemon-soda',
@@ -551,6 +591,7 @@ export const foodItems: FoodItem[] = [
     category: 'beverages',
     type: 'veg',
     popular: true,
+    image: '/food-images/beverges/lemomsoda2.jpg',
   },
   {
     id: 'beverages-cold-coffee',
@@ -560,6 +601,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 100, half: 170, full: 320 },
     category: 'beverages',
     type: 'non-veg',
+    image: '/food-images/beverges/coldcoffee.jpg',
   },
   {
     id: 'beverages-watermelon-juice',
@@ -569,6 +611,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 110, half: 180, full: 340 },
     category: 'beverages',
     type: 'veg',
+    image: '/food-images/beverges/watermelon.jpg',
   },
   {
     id: 'beverages-buttermilk',
@@ -578,6 +621,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 120, half: 190, full: 360 },
     category: 'beverages',
     type: 'non-veg',
+    image: '/food-images/beverges/buttermilk.jpg',
   },
   {
     id: 'beverages-sweet-lassi',
@@ -587,6 +631,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 130, half: 200, full: 380 },
     category: 'beverages',
     type: 'veg',
+    image: '/food-images/beverges/sweetlassi.jpg',
   },
   {
     id: 'beverages-orange-juice',
@@ -596,6 +641,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 140, half: 210, full: 400 },
     category: 'beverages',
     type: 'non-veg',
+    image: '/food-images/beverges/orangejuice.jpg',
   },
   {
     id: 'beverages-lemon-soda-7',
@@ -605,6 +651,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 220, full: 420 },
     category: 'beverages',
     type: 'veg',
+    image: '/food-images/beverges/lemonsoda.jpg',
   },
   {
     id: 'beverages-cold-coffee-8',
@@ -614,6 +661,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 160, half: 230, full: 440 },
     category: 'beverages',
     type: 'non-veg',
+    image: '/food-images/beverges/coldcoffee.jpg',
   },
   
   // Tandoori
@@ -626,6 +674,7 @@ export const foodItems: FoodItem[] = [
     category: 'tandoori',
     type: 'non-veg',
     popular: true,
+    image: '/food-images/tandoori/chicken.jpg',
   },
   {
     id: 'tandoori-paneer',
@@ -635,6 +684,7 @@ export const foodItems: FoodItem[] = [
     price: { half: 240, full: 420 },
     category: 'tandoori',
     type: 'veg',
+    image: '/food-images/tandoori/paneer.jpg',
   },
   {
     id: 'tandoori-tandoori-mushroom',
@@ -645,6 +695,7 @@ export const foodItems: FoodItem[] = [
     category: 'tandoori',
     type: 'veg',
     popular: true,
+    image: '/food-images/tandoori/451531b04773bee9cca835c5b05297b6.jpg',
   },
   {
     id: 'tandoori-tandoori-fish',
@@ -654,6 +705,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 100, half: 170, full: 320 },
     category: 'tandoori',
     type: 'non-veg',
+    image: '/food-images/tandoori/fish.jpg',
   },
   {
     id: 'tandoori-tandoori-wings',
@@ -663,6 +715,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 110, half: 180, full: 340 },
     category: 'tandoori',
     type: 'veg',
+    image: '/food-images/tandoori/wings.jpg',
   },
   {
     id: 'tandoori-tandoori-veg-platter',
@@ -672,6 +725,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 120, half: 190, full: 360 },
     category: 'tandoori',
     type: 'non-veg',
+    image: '/food-images/tandoori/1ae9febf611e9f4671905efefe344914.jpg',
   },
   {
     id: 'tandoori-seekh-kebab',
@@ -681,6 +735,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 130, half: 200, full: 380 },
     category: 'tandoori',
     type: 'veg',
+    image: '/food-images/tandoori/IMG_20250517_095334.jpg',
   },
   {
     id: 'tandoori-tandoori-roti',
@@ -690,6 +745,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 140, half: 210, full: 400 },
     category: 'tandoori',
     type: 'non-veg',
+    image: '/food-images/tandoori/IMG_20250517_095234.jpg',
   },
   {
     id: 'tandoori-tandoori-mushroom-7',
@@ -699,6 +755,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 220, full: 420 },
     category: 'tandoori',
     type: 'veg',
+    image: '/food-images/tandoori/451531b04773bee9cca835c5b05297b6.jpg',
   },
   {
     id: 'tandoori-tandoori-fish-8',
@@ -708,6 +765,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 160, half: 230, full: 440 },
     category: 'tandoori',
     type: 'non-veg',
+    image: '/food-images/tandoori/fish.jpg',
   },
   
   // Rice & Curry
@@ -719,6 +777,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 120, half: 200, full: 350 },
     category: 'rice-curry',
     type: 'veg',
+    image: '/food-images/rice and curry/dal.jpg',
   },
   {
     id: 'butter-chicken',
@@ -729,6 +788,7 @@ export const foodItems: FoodItem[] = [
     category: 'rice-curry',
     type: 'non-veg',
     popular: true,
+    image: '/food-images/rice and curry/butter chicken.jpg',
   },
   {
     id: 'rice-curry-rajma-masala',
@@ -739,6 +799,7 @@ export const foodItems: FoodItem[] = [
     category: 'rice-curry',
     type: 'veg',
     popular: true,
+    image: '/food-images/rice and curry/IMG_20250517_095442.jpg',
   },
   {
     id: 'rice-curry-chana-masala',
@@ -748,6 +809,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 100, half: 170, full: 320 },
     category: 'rice-curry',
     type: 'non-veg',
+    image: '/food-images/rice and curry/d36272a70384901f53c97e8b83b7959c.jpg',
   },
   {
     id: 'rice-curry-egg-curry',
@@ -757,6 +819,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 110, half: 180, full: 340 },
     category: 'rice-curry',
     type: 'veg',
+    image: '/food-images/rice and curry/egg.jpg',
   },
   {
     id: 'rice-curry-fish-curry',
@@ -766,6 +829,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 120, half: 190, full: 360 },
     category: 'rice-curry',
     type: 'non-veg',
+    image: '/food-images/rice and curry/1c4e7d9a2cc462a0299d5ddba4069c70.jpg',
   },
   {
     id: 'rice-curry-palak-paneer',
@@ -775,6 +839,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 130, half: 200, full: 380 },
     category: 'rice-curry',
     type: 'veg',
+    image: '/food-images/rice and curry/panner.jpg',
   },
   {
     id: 'rice-curry-mushroom-curry',
@@ -784,6 +849,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 140, half: 210, full: 400 },
     category: 'rice-curry',
     type: 'non-veg',
+    image: '/food-images/rice and curry/30c909ca95d23e11dd1b05d79539ea64.jpg',
   },
   {
     id: 'rice-curry-rajma-masala-7',
@@ -793,6 +859,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 220, full: 420 },
     category: 'rice-curry',
     type: 'veg',
+    image: '/food-images/rice and curry/d36272a70384901f53c97e8b83b7959c.jpg',
   },
   {
     id: 'rice-curry-chana-masala-8',
@@ -802,6 +869,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 160, half: 230, full: 440 },
     category: 'rice-curry',
     type: 'non-veg',
+    image: '/food-images/rice and curry/IMG_20250517_095442.jpg',
   },
   
   // Indian Breads
@@ -813,6 +881,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 40 },
     category: 'indian-breads',
     type: 'veg',
+    image: '/food-images/indianbread/butter.jpg',
   },
   {
     id: 'garlic-naan',
@@ -823,6 +892,7 @@ export const foodItems: FoodItem[] = [
     category: 'indian-breads',
     type: 'veg',
     popular: true,
+    image: '/food-images/indianbread/garlic.jpg',
   },
   {
     id: 'indian-breads-tandoori-roti',
@@ -833,6 +903,7 @@ export const foodItems: FoodItem[] = [
     category: 'indian-breads',
     type: 'veg',
     popular: true,
+    image: '/food-images/indianbread/tandoori.jpg',
   },
   {
     id: 'indian-breads-lachha-paratha',
@@ -842,6 +913,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 100, half: 170, full: 320 },
     category: 'indian-breads',
     type: 'non-veg',
+    image: '/food-images/indianbread/306b6e439aa2e7d81c6a510443e23e81.jpg',
   },
   {
     id: 'indian-breads-stuffed-kulcha',
@@ -851,6 +923,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 110, half: 180, full: 340 },
     category: 'indian-breads',
     type: 'veg',
+    image: '/food-images/indianbread/296659d352e1c1206b7b210ce9730a95.jpg',
   },
   {
     id: 'indian-breads-roomali-roti',
@@ -860,6 +933,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 120, half: 190, full: 360 },
     category: 'indian-breads',
     type: 'non-veg',
+    image: '/food-images/indianbread/rumaliroti.jpg',
   },
   {
     id: 'indian-breads-missi-roti',
@@ -869,6 +943,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 130, half: 200, full: 380 },
     category: 'indian-breads',
     type: 'veg',
+    image: '/food-images/indianbread/7835c6d9c6d127799d959afb9c68291d.jpg',
   },
   {
     id: 'indian-breads-aloo-paratha',
@@ -878,6 +953,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 140, half: 210, full: 400 },
     category: 'indian-breads',
     type: 'non-veg',
+    image: '/food-images/indianbread/alooparata.jpg',
   },
   {
     id: 'indian-breads-tandoori-roti-7',
@@ -887,6 +963,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 220, full: 420 },
     category: 'indian-breads',
     type: 'veg',
+    image: '/food-images/indianbread/tandoori.jpg',
   },
   {
     id: 'indian-breads-lachha-paratha-8',
@@ -896,6 +973,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 160, half: 230, full: 440 },
     category: 'indian-breads',
     type: 'non-veg',
+    image: '/food-images/indianbread/296659d352e1c1206b7b210ce9730a95.jpg',
   },
 ];
 
