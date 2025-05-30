@@ -4,11 +4,14 @@ import { getFoodItemById } from "../data/menuData";
 import PageHeader from "../components/PageHeader";
 import { FoodSize } from "../types/menu";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { useCart } from "../context/CartContext";
+import { ShoppingCart } from "lucide-react";
 
 const FoodDetails = () => {
   const { foodId } = useParams<{ foodId: string }>();
   const [searchParams] = useSearchParams();
   const foodItem = foodId ? getFoodItemById(foodId) : undefined;
+  const { cart, addToCart } = useCart();
 
   const [selectedSize, setSelectedSize] = useState<FoodSize>(() => {
     if (foodItem?.price.full !== null) return 'full';
@@ -38,6 +41,16 @@ const FoodDetails = () => {
 
   const currentPrice = getPrice(selectedSize);
   const typeColor = foodItem.type === 'veg' ? 'bg-food-veg' : 'bg-food-nonveg';
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: foodItem.id,
+      name: foodItem.name,
+      size: selectedSize,
+      price: currentPrice,
+      quantity: 1,
+    });
+  };
 
   return (
     <div className="page-container pb-10 relative">
@@ -98,6 +111,13 @@ const FoodDetails = () => {
                 </p>
               )}
             </div>
+
+            <button
+              onClick={handleAddToCart}
+              className="mt-4 w-full bg-primary text-white py-3 px-5 rounded-md font-semibold flex items-center justify-center gap-2"
+            >
+              <ShoppingCart size={20} /> Add to Cart
+            </button>
           </div>
 
           {/* Right Section */}
@@ -117,7 +137,7 @@ const FoodDetails = () => {
                 : `Only ${availableSizes[0].charAt(0).toUpperCase() + availableSizes[0].slice(1)} Available - ₹${currentPrice}`}
             </p>
           </div>
-        </div>
+        </div>  
       </div>
     </div>
   );
