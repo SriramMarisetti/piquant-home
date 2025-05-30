@@ -1,5 +1,14 @@
 
 export type FoodCategory =
+  | 'bhojanam-box'
+  | 'bhojanam-subscription'
+  | 'diet-food'
+  | 'diet-subscription'
+  | 'podulu'
+  | 'rice-mix'
+  | 'traditional-snacks'
+  | 'pickles'
+  | 'cakes'
   | 'starters'
   | 'biryani'
   | 'noodles'
@@ -29,7 +38,7 @@ export type FoodCategory =
   | 'party-orders'
   | 'midnight-cravings';
 
-export type FoodType = 'veg' | 'non-veg';
+export type FoodType = 'veg' | 'non-veg' | 'mixed';
 
 export type FoodSize = 'mini' | 'half' | 'full';
 
@@ -49,6 +58,8 @@ export interface FoodItem {
   type: FoodType;
   image?: string;
   popular?: boolean;
+  sizeImages?: Partial<Record<FoodSize, string>>;
+
 }
 
 export interface CategoryInfo {
