@@ -1,5 +1,14 @@
 
 export type FoodCategory =
+  | 'bhojanam-box'
+  | 'bhojanam-subscription'
+  | 'diet-food'
+  | 'diet-subscription'
+  | 'podulu'
+  | 'rice-mix'
+  | 'traditional-snacks'
+  | 'pickles'
+  | 'cakes'
   | 'starters'
   | 'biryani'
   | 'noodles'
@@ -29,7 +38,7 @@ export type FoodCategory =
   | 'party-orders'
   | 'midnight-cravings';
 
-export type FoodType = 'veg' | 'non-veg';
+export type FoodType = 'veg' | 'non-veg' | 'mixed';
 
 export type FoodSize = 'mini' | 'half' | 'full';
 
@@ -37,12 +46,6 @@ export interface FoodPrice {
   mini?: number;
   half?: number;
   full: number;
-}
-
-export interface SizeImages {
-  mini?: string;
-  half?: string;
-  full?: string;
 }
 
 export interface FoodItem {
@@ -54,8 +57,9 @@ export interface FoodItem {
   category: FoodCategory;
   type: FoodType;
   image?: string;
-  sizeImages?: SizeImages;
   popular?: boolean;
+  sizeImages?: Partial<Record<FoodSize, string>>;
+
 }
 
 export interface CategoryInfo {
@@ -69,14 +73,4 @@ export type CategoryGroup = 'cuisine' | 'course' | 'dietary' | 'occasion';
 
 export interface ExtendedCategoryInfo extends CategoryInfo {
   group: CategoryGroup;
-}
-
-export interface CartItem {
-  id: string;
-  foodId: string;
-  name: string;
-  size: FoodSize;
-  price: number;
-  quantity: number;
-  image?: string;
 }
