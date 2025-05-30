@@ -14,9 +14,9 @@ const FoodDetails = () => {
   const { cart, addToCart } = useCart();
 
   const [selectedSize, setSelectedSize] = useState<FoodSize>(() => {
-    if (foodItem?.price.full !== null) return 'full';
-    if (foodItem?.price.half !== null) return 'half';
-    return 'mini';
+    if (foodItem?.price.full !== null) return "full";
+    if (foodItem?.price.half !== null) return "half";
+    return "mini";
   });
 
   if (!foodItem) {
@@ -29,18 +29,18 @@ const FoodDetails = () => {
   }
 
   const availableSizes: FoodSize[] = [];
-  if (foodItem.price.mini !== null) availableSizes.push('mini');
-  if (foodItem.price.half !== null) availableSizes.push('half');
-  if (foodItem.price.full !== null) availableSizes.push('full');
+  if (foodItem.price.mini !== null) availableSizes.push("mini");
+  if (foodItem.price.half !== null) availableSizes.push("half");
+  if (foodItem.price.full !== null) availableSizes.push("full");
 
   const getPrice = (size: FoodSize) => {
-    if (size === 'mini' && foodItem.price.mini !== undefined) return foodItem.price.mini;
-    if (size === 'half' && foodItem.price.half !== undefined) return foodItem.price.half;
+    if (size === "mini" && foodItem.price.mini !== undefined) return foodItem.price.mini;
+    if (size === "half" && foodItem.price.half !== undefined) return foodItem.price.half;
     return foodItem.price.full ?? 0;
   };
 
   const currentPrice = getPrice(selectedSize);
-  const typeColor = foodItem.type === 'veg' ? 'bg-food-veg' : 'bg-food-nonveg';
+  const typeColor = foodItem.type === "veg" ? "bg-food-veg" : "bg-food-nonveg";
 
   const handleAddToCart = () => {
     addToCart({
@@ -67,7 +67,7 @@ const FoodDetails = () => {
                 <div className="w-3 h-3 rounded-full bg-white"></div>
               </div>
               <span className="font-medium">
-                {foodItem.type === 'veg' ? 'Vegetarian' : 'Non-Vegetarian'}
+                {foodItem.type === "veg" ? "Vegetarian" : "Non-Vegetarian"}
               </span>
 
               {foodItem.popular && (
@@ -96,7 +96,9 @@ const FoodDetails = () => {
                     <button
                       key={size}
                       className={`px-4 py-2 rounded-md font-medium transition-colors ${
-                        selectedSize === size ? 'bg-primary text-white' : 'bg-muted hover:bg-muted/80'
+                        selectedSize === size
+                          ? "bg-primary text-white"
+                          : "bg-muted hover:bg-muted/80"
                       }`}
                       onClick={() => setSelectedSize(size)}
                     >
@@ -107,12 +109,8 @@ const FoodDetails = () => {
                 </div>
               ) : (
                 <p className="text-md font-semibold">
-                  {availableSizes[0].charAt(0).toUpperCase() + availableSizes[0].slice(1)}: ₹{foodItem.price[availableSizes[0]]}
-                </p>
-              )}
-              ) : (
-                <p className="text-md font-semibold">
-                  {availableSizes[0].charAt(0).toUpperCase() + availableSizes[0].slice(1)}: ₹{foodItem.price[availableSizes[0]]}
+                  {availableSizes[0].charAt(0).toUpperCase() + availableSizes[0].slice(1)}: ₹
+                  {foodItem.price[availableSizes[0]]}
                 </p>
               )}
             </div>
@@ -129,10 +127,10 @@ const FoodDetails = () => {
           <div className="md:w-1/2 mt-6 md:mt-0">
             <div className="rounded-xl overflow-hidden shadow-md transition-opacity duration-300">
               <AspectRatio ratio={4 / 3}>
-                <img 
-                  src={foodItem.image} 
-                  alt={`${foodItem.name}`} 
-                  className="w-full h-full object-cover animate-scale-in" 
+                <img
+                  src={foodItem.image}
+                  alt={`${foodItem.name}`}
+                  className="w-full h-full object-cover animate-scale-in"
                 />
               </AspectRatio>
             </div>
@@ -142,7 +140,7 @@ const FoodDetails = () => {
                 : `Only ${availableSizes[0].charAt(0).toUpperCase() + availableSizes[0].slice(1)} Available - ₹${currentPrice}`}
             </p>
           </div>
-        </div>  
+        </div>
       </div>
     </div>
   );
