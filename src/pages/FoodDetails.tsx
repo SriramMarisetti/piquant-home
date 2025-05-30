@@ -5,11 +5,14 @@ import { getFoodItemById } from "../data/menuData";
 import PageHeader from "../components/PageHeader";
 import { FoodSize } from "../types/menu";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Button } from "@/components/ui/button";
+import { useCart } from "../contexts/CartContext";
 
 const FoodDetails = () => {
   const { foodId } = useParams<{ foodId: string }>();
   const [searchParams] = useSearchParams();
   const foodItem = foodId ? getFoodItemById(foodId) : undefined;
+  const { addToCart } = useCart();
   
   const [selectedSize, setSelectedSize] = useState<FoodSize>(
     foodItem?.price.full !== undefined ? 'full' : 
@@ -48,6 +51,16 @@ const FoodDetails = () => {
   
   const currentPrice = getPrice(selectedSize);
   const typeColor = foodItem.type === 'veg' ? 'bg-food-veg' : 'bg-food-nonveg';
+
+  const handleAddToCart = () => {
+    addToCart(
+      foodItem.id,
+      foodItem.name,
+      selectedSize,
+      currentPrice,
+      getSizeImage(selectedSize)
+    );
+  };
   
   return (
     <div className="page-container pb-10 relative">
@@ -109,6 +122,14 @@ const FoodDetails = () => {
                 </div>
               </div>
             )}
+
+            <div className="flex items-center justify-between mb-4">
+              <div className="text-2xl font-bold">₹{currentPrice}</div>
+            </div>
+
+            <Button onClick={handleAddToCart} size="lg" className="w-full">
+              Add to Cart - ₹{currentPrice}
+            </Button>
           </div>
           
           {/* Image on the right */}

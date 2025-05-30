@@ -39,6 +39,12 @@ export interface FoodPrice {
   full: number;
 }
 
+export interface SizeImages {
+  mini?: string;
+  half?: string;
+  full?: string;
+}
+
 export interface FoodItem {
   id: string;
   name: string;
@@ -48,6 +54,7 @@ export interface FoodItem {
   category: FoodCategory;
   type: FoodType;
   image?: string;
+  sizeImages?: SizeImages;
   popular?: boolean;
 }
 
@@ -62,4 +69,14 @@ export type CategoryGroup = 'cuisine' | 'course' | 'dietary' | 'occasion';
 
 export interface ExtendedCategoryInfo extends CategoryInfo {
   group: CategoryGroup;
+}
+
+export interface CartItem {
+  id: string;
+  foodId: string;
+  name: string;
+  size: FoodSize;
+  price: number;
+  quantity: number;
+  image?: string;
 }
