@@ -339,7 +339,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-food',
     type: 'veg',
     popular: true,
-    image: '/food-images/DietFood/b712c472356ab0ae06ffa25a722179f3.jpg',
+    image: '/food-images/DietFood/7a55e4d4ce502e8a2de8cfda9b2da701.jpg',
   },
   {
     id: 'healthy-juice',
@@ -350,7 +350,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-food',
     type: 'veg',
     popular: true,
-    image: '/food-images/DietFood/b712c472356ab0ae06ffa25a722179f3.jpg',
+    image: '/food-images/DietFood/e521f6d4f27b55146b84e2bbf5148b5c.jpg',
   },
 
    // Diet Food Subscription – Veg
