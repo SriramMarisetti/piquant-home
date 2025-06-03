@@ -8,31 +8,30 @@ type Props = {
 };
 
 const CartDialog: React.FC<Props> = ({ open, onOpenChange }) => {
-  const { cart, removeFromCart } = useCart();
+  const { cart, removeFromCart, increaseQuantity, decreaseQuantity } = useCart();
 
   const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
-const getWhatsAppLink = () => {
-  const baseUrl = "https://wa.me/917989152819?text=";
+  const getWhatsAppLink = () => {
+    const baseUrl = "https://wa.me/917989152819?text=";
 
-  const itemLines = cart.map(
-    item =>
-      `• *${item.name}* (${item.size.charAt(0).toUpperCase() + item.size.slice(1)}) x ${item.quantity} = ₹${item.price * item.quantity}`
-  );
+    const itemLines = cart.map(
+      item =>
+        `• *${item.name}* (${item.size.charAt(0).toUpperCase() + item.size.slice(1)}) x ${item.quantity} = ₹${item.price * item.quantity}`
+    );
 
-  const message = `
+    const message = `
 Hello! I would like to place an order. 🛍️
 
 *🧾 Order Details:*
 ${itemLines.join("\n")}
 
 *💰 Total Bill:* ₹${totalPrice}
- `;
+    `;
 
-  const encodedMessage = encodeURIComponent(message.trim());
-  return `${baseUrl}${encodedMessage}`;
-};
-
+    const encodedMessage = encodeURIComponent(message.trim());
+    return `${baseUrl}${encodedMessage}`;
+  };
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -50,9 +49,24 @@ ${itemLines.join("\n")}
                 <div>
                   <p className="font-medium">{item.name}</p>
                   <p className="text-sm text-muted-foreground">
-                    {item.size.charAt(0).toUpperCase() + item.size.slice(1)} x {item.quantity}
+                    {item.size.charAt(0).toUpperCase() + item.size.slice(1)}
                   </p>
-                  <p className="text-sm font-semibold">₹{item.price * item.quantity}</p>
+                  <div className="flex items-center space-x-2 mt-1">
+                    <button
+                      onClick={() => decreaseQuantity(item.id, item.size)}
+                      className="w-6 h-6 text-lg bg-gray-200 rounded-full hover:bg-gray-300"
+                    >
+                      −
+                    </button>
+                    <span className="px-2">{item.quantity}</span>
+                    <button
+                      onClick={() => increaseQuantity(item.id, item.size)}
+                      className="w-6 h-6 text-lg bg-gray-200 rounded-full hover:bg-gray-300"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <p className="text-sm font-semibold mt-1">₹{item.price * item.quantity}</p>
                 </div>
                 <button
                   onClick={() => removeFromCart(item.id, item.size)}
