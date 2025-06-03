@@ -69,7 +69,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-box',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/veg-breakfast',
+    image: '/food-images/BojanamBox/2b045d361ca6d0b02bd8b10f0fc55b8f.jpg',
   },
   {
     id: 'lunch-box-veg',
@@ -80,7 +80,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-box',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/veg-lunch',
+    image: '/food-images/BojanamBox/18bc977962547c723b955e8092997635.jpg',
   },
   {
     id: 'lunch-box-nonveg',
@@ -91,7 +91,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-box',
     type: 'non-veg',
     popular: true,
-    image: 'https://source.unsplash.com/nonveg-lunch',
+    image: '/food-images/BojanamBox/eefc3ca47b1f0a99eb5c20be5136dfeb.jpg',
   },
   {
     id: 'lunch-box-combo',
@@ -102,7 +102,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-box',
     type: 'mixed',
     popular: true,
-    image: 'https://source.unsplash.com/lunch-combo',
+    image: '/food-images/BojanamBox/18bc977962547c723b955e8092997635.jpg',
   },
   {
     id: 'curry-box-veg',
@@ -113,7 +113,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-box',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/veg-curry',
+    image: '/food-images/BojanamBox/0e715939aedc11cc8f16be414482d60e.jpg',
   },
   {
     id: 'curry-box-nonveg',
@@ -124,7 +124,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-box',
     type: 'non-veg',
     popular: false,
-    image: 'https://source.unsplash.com/nonveg-curry',
+    image: '/food-images/BojanamBox/15f0365f4dddf1cf22d67613af8dc95d.jpg',
   },
   {
     id: 'curry-box-combo',
@@ -146,7 +146,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-box',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/veg-dinner',
+    image: '/food-images/BojanamBox/49df111dc4962648a4cfb9aa5756b161.jpg',
   },
   {
     id: 'dinner-box-nonveg',
@@ -157,7 +157,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-box',
     type: 'non-veg',
     popular: false,
-    image: 'https://source.unsplash.com/nonveg-dinner',
+    image: '/food-images/BojanamBox/81724aca51bf628586e4497f4d469a40.jpg',
   },
 
   // Bhojanam Subscription - Veg

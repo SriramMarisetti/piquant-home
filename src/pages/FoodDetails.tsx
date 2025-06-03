@@ -77,16 +77,17 @@ const FoodDetails = () => {
               )}
             </div>
 
-            <p className="text-lg mb-6">{foodItem.description}</p>
+           {/* <p className="text-lg mb-6">{foodItem.description}</p>
 
-            <div className="mb-6">
-              <h3 className="font-semibold mb-2">Ingredients:</h3>
-              <ul className="list-disc pl-5 space-y-1">
-                {foodItem.ingredients.map((ingredient, index) => (
-                  <li key={index}>{ingredient}</li>
-                ))}
-              </ul>
-            </div>
+          <div className="mb-6">
+            <h3 className="font-semibold mb-2">Ingredients:</h3>
+            <ul className="list-disc pl-5 space-y-1">
+              {foodItem.ingredients.map((ingredient, index) => (
+                <li key={index}>{ingredient}</li>
+              ))}
+            </ul>
+          </div> */}
+
 
             <div className="mb-6">
               <h3 className="font-semibold mb-2">Portion Size:</h3>
