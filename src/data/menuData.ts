@@ -170,7 +170,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-subscription',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/veg-breakfast-box',
+    image: '/food-images/BojanamBox/2b045d361ca6d0b02bd8b10f0fc55b8f.jpg',
   },
   {
     id: 'subscription-lunch-veg',
@@ -181,7 +181,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-subscription',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/veg-lunch-box',
+    image: '/food-images/BojanamBox/18bc977962547c723b955e8092997635.jpg',
   },
   {
     id: 'subscription-curry-veg',
@@ -192,7 +192,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-subscription',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/veg-curry-box',
+    image: '/food-images/BojanamBox/0e715939aedc11cc8f16be414482d60e.jpg',
   },
   {
     id: 'subscription-dinner-veg',
@@ -203,7 +203,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-subscription',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/veg-dinner-box',
+    image: '/food-images/BojanamBox/49df111dc4962648a4cfb9aa5756b161.jpg',
   },
   {
     id: 'subscription-full-day-veg',
@@ -214,7 +214,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-subscription',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/veg-full-day-box',
+    image: '/food-images/BhojanamSubscription/2a4f08b97f5e58e9b8db71b54e566d44.jpg',
   },
 
   // Bhojanam Subscription - Non-Veg
@@ -227,7 +227,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-subscription',
     type: 'non-veg',
     popular: true,
-    image: 'https://source.unsplash.com/nonveg-lunch-box',
+    image: '/food-images/BojanamBox/eefc3ca47b1f0a99eb5c20be5136dfeb.jpg',
   },
   {
     id: 'subscription-curry-nonveg',
@@ -238,7 +238,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-subscription',
     type: 'non-veg',
     popular: false,
-    image: 'https://source.unsplash.com/nonveg-curry-box',
+    image: '/food-images/BojanamBox/15f0365f4dddf1cf22d67613af8dc95d.jpg',
   },
   {
     id: 'subscription-dinner-nonveg',
@@ -249,7 +249,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-subscription',
     type: 'non-veg',
     popular: false,
-    image: 'https://source.unsplash.com/nonveg-dinner-box',
+    image: '/food-images/BojanamBox/81724aca51bf628586e4497f4d469a40.jpg',
   },
   {
     id: 'subscription-full-day-nonveg',
@@ -260,7 +260,7 @@ export const foodItems: FoodItem[] = [
     category: 'bhojanam-subscription',
     type: 'non-veg',
     popular: true,
-    image: 'https://source.unsplash.com/full-day-meals',
+    image: '/food-images/BhojanamSubscription/233ba7707c0b1dfbce93afc7846a5833.jpg',
   },
 
     // Diet Food
@@ -328,7 +328,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-food',
     type: 'non-veg',
     popular: false,
-    image: 'https://source.unsplash.com/nonveg-diet-dinner',
+    image: '/food-images/BojanamBox/81724aca51bf628586e4497f4d469a40.jpg',
   },
   {
     id: 'fruit-bowl',
