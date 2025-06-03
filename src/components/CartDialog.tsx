@@ -13,7 +13,7 @@ const CartDialog: React.FC<Props> = ({ open, onOpenChange }) => {
   const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   const getWhatsAppLink = () => {
-    const baseUrl = "https://wa.me/917989152819?text=";
+    const baseUrl = "https://wa.me/918500590591?text=";
 
     const itemLines = cart.map(
       item =>
