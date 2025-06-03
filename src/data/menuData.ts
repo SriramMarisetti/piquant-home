@@ -273,7 +273,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-food',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/veg-diet-breakfast',
+    image: '/food-images/DietFood/b712c472356ab0ae06ffa25a722179f3.jpg',
   },
   {
     id: 'diet-breakfast-nonveg',
@@ -284,7 +284,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-food',
     type: 'non-veg',
     popular: false,
-    image: 'https://source.unsplash.com/nonveg-diet-breakfast',
+    image: '/food-images/DietFood/b712c472356ab0ae06ffa25a722179f3.jpg',
   },
   {
     id: 'diet-lunch-veg',
@@ -295,7 +295,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-food',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/veg-diet-lunch',
+    image: '/food-images/DietFood/b712c472356ab0ae06ffa25a722179f3.jpg',
   },
   {
     id: 'diet-lunch-nonveg',
@@ -306,7 +306,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-food',
     type: 'non-veg',
     popular: true,
-    image: 'https://source.unsplash.com/nonveg-diet-lunch',
+    image: '/food-images/DietFood/b712c472356ab0ae06ffa25a722179f3.jpg',
   },
   {
     id: 'diet-dinner-veg',
@@ -317,7 +317,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-food',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/veg-diet-dinner',
+    image: '/food-images/DietFood/b712c472356ab0ae06ffa25a722179f3.jpg',
   },
   {
     id: 'diet-dinner-nonveg',
@@ -339,7 +339,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-food',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/fruit-bowl',
+    image: '/food-images/DietFood/b712c472356ab0ae06ffa25a722179f3.jpg',
   },
   {
     id: 'healthy-juice',
@@ -350,7 +350,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-food',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/healthy-juice',
+    image: '/food-images/DietFood/b712c472356ab0ae06ffa25a722179f3.jpg',
   },
 
    // Diet Food Subscription – Veg
