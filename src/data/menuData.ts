@@ -363,7 +363,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-subscription',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/veg-breakfast-subscription',
+    image: '/food-images/DietFood/b712c472356ab0ae06ffa25a722179f3.jpg',
   },
   {
     id: 'diet-subscription-lunch-veg',
@@ -374,7 +374,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-subscription',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/veg-lunch-subscription',
+    image: '/food-images/DietFood/3731c8de8b2061eb9ebf083963c2bca6.jpg',
   },
   {
     id: 'diet-subscription-dinner-veg',
@@ -385,7 +385,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-subscription',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/veg-dinner-subscription',
+    image: '/food-images/DietFood/d929e3aa5de97cc2e413006b84f82f8d.jpg',
   },
   {
     id: 'diet-subscription-fruit-bowl',
@@ -396,7 +396,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-subscription',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/fruit-bowl-subscription',
+    image: '/food-images/DietFood/7a55e4d4ce502e8a2de8cfda9b2da701.jpg',
   },
   {
     id: 'diet-subscription-healthy-juice',
@@ -407,7 +407,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-subscription',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/juice-subscription',
+    image: '/food-images/DietFood/e521f6d4f27b55146b84e2bbf5148b5c.jpg',
   },
   {
     id: 'diet-subscription-full-day-veg',
@@ -418,7 +418,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-subscription',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/veg-full-day-plan',
+    image: '/food-images/DietFood/3731c8de8b2061eb9ebf083963c2bca6.jpg',
   },
   {
     id: 'diet-subscription-lunch-fruit-dinner-veg',
@@ -429,7 +429,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-subscription',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/veg-lunch-fruit-dinner',
+    image: '/food-images/BojanamBox/56fb3f0a81ab2a5fef185f774365ef82.jpg',
   },
 
   // Diet Food Subscription – Non-Veg (4 days Non-Veg, 3 days Veg)
@@ -442,7 +442,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-subscription',
     type: 'non-veg',
     popular: false,
-    image: 'https://source.unsplash.com/nonveg-breakfast-subscription',
+    image: '/food-images/DietFood/53cab4b64eb7f9d5bf1632ed549c1967.jpg',
   },
   {
     id: 'diet-subscription-lunch-nonveg',
@@ -453,7 +453,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-subscription',
     type: 'non-veg',
     popular: false,
-    image: 'https://source.unsplash.com/nonveg-lunch-subscription',
+    image: '/food-images/DietFood/4ad86356b4227896a1fc962a761550d9.jpg',
   },
   {
     id: 'diet-subscription-dinner-nonveg',
@@ -464,7 +464,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-subscription',
     type: 'non-veg',
     popular: false,
-    image: 'https://source.unsplash.com/nonveg-dinner-subscription',
+    image: '/food-images/BojanamBox/81724aca51bf628586e4497f4d469a40.jpg',
   },
   {
     id: 'diet-subscription-full-day-nonveg',
@@ -475,7 +475,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-subscription',
     type: 'non-veg',
     popular: true,
-    image: 'https://source.unsplash.com/nonveg-full-day-plan',
+    image: '/food-images/BojanamBox/81724aca51bf628586e4497f4d469a40.jpg',
   },
   {
     id: 'diet-subscription-lunch-fruit-dinner-nonveg',
@@ -486,7 +486,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-subscription',
     type: 'non-veg',
     popular: false,
-    image: 'https://source.unsplash.com/nonveg-lunch-fruit-dinner',
+    image: '/food-images/BojanamBox/56fb3f0a81ab2a5fef185f774365ef82.jpg',
   },
 
   // Podulu – Spice Powders
@@ -499,7 +499,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-1',
+    image: '/food-images/Podulu/avisa.jpg',
   },
   {
     id: 'avisa-nuvulu',
@@ -510,7 +510,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-2',
+    image: '/food-images/Podulu/nuvvula.jpg',
   },
   {
     id: 'dhaniya-podi',
@@ -521,7 +521,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-3',
+    image: '/food-images/Podulu/daniyala.jpg',
   },
   {
     id: 'garam-masala',
@@ -532,7 +532,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/spice-powder-4',
+    image: '/food-images/Podulu/garamond.jpg',
   },
   {
     id: 'gravy-masala-powder',
@@ -543,7 +543,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-5',
+    image: '/food-images/Podulu/gravya.jpg',
   },
   {
     id: 'idli-karam-podi',
@@ -554,7 +554,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/spice-powder-6',
+    image: '/food-images/Podulu/idlypodi.jpg',
   },
     {
     id: 'jeera-powder',
@@ -565,7 +565,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-6',
+    image: '/food-images/Podulu/jeerapodi.jpg',
   },
   {
     id: 'kandi-podi',
@@ -576,7 +576,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-7',
+    image: '/food-images/Podulu/kandipodi.jpg',
   },
   {
     id: 'karivepaku-podi',
@@ -587,7 +587,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-8',
+    image: '/food-images/Podulu/karvepakupodi.jpg',
   },
   {
     id: 'kobari-karam-podi',
@@ -598,7 +598,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-9',
+    image: '/food-images/Podulu/avisa.jpg',
   },
   {
     id: 'masala-karam',
@@ -609,7 +609,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/spice-powder-10',
+    image: '/food-images/Podulu/nuvvulapodi.jpg',
   },
   {
     id: 'munagaku-podi',
@@ -620,7 +620,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/spice-powder-11',
+    image: '/food-images/Podulu/munagaku.jpg',
   },
   {
     id: 'nalla-karam-podi',
@@ -631,7 +631,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-12',
+    image: '/food-images/Podulu/jeerapodi.jpg',
   },
   {
     id: 'nuvulu-podi',
@@ -642,7 +642,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-13',
+    image: '/food-images/Podulu/nuvvulapodi.jpg',
   },
   {
     id: 'pallila-podi',
@@ -653,7 +653,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-14',
+    image: '/food-images/Podulu/pallilapodi.jpg',
   },
   {
     id: 'podi-karam',
@@ -664,7 +664,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-15',
+    image: '/food-images/Podulu/podikaaram.jpg',
   },
   {
     id: 'ulava-karam-podi',
@@ -675,7 +675,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-16',
+    image: '/food-images/Podulu/vulavalapodi.jpg',
   },
 
   {
@@ -687,7 +687,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/spice-powder-17',
+    image: '/food-images/Podulu/biryanimasala.jpg',
   },
   {
     id: 'chicken-masala-powder',
@@ -698,7 +698,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-18',
+    image: '/food-images/Podulu/chickenmasala.jpg',
   },
   {
     id: 'endi-royalu-podi',
@@ -709,7 +709,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'non-veg',
     popular: false,
-    image: 'https://source.unsplash.com/spice-powder-19',
+    image: '/food-images/Podulu/endiroyyala.jpg',
   },
   {
     id: 'mutton-masala-powder',
@@ -720,7 +720,7 @@ export const foodItems: FoodItem[] = [
     category: 'podulu',
     type: 'non-veg',
     popular: true,
-    image: 'https://source.unsplash.com/spice-powder-20',
+    image: '/food-images/Podulu/mutton.jpg',
   },
 
   //Rice-Mix
@@ -733,7 +733,7 @@ export const foodItems: FoodItem[] = [
     category: 'rice-mix',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/pulihora-mix-1',
+    image: '/food-images/RiceMix/mangorice.jpg',
   },
   {
     id: 'pudhina-rice-mix',
@@ -744,7 +744,7 @@ export const foodItems: FoodItem[] = [
     category: 'rice-mix',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/mint-rice-mix-2',
+    image: '/food-images/RiceMix/pudhina.jpg',
   },
   {
     id: 'pulihora-mix',
@@ -755,7 +755,7 @@ export const foodItems: FoodItem[] = [
     category: 'rice-mix',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/pulihora-mix-3',
+    image: '/food-images/RiceMix/pulihora.jpg',
   },
   {
     id: 'tomato-rice-mix',
@@ -766,7 +766,7 @@ export const foodItems: FoodItem[] = [
     category: 'rice-mix',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/tomato-rice-mix-4',
+    image: '/food-images/RiceMix/tomato.jpg',
   },
 
   //Traditional-snacks
@@ -779,7 +779,7 @@ export const foodItems: FoodItem[] = [
     category: 'traditional-snacks',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/ariselu-snack',
+    image: '/food-images/TraditionalSnacks/arisalu.jpg',
   },
   {
     id: 'boondi-laddu',
@@ -790,7 +790,7 @@ export const foodItems: FoodItem[] = [
     category: 'traditional-snacks',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/boondi-laddu',
+    image: '/food-images/TraditionalSnacks/laddu.jpg',
   },
   {
     id: 'chegodi',
@@ -801,7 +801,7 @@ export const foodItems: FoodItem[] = [
     category: 'traditional-snacks',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/chegodi-snack',
+    image: '/food-images/TraditionalSnacks/chegodi.jpg',
   },
   {
     id: 'chekkalu',
@@ -812,7 +812,7 @@ export const foodItems: FoodItem[] = [
     category: 'traditional-snacks',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/chekkalu-snack',
+    image: '/food-images/TraditionalSnacks/chegodi.jpg',
   },
   {
     id: 'chota-bheem-laddu',
@@ -823,7 +823,7 @@ export const foodItems: FoodItem[] = [
     category: 'traditional-snacks',
     type: 'veg',
     popular: true,
-    image: 'https://source.unsplash.com/chota-bheem-laddu',
+    image: '/food-images/TraditionalSnacks/chotaladdu.jpg',
   },
   {
     id: 'coconut-laddu-bellam',
@@ -834,7 +834,7 @@ export const foodItems: FoodItem[] = [
     category: 'traditional-snacks',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/coconut-laddu',
+    image: '/food-images/TraditionalSnacks/laddu.jpg',
   },
   {
     id: 'gavvalu',
@@ -845,7 +845,7 @@ export const foodItems: FoodItem[] = [
     category: 'traditional-snacks',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/gavvalu-snack',
+    image: '/food-images/TraditionalSnacks/gavvalu.jpg',
   },
   {
     id: 'janthikalu',
@@ -856,7 +856,7 @@ export const foodItems: FoodItem[] = [
     category: 'traditional-snacks',
     type: 'veg',
     popular: false,
-    image: 'https://source.unsplash.com/janthikalu-snack',
+    image: '/food-images/TraditionalSnacks/janthukulu.jpg',
   },
   {
     id: 'kajjikayalu-bellam',
@@ -866,7 +866,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 230, half: 450, full: 850 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: 'https://source.unsplash.com/kajjikayalu-bellam',
+    image: '/food-images/TraditionalSnacks/bellamariselu.jpg',
   },
   {
     id: 'kajjikayalu-sugar',
@@ -876,7 +876,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 200, half: 400, full: 750 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: 'https://source.unsplash.com/kajjikayalu-sugar',
+    image: '/food-images/TraditionalSnacks/sugarariselu.jpg',
   },
   {
     id: 'karaboondi',
@@ -886,7 +886,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 240, full: 480 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: 'https://source.unsplash.com/karaboondi-snack',
+    image: '/food-images/TraditionalSnacks/karabondhi.jpg',
   },
   {
     id: 'kova-kajjikayalu',
@@ -896,7 +896,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 250, half: 500, full: 950 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: 'https://source.unsplash.com/kova-kajjikayalu',
+    image: '/food-images/TraditionalSnacks/kovakajjikaya.jpg',
   },
   {
     id: 'mango-jelly-thandri',
@@ -906,7 +906,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 250, half: 400, full: 580 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: 'https://source.unsplash.com/mango-jelly',
+    image: '/food-images/TraditionalSnacks/mangojelly.jpg',
   },
   {
     id: 'mixture',
@@ -916,7 +916,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 180, half: 350, full: 600 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: 'https://source.unsplash.com/mixture-snack',
+    image: '/food-images/TraditionalSnacks/mixture.jpg',
   },
   {
     id: 'nimki',
@@ -926,7 +926,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 230, full: 460 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: 'https://source.unsplash.com/nimki-snack',
+    image: '/food-images/TraditionalSnacks/nimki.jpg',
   },
   {
     id: 'nuvulu-laddu-bellam',
@@ -936,7 +936,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 200, half: 350, full: 600 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: 'https://source.unsplash.com/nuvulu-laddu',
+    image: '/food-images/TraditionalSnacks/nuvvulaladdu.jpg',
   },
   {
     id: 'rava-laddu',
@@ -946,7 +946,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 300, full: 560 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: 'https://source.unsplash.com/rava-laddu',
+    image: '/food-images/TraditionalSnacks/ravvaladdu.jpg',
   },
   {
     id: 'sweet-boondi',
@@ -956,7 +956,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 220, full: 440 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: 'https://source.unsplash.com/sweet-boondi',
+    image: '/food-images/TraditionalSnacks/sweetboondhi.jpg',
   },
 
   //Pickles
@@ -968,7 +968,7 @@ export const foodItems: FoodItem[] = [
     price: { half: 1500, full: 2800 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/apollo-fish-pickle',
+    image: '/food-images/Pickles/apolo.jpg',
   },
   {
     id: 'chicken-pickle',
@@ -978,7 +978,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 280, half: 650, full: 1300 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/chicken-pickle',
+    image: '/food-images/Pickles/chicken.jpg',
   },
   {
     id: 'chicken-boneless-pickle',
@@ -988,7 +988,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 350, half: 790, full: 1580 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/boneless-chicken-pickle',
+    image: '/food-images/Pickles/boneless.jpg',
   },
   {
     id: 'crab-pickle',
@@ -998,7 +998,7 @@ export const foodItems: FoodItem[] = [
     price: { half: 780, full: 1500 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/crab-pickle',
+    image: '/food-images/Pickles/crab.jpg',
   },
   {
     id: 'fish-mackerel-pickle',
@@ -1008,7 +1008,7 @@ export const foodItems: FoodItem[] = [
     price: { half: 650, full: 1250 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/fish-mackerel-pickle',
+    image: '/food-images/Pickles/fish.jpg',
   },
   {
     id: 'fish-tuna-pickle',
@@ -1018,7 +1018,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 230, half: 575, full: 1150 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/fish-tuna-pickle',
+    image: '/food-images/Pickles/fish.jpg',
   },
   {
     id: 'fish-spanish-mackerel-pickle',
@@ -1028,7 +1028,7 @@ export const foodItems: FoodItem[] = [
     price: { half: 800, full: 1550 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/fish-spanish-mackerel-pickle',
+    image: '/food-images/Pickles/apolo.jpg',
   },
   {
     id: 'fish-spanish-mackerel-boneless-pickle',
@@ -1038,7 +1038,7 @@ export const foodItems: FoodItem[] = [
     price: { half: 1600, full: 3100 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/fish-boneless-pickle',
+    image: '/food-images/Pickles/apolo.jpg',
   },
   {
     id: 'gongura-chicken',
@@ -1048,7 +1048,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 350, half: 750, full: 1500 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/gongura-chicken-pickle',
+    image: '/food-images/Pickles/gongurachicken.jpg',
   },
   {
     id: 'gongura-chicken-boneless',
@@ -1058,7 +1058,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 420, half: 890, full: 1780 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/gongura-chicken-boneless',
+    image: '/food-images/Pickles/gonguraboneless.jpg',
   },
   {
     id: 'gongura-mutton',
@@ -1068,7 +1068,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 510, half: 900, full: 1800 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/gongura-mutton',
+    image: '/food-images/Pickles/gonguramutton.jpg',
   },
   {
     id: 'gongura-mutton-boneless',
@@ -1078,7 +1078,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 560, half: 1045, full: 2080 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/gongura-mutton-boneless',
+    image: '/food-images/Pickles/gonguraboneless.jpg',
   },
   {
     id: 'gongura-prawn-big',
@@ -1088,7 +1088,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 770, half: 1450, full: 2800 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/gongura-prawn-big',
+    image: '/food-images/Pickles/prawns.jpg',
   },
   {
     id: 'gongura-prawn-small',
@@ -1098,7 +1098,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 458, half: 825, full: 1650 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/gongura-prawn-small',
+    image: '/food-images/Pickles/prawns.jpg',
   },
   {
     id: 'mutton-pickle',
@@ -1108,7 +1108,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 430, half: 815, full: 1630 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/mutton-pickle',
+    image: '/food-images/Pickles/gonguramutton.jpg',
   },
   {
     id: 'mutton-boneless-pickle',
@@ -1118,7 +1118,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 490, half: 935, full: 1870 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/mutton-boneless',
+    image: '/food-images/Pickles/55724fc1370289584d8f917f436f09a0.jpg',
   },
   {
     id: 'natukodi-cashew-pickle',
@@ -1128,7 +1128,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 780, full: 1560 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/natukodi-pickle',
+    image: '/food-images/Pickles/natukodicashew.jpg',
   },
     {
     id: 'natukodi-cashew-boneless',
@@ -1138,7 +1138,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 1500, full: 3000 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/natukodi-cashew-boneless',
+    image: '/food-images/Pickles/natukodi.jpg',
   },
   {
     id: 'nethalu-big',
@@ -1148,7 +1148,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 1050, full: 2035 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/nethalu-big',
+    image: '/food-images/Pickles/nethulu.jpg',
   },
   {
     id: 'nethalu-small',
@@ -1158,7 +1158,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 800, full: 1500 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/nethalu-small',
+    image: '/food-images/Pickles/nethulu.jpg',
   },
   {
     id: 'prawns-big',
@@ -1168,7 +1168,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 700, half: 1350, full: 2600 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/prawns-big',
+    image: '/food-images/Pickles/prawns.jpg',
   },
   {
     id: 'prawns-small',
@@ -1178,7 +1178,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 310, half: 725, full: 1450 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/prawns-small',
+    image: '/food-images/Pickles/prawns.jpg',
   },
   {
     id: 'squid-pickle',
@@ -1188,7 +1188,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 850, full: 1600 },
     category: 'pickles',
     type: 'non-veg',
-    image: 'https://source.unsplash.com/squid-pickle',
+    image: '/food-images/Pickles/squid.jpg',
   },
   {
     id: 'allam-pickle',
@@ -1198,7 +1198,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 210, half: 360, full: 610 },
     category: 'pickles',
     type: 'veg',
-    image: 'https://source.unsplash.com/ginger-pickle',
+    image: '/food-images/Pickles/allam.jpg',
   },
   {
     id: 'avakay-pickle',
@@ -1208,7 +1208,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 210, half: 360, full: 610 },
     category: 'pickles',
     type: 'veg',
-    image: 'https://source.unsplash.com/avakaya-pickle',
+    image: '/food-images/Pickles/mango.jpg',
   },
   {
     id: 'dosakay-pickle',
@@ -1218,7 +1218,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 210, half: 360, full: 610 },
     category: 'pickles',
     type: 'veg',
-    image: 'https://source.unsplash.com/dosakaya-pickle',
+    image: '/food-images/Pickles/dosakay.jpg',
   },
   {
     id: 'mixed-veg-pickle',
@@ -1228,7 +1228,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 210, half: 360, full: 610 },
     category: 'pickles',
     type: 'veg',
-    image: 'https://source.unsplash.com/mixed-veg-pickle',
+    image: '/food-images/Pickles/mixedveg.jpg',
   },
   {
     id: 'thepi-avakay-pickle',
@@ -1238,7 +1238,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 250, half: 500, full: 960 },
     category: 'pickles',
     type: 'veg',
-    image: 'https://source.unsplash.com/thepi-avakaya',
+    image: '/food-images/Pickles/sweetmango.jpg',
   },
   {
     id: 'tomato-pickle',
@@ -1248,7 +1248,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 210, half: 360, full: 610 },
     category: 'pickles',
     type: 'veg',
-    image: 'https://source.unsplash.com/tomato-pickle',
+    image: '/food-images/Pickles/tomato.jpg',
   },
   {
     id: 'usirikaya-pickle',
@@ -1258,7 +1258,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 210, half: 360, full: 610 },
     category: 'pickles',
     type: 'veg',
-    image: 'https://source.unsplash.com/amla-pickle',
+    image: '/food-images/Pickles/vusiri.jpg',
   },
   {
     id: 'vellulli-pickle',
@@ -1268,7 +1268,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 250, half: 410, full: 690 },
     category: 'pickles',
     type: 'veg',
-    image: 'https://source.unsplash.com/garlic-pickle',
+    image: '/food-images/Pickles/velluli.jpg',
   },
 
   //Cakes
@@ -1280,7 +1280,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 45 },
     category: 'cakes',
     type: 'veg',
-    image: 'https://source.unsplash.com/plum-slice-rum',
+    image: '/food-images/Cakes/plumwithrum.jpg',
   },
   {
     id: 'plum-slices-no-rum',
@@ -1290,7 +1290,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 25 },
     category: 'cakes',
     type: 'veg',
-    image: 'https://source.unsplash.com/plum-slice-norum',
+    image: '/food-images/Cakes/plumwithoutrum.jpg',
   },
   {
     id: 'plum-cupcake-rum',
@@ -1300,7 +1300,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 60 },
     category: 'cakes',
     type: 'veg',
-    image: 'https://source.unsplash.com/plum-cupcake-rum',
+    image: '/food-images/Cakes/cupcakewithrum.jpg',
   },
   {
     id: 'plum-cupcake-no-rum',
@@ -1310,7 +1310,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 40 },
     category: 'cakes',
     type: 'veg',
-    image: 'https://source.unsplash.com/plum-cupcake-norum',
+    image: '/food-images/Cakes/cupcakewithoutrum.jpg',
   },
   {
     id: 'premium-cake-rum-1kg',
@@ -1320,7 +1320,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 1200 },
     category: 'cakes',
     type: 'veg',
-    image: 'https://source.unsplash.com/premium-cake-rum',
+    image: '/food-images/Cakes/premiumplumwithrum.jpg',
   },
   {
     id: 'premium-cake-no-rum-1kg',
@@ -1330,7 +1330,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 900 },
     category: 'cakes',
     type: 'veg',
-    image: 'https://source.unsplash.com/premium-cake-norum',
+    image: '/food-images/Cakes/plumwithoutrum.jpg',
   },
   {
     id: 'plum-cake-rum-500g',
@@ -1340,7 +1340,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 450 },
     category: 'cakes',
     type: 'veg',
-    image: 'https://source.unsplash.com/plumcake-rum-500g',
+    image: '/food-images/Cakes/plumwithrum.jpg',
   },
   {
     id: 'plum-cake-no-rum-500g',
@@ -1350,7 +1350,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 350 },
     category: 'cakes',
     type: 'veg',
-    image: 'https://source.unsplash.com/plumcake-norum-500g',
+    image: '/food-images/Cakes/plumwithoutrum.jpg',
   },
   {
     id: 'plum-cake-rum-750g',
@@ -1360,7 +1360,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 700 },
     category: 'cakes',
     type: 'veg',
-    image: 'https://source.unsplash.com/plumcake-rum-750g',
+    image: '/food-images/Cakes/plumwithrum.jpg',
   },
   {
     id: 'plum-cake-no-rum-750g',
@@ -1370,7 +1370,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 550 },
     category: 'cakes',
     type: 'veg',
-    image: 'https://source.unsplash.com/plumcake-norum-750g',
+    image: '/food-images/Cakes/plumwithoutrum.jpg',
   },
   {
     id: 'loaf-cake-rum-300g',
@@ -1380,7 +1380,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 350 },
     category: 'cakes',
     type: 'veg',
-    image: 'https://source.unsplash.com/loaf-cake-rum',
+    image: '/food-images/Cakes/loaf.jpg',
   },
   {
     id: 'loaf-cake-no-rum-300g',
@@ -1390,7 +1390,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 280 },
     category: 'cakes',
     type: 'veg',
-    image: 'https://source.unsplash.com/loaf-cake-norum',
+    image: '/food-images/Cakes/loaf.jpg',
   },
   // Starters
   {
