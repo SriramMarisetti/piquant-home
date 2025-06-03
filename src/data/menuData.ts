@@ -284,7 +284,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-food',
     type: 'non-veg',
     popular: false,
-    image: '/food-images/DietFood/b712c472356ab0ae06ffa25a722179f3.jpg',
+    image: '/food-images/DietFood/53cab4b64eb7f9d5bf1632ed549c1967.jpg',
   },
   {
     id: 'diet-lunch-veg',
@@ -295,7 +295,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-food',
     type: 'veg',
     popular: true,
-    image: '/food-images/DietFood/b712c472356ab0ae06ffa25a722179f3.jpg',
+    image: '/food-images/DietFood/3731c8de8b2061eb9ebf083963c2bca6.jpg',
   },
   {
     id: 'diet-lunch-nonveg',
@@ -306,7 +306,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-food',
     type: 'non-veg',
     popular: true,
-    image: '/food-images/DietFood/b712c472356ab0ae06ffa25a722179f3.jpg',
+    image: '/food-images/DietFood/4ad86356b4227896a1fc962a761550d9.jpg',
   },
   {
     id: 'diet-dinner-veg',
@@ -317,7 +317,7 @@ export const foodItems: FoodItem[] = [
     category: 'diet-food',
     type: 'veg',
     popular: false,
-    image: '/food-images/DietFood/b712c472356ab0ae06ffa25a722179f3.jpg',
+    image: '/food-images/DietFood/d929e3aa5de97cc2e413006b84f82f8d.jpg',
   },
   {
     id: 'diet-dinner-nonveg',
