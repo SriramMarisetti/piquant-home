@@ -54,8 +54,10 @@ const FoodDetails = () => {
 
   return (
     <div className="page-container pb-10 relative">
-      <div className="fixed inset-0 bg-[url('https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?q=80&w=1000')] bg-cover bg-center opacity-5 -z-10"></div>
-
+      <div
+        className="fixed inset-0 bg-cover bg-center opacity-20 -z-10"
+        style={{ backgroundImage: "url('/food-bg.png')" }}
+      ></div>
       <PageHeader title={foodItem.name} />
 
       <div className="bg-white rounded-xl shadow-md p-6 mb-6">

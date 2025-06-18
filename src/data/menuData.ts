@@ -63,7 +63,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'breakfast-box-veg',
     name: 'Breakfast Box (Veg)',
-    description: 'Homemade vegetarian breakfast for a fresh start to your day.',
+    description: 'Rice | Dal | Rasam | Curry | Fry | Chutney',
     ingredients: ['Idli', 'Chutney', 'Upma'],
     price: { mini: 80, half: null, full: null },
     category: 'bhojanam-box',
@@ -74,7 +74,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'lunch-box-veg',
     name: 'Lunch Box (Veg)',
-    description: 'Nutritious vegetarian lunch with rice, dal, and curry.',
+    description: 'Rice | Dal | Rasam | Curry | Fry | Chutney',
     ingredients: ['Rice', 'Dal', 'Vegetable Curry'],
     price: { mini: null, half: null, full: 145 },
     category: 'bhojanam-box',
@@ -85,7 +85,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'lunch-box-nonveg',
     name: 'Lunch Box (Non-Veg)',
-    description: 'Fulfilling non-veg lunch with chicken curry and rice.',
+    description: 'Millet Rice | Tuna fish | Paneer | Brown Rice | Steamed veggies',
     ingredients: ['Rice', 'Chicken Curry', 'Vegetable Fry'],
     price: { mini: null, half: null, full: 200 },
     category: 'bhojanam-box',
@@ -96,7 +96,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'lunch-box-combo',
     name: 'Lunch Box (Veg & Non-Veg)',
-    description: 'Combo meal with both veg and non-veg dishes.',
+    description: 'Millet Rice | Tuna fish | Paneer | Brown Rice | Steamed veggies',
     ingredients: ['Rice', 'Dal', 'Chicken Curry'],
     price: { mini: null, half: null, full: 175 },
     category: 'bhojanam-box',
@@ -107,7 +107,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'curry-box-veg',
     name: 'Curry Box (Veg)',
-    description: 'Box of flavorful vegetarian curries.',
+    description: 'Dal | Rasam | Curry | Fry | Chutney',
     ingredients: ['Paneer Butter Masala', 'Mixed Veg Curry'],
     price: { mini: null, half: null, full: 125 },
     category: 'bhojanam-box',
@@ -118,7 +118,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'curry-box-nonveg',
     name: 'Curry Box (Non-Veg)',
-    description: 'Delicious non-veg curries packed in a box.',
+    description: 'Dal | Rasam | Curry | Fry | Chutney',
     ingredients: ['Chicken Curry', 'Mutton Curry'],
     price: { mini: null, half: null, full: 180 },
     category: 'bhojanam-box',
@@ -140,7 +140,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'dinner-box-veg',
     name: 'Dinner Box (Veg)',
-    description: 'Light and healthy vegetarian dinner box.',
+    description: '3 Pulkas | Dal | Curry',
     ingredients: ['Chapati', 'Vegetable Curry', 'Curd Rice'],
     price: { mini: 100, half: null, full: null },
     category: 'bhojanam-box',
@@ -151,7 +151,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'dinner-box-nonveg',
     name: 'Dinner Box (Non-Veg)',
-    description: 'Wholesome dinner with non-veg curry and chapatis.',
+    description: '3 Pulkas | Dal | Curry',
     ingredients: ['Chapati', 'Chicken Curry', 'Rice'],
     price: { mini: 130, half: null, full: null },
     category: 'bhojanam-box',
@@ -267,7 +267,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'diet-breakfast-veg',
     name: 'Diet Breakfast Box (Veg)',
-    description: 'A wholesome vegetarian breakfast for your health goals.',
+    description: 'Millet | Sprouts | Oats',
     ingredients: ['Oats', 'Fruits', 'Sprouts'],
     price: { mini: 120, half: null, full: null },
     category: 'diet-food',
@@ -278,7 +278,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'diet-breakfast-nonveg',
     name: 'Diet Breakfast Box (Non-Veg)',
-    description: 'High-protein non-veg breakfast to fuel your day.',
+    description: ' Idly | Upma | Dosa | etc with 2 chutney',
     ingredients: ['Boiled Eggs', 'Chicken Sausage', 'Veg Salad'],
     price: { mini: 150, half: null, full: null },
     category: 'diet-food',
@@ -289,7 +289,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'diet-lunch-veg',
     name: 'Diet Lunch Box (Veg)',
-    description: 'Balanced vegetarian lunch with whole grains and vegetables.',
+    description: 'Millet Rice | Tuna fish | Paneer | Brown Rice | Steamed veggies',
     ingredients: ['Brown Rice', 'Dal', 'Boiled Veggies'],
     price: { mini: 220, half: null, full: null },
     category: 'diet-food',
@@ -300,7 +300,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'diet-lunch-nonveg',
     name: 'Diet Lunch Box (Non-Veg)',
-    description: 'Nutritious non-veg lunch for high-protein dietary needs.',
+    description: 'Millet Rice | Tuna fish | Paneer | Brown Rice | Steamed veggies',
     ingredients: ['Brown Rice', 'Grilled Chicken', 'Salad'],
     price: { mini: 280, half: null, full: null },
     category: 'diet-food',
@@ -311,7 +311,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'diet-dinner-veg',
     name: 'Diet Dinner Box (Veg)',
-    description: 'Light vegetarian dinner to end your day healthy.',
+    description: 'Millet Roti | Chicken curry | Paneer Mixed Veg curry',
     ingredients: ['Chapati', 'Boiled Veggies', 'Soup'],
     price: { mini: 150, half: null, full: null },
     category: 'diet-food',
@@ -322,7 +322,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'diet-dinner-nonveg',
     name: 'Diet Dinner Box (Non-Veg)',
-    description: 'Protein-rich non-veg dinner with clean ingredients.',
+    description: 'Millet Roti | Chicken curry | Paneer Mixed Veg curry',
     ingredients: ['Grilled Fish', 'Veg Soup', 'Chapati'],
     price: { mini: 200, half: null, full: null },
     category: 'diet-food',
@@ -333,7 +333,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'fruit-bowl',
     name: 'Fruit Bowl',
-    description: 'Assorted seasonal fruits for a refreshing and nutritious treat.',
+    description: 'Papaya | Banana | Apple | Pineapple | Nuts | Mixed fruits',
     ingredients: ['Apple', 'Papaya', 'Watermelon'],
     price: { mini: 100, half: null, full: null },
     category: 'diet-food',
@@ -357,7 +357,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'diet-subscription-breakfast-veg',
     name: 'Diet Subscription – Breakfast (Veg)',
-    description: 'Monthly vegetarian breakfast plan focused on health and balance.',
+    description: 'Millet | Sprouts | Oats',
     ingredients: ['Oats', 'Fruit Bowl', 'Sprouts'],
     price: { mini: null, half: null, full: 3000 },
     category: 'diet-subscription',
@@ -368,7 +368,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'diet-subscription-lunch-veg',
     name: 'Diet Subscription – Lunch (Veg)',
-    description: 'Nutritious vegetarian lunch subscription for daily healthy eating.',
+    description: 'Millet Rice | Tuna fish | Paneer | Brown Rice | Steamed veggies',
     ingredients: ['Brown Rice', 'Dal', 'Veg Curry'],
     price: { mini: null, half: null, full: 6000 },
     category: 'diet-subscription',
@@ -379,7 +379,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'diet-subscription-dinner-veg',
     name: 'Diet Subscription – Dinner (Veg)',
-    description: 'Light vegetarian dinner for weight-conscious individuals.',
+    description: 'Millet Roti | Chicken curry | Paneer Mixed Veg curry',
     ingredients: ['Soup', 'Chapati', 'Boiled Vegetables'],
     price: { mini: null, half: null, full: 4000 },
     category: 'diet-subscription',

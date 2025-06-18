@@ -15,7 +15,7 @@ const Index = () => {
       <img
         src="/logo/logo.png"
         alt="Logo"
-        className="mx-auto mb-4 w-28 h-auto"
+        className="mx-auto mb-4 w-28 h-auto md:w-52"
       />
     </header>
 

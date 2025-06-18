@@ -1,5 +1,5 @@
 // CartContext.tsx
-import { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { FoodSize } from '../types/menu';
 
 type CartItem = {
@@ -21,8 +21,27 @@ type CartContextType = {
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
+const CART_STORAGE_KEY = 'bistro-cart';
+
 export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [cart, setCart] = useState<CartItem[]>([]);
+
+  // Load cart from localStorage on initial render
+  useEffect(() => {
+    const storedCart = localStorage.getItem(CART_STORAGE_KEY);
+    if (storedCart) {
+      try {
+        setCart(JSON.parse(storedCart));
+      } catch (err) {
+        console.error('Error parsing cart from localStorage', err);
+      }
+    }
+  }, []);
+
+  // Save cart to localStorage on cart change
+  useEffect(() => {
+    localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+  }, [cart]);
 
   const addToCart = (item: CartItem) => {
     setCart(prev => {
