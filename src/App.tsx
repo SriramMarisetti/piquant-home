@@ -10,6 +10,7 @@ import FoodDetails from "./pages/FoodDetails";
 import NotFound from "./pages/NotFound";
 import { CartProvider } from "./context/CartContext";
 import CartIcon from "./components/CartIcon";
+import { CartDialogProvider } from "@/context/CartDialogContext";
 
 
 const queryClient = new QueryClient();
@@ -20,26 +21,27 @@ const App = () => (
       <Toaster />
       <Sonner />
       <CartProvider>
-        <BrowserRouter>
-          <div className="min-h-screen relative">
-            {/* Floating Cart Icon (Optional) */}
-            <CartIcon />
-            <div className="container-custom">
-              <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/type-selection/:categoryId" element={<TypeSelection />} />
-                <Route path="/food-list/:categoryId/:type" element={<FoodList />} />
-                <Route path="/food-details/:foodId" element={<FoodDetails />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
+        <CartDialogProvider>
+          <BrowserRouter>
+            <div className="min-h-screen relative">
+              {/* ✅ Single Cart Icon */}
+              <CartIcon />
+              <div className="container-custom">
+                <Routes>
+                  <Route path="/" element={<Index />} />
+                  <Route path="/type-selection/:categoryId" element={<TypeSelection />} />
+                  <Route path="/food-list/:categoryId/:type" element={<FoodList />} />
+                  <Route path="/food-details/:foodId" element={<FoodDetails />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </div>
             </div>
-                <CartIcon /> {/* Global Cart Icon */}
-
-          </div>
-        </BrowserRouter>
+          </BrowserRouter>
+        </CartDialogProvider>
       </CartProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );
+
 
 export default App;

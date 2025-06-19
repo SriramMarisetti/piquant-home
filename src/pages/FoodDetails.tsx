@@ -6,12 +6,15 @@ import { FoodSize } from "../types/menu";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useCart } from "../context/CartContext";
 import { ShoppingCart } from "lucide-react";
+import { useCartDialog } from "@/context/CartDialogContext";
+
 
 const FoodDetails = () => {
   const { foodId } = useParams<{ foodId: string }>();
   const [searchParams] = useSearchParams();
   const foodItem = foodId ? getFoodItemById(foodId) : undefined;
   const { cart, addToCart } = useCart();
+  const { setOpen } = useCartDialog();
 
   const [selectedSize, setSelectedSize] = useState<FoodSize>(() => {
     if (foodItem?.price.full !== null) return "full";
@@ -42,15 +45,20 @@ const FoodDetails = () => {
   const currentPrice = getPrice(selectedSize);
   const typeColor = foodItem.type === "veg" ? "bg-food-veg" : "bg-food-nonveg";
 
-  const handleAddToCart = () => {
-    addToCart({
-      id: foodItem.id,
-      name: foodItem.name,
-      size: selectedSize,
-      price: currentPrice,
-      quantity: 1,
-    });
-  };
+
+const handleAddToCart = () => {
+  console.log("CartDialog open triggered"); // ✅ Debug
+  addToCart({
+    id: foodItem.id,
+    name: foodItem.name,
+    size: selectedSize,
+    price: currentPrice,
+    quantity: 1,
+  });
+
+  setOpen(true);
+};
+
 
   return (
     <div className="page-container pb-10 relative">

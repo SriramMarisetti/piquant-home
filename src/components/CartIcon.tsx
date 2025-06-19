@@ -1,12 +1,13 @@
-import { useState } from "react";
 import { useCart } from "@/context/CartContext";
+import { useCartDialog } from "@/context/CartDialogContext";
 import { ShoppingCart } from "lucide-react";
-import CartDialog from "./CartDialog"; // Make sure this exists
+import CartDialog from "./CartDialog";
 
 const CartIcon = () => {
   const { cart } = useCart();
+  const { open, setOpen } = useCartDialog(); // Use shared context
+
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-  const [open, setOpen] = useState(false);
 
   return (
     <>
