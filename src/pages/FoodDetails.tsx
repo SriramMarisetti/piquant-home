@@ -47,7 +47,7 @@ const FoodDetails = () => {
 
 
 const handleAddToCart = () => {
-  console.log("CartDialog open triggered"); // ✅ Debug
+  console.log("CartDialog open triggered");
   addToCart({
     id: foodItem.id,
     name: foodItem.name,
