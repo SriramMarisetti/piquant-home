@@ -36,23 +36,43 @@ const TypeSelection = () => {
           <p className="text-muted-foreground">{category.description}</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-xl mx-auto w-full">
-          <Link
-            to={`/food-list/${category.id}/veg`}
-            className="bg-food-veg text-white flex items-center justify-center 
-                      py-8 px-6 rounded-xl shadow-md font-bold text-lg card-hover"
-          >
-            <span className="mr-2 text-2xl">🥦</span> Vegetarian
-          </Link>
-          
-          <Link
-            to={`/food-list/${category.id}/non-veg`}
-            className="bg-food-nonveg text-white flex items-center justify-center 
-                      py-8 px-6 rounded-xl shadow-md font-bold text-lg card-hover"
-          >
-            <span className="mr-2 text-2xl">🍗</span> Non-Vegetarian
-          </Link>
-        </div>
+<div
+  className={`grid gap-6 max-w-xl mx-auto w-full
+    ${
+      ["cakes","traditional-snacks","rice-mix","podulu"].includes(categoryId ?? "")
+        ? "grid-cols-1 place-items-center"
+        : "grid-cols-1 md:grid-cols-2"
+    }
+  `}
+>
+  {/* Vegetarian – always visible */}
+<Link
+  to={`/food-list/${category.id}/veg`}
+  className={`bg-food-veg text-white flex items-center justify-center 
+    py-8 px-6 rounded-xl shadow-md font-bold text-lg card-hover
+    ${
+      ["cakes", "traditional-snacks","rice-mix","podulu"].includes(categoryId ?? "")
+        ? "w-full max-w-sm"
+        : "w-full"
+    }
+  `}
+>
+  <span className="mr-2 text-2xl">🥦</span> Vegetarian
+</Link>
+
+{/* Non-Vegetarian – hide for cakes & pickles */}
+{!["cakes","traditional-snacks","rice-mix","podulu"].includes(categoryId ?? "") && (
+  <Link
+    to={`/food-list/${category.id}/non-veg`}
+    className="bg-food-nonveg text-white flex items-center justify-center 
+              py-8 px-6 rounded-xl shadow-md font-bold text-lg card-hover"
+  >
+    <span className="mr-2 text-2xl">🍗</span> Non-Vegetarian
+  </Link>
+)}
+
+</div>
+
       </div>
     </div>
   );

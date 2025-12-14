@@ -1,14 +1,28 @@
+/* ================================
+   CATEGORY TYPES
+================================ */
 
 export type FoodCategory =
+  // 🔹 Main Box Categories (IMPORTANT)
+  | 'breakfast-box'
+  | 'lunch-box'
+  | 'curry-box'
+  | 'dinner-box'
+
+  // 🔹 Bhojanam & Diet
   | 'bhojanam-box'
   | 'bhojanam-subscription'
   | 'diet-food'
   | 'diet-subscription'
+
+  // 🔹 Homemade Items
   | 'podulu'
   | 'rice-mix'
   | 'traditional-snacks'
   | 'pickles'
   | 'cakes'
+
+  // 🔹 Restaurant Menu
   | 'starters'
   | 'biryani'
   | 'noodles'
@@ -17,36 +31,59 @@ export type FoodCategory =
   | 'tandoori'
   | 'rice-curry'
   | 'indian-breads'
+
+  // 🔹 Cuisine Types
   | 'south-indian'
   | 'north-indian'
   | 'chinese'
   | 'continental'
   | 'seafood'
-  | 'salads'
-  | 'soups'
-  | 'wraps-rolls'
-  | 'kids-menu'
-  | 'specials'
+
+  // 🔹 Dietary
   | 'vegan'
   | 'vegetarian'
   | 'gluten-free'
   | 'high-protein'
   | 'low-carb'
-  | 'festive-specials'
+
+  // 🔹 Special Menus
+  | 'kids-menu'
   | 'combo-meals'
   | 'family-packs'
   | 'party-orders'
-  | 'midnight-cravings';
+  | 'festive-specials'
+  | 'midnight-cravings'
+
+  // 🔹 Monthly Subscriptions
+  | 'breakfast-subscription'
+  | 'lunch-subscription'
+  | 'curry-subscription'
+  | 'dinner-subscription';
+
+
+/* ================================
+   FOOD TYPES
+================================ */
 
 export type FoodType = 'veg' | 'non-veg' | 'mixed';
 
 export type FoodSize = 'mini' | 'half' | 'full';
 
+
+/* ================================
+   PRICE TYPE (FIXED)
+================================ */
+
 export interface FoodPrice {
-  mini?: number;
-  half?: number;
-  full: number;
+  mini?: number | null;
+  half?: number | null;
+  full?: number | null;
 }
+
+
+/* ================================
+   FOOD ITEM
+================================ */
 
 export interface FoodItem {
   id: string;
@@ -59,8 +96,12 @@ export interface FoodItem {
   image?: string;
   popular?: boolean;
   sizeImages?: Partial<Record<FoodSize, string>>;
-
 }
+
+
+/* ================================
+   CATEGORY INFO
+================================ */
 
 export interface CategoryInfo {
   id: FoodCategory;
@@ -69,7 +110,18 @@ export interface CategoryInfo {
   description: string;
 }
 
-export type CategoryGroup = 'cuisine' | 'course' | 'dietary' | 'occasion';
+
+/* ================================
+   OPTIONAL EXTENDED CATEGORY
+================================ */
+
+export type CategoryGroup =
+  | 'box'
+  | 'subscription'
+  | 'cuisine'
+  | 'course'
+  | 'dietary'
+  | 'occasion';
 
 export interface ExtendedCategoryInfo extends CategoryInfo {
   group: CategoryGroup;

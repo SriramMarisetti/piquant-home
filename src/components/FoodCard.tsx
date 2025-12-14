@@ -43,7 +43,6 @@ const FoodCard = ({ food, category, type }: FoodCardProps) => {
         
         <div className="flex-1">
           <h3 className="font-semibold">{food.name}</h3>
-          <p className="text-sm text-muted-foreground line-clamp-2">{food.description}</p>
           <p className="text-sm font-medium mt-1">From ₹{basePrice}</p>
           
           {food.popular && (

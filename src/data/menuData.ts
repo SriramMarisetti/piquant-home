@@ -2,63 +2,349 @@ import { CategoryInfo, FoodCategory, FoodItem } from "../types/menu";
 
 export const categories: CategoryInfo[] = [
   {
-    id: 'bhojanam-box',
-    name: 'Bhojanam Box',
-    icon: '🍲',
-    description: 'Wholesome daily meal boxes with veg and non-veg options',
+    id: "breakfast-box",
+    name: "Breakfast Box",
+    icon: "🍳",
+    description: "Wholesome breakfast meal boxes",
   },
   {
-    id: 'bhojanam-subscription',
-    name: 'Bhojanam Subscription',
-    icon: '📦',
-    description: 'Monthly subscription for homemade meal plans',
+    id: "lunch-box",
+    name: "Lunch Box",
+    icon: "🍱",
+    description: "Homemade lunch meal boxes",
   },
   {
-    id: 'diet-food',
-    name: 'Diet Food',
-    icon: '🥗',
-    description: 'Healthy and nutritious meals designed for a balanced diet',
+    id: "curry-box",
+    name: "Curry Box",
+    icon: "🍛",
+    description: "Veg and non-veg curry boxes",
   },
   {
-    id: 'diet-subscription',
-    name: 'Diet Food Subscription',
-    icon: '🗓️',
-    description: 'Monthly subscription for healthy diet meal boxes',
+    id: "dinner-box",
+    name: "Dinner Box",
+    icon: "🍽️",
+    description: "Healthy dinner meal boxes",
+  },
+ /* ---------- Monthly Subscriptions ---------- */
+
+  {
+    id: "breakfast-subscription",
+    name: "Breakfast Subscription",
+    icon: "🍳",
+    description: "Monthly breakfast meal plans delivered fresh every day",
   },
   {
-    id: 'podulu',
-    name: 'Podulu (Spice Powders)',
-    icon: '🌶️',
-    description: 'Traditional homemade spice powders for daily use',
+    id: "lunch-subscription",
+    name: "Lunch Subscription",
+    icon: "🍱",
+    description: "Monthly lunch meal plans with homely taste",
   },
   {
-    id: 'rice-mix',
-    name: 'Rice Mix',
-    icon: '🍛',
-    description: 'Ready-to-cook mixes for popular South Indian rice dishes',
+    id: "curry-subscription",
+    name: "Curry Subscription",
+    icon: "🍛",
+    description: "Monthly curry-based meal subscriptions",
   },
   {
-    id: 'traditional-snacks',
-    name: 'Traditional Snacks',
-    icon: '🍘',
-    description: 'Authentic Andhra sweets and savories made at home',
+    id: "dinner-subscription",
+    name: "Dinner Subscription",
+    icon: "🌙",
+    description: "Monthly dinner meal plans for a healthy lifestyle",
+  },
+  /* ---------- Regular Items ---------- */
+{
+  id: 'combo-meals',
+  name: 'Combos',
+  icon: '🍱',
+  description: 'Full day meal combo subscriptions (Breakfast + Lunch + Dinner)',
+},
+
+  {
+    id: "podulu",
+    name: "Podulu (Spice Powders)",
+    icon: "🌶️",
+    description: "Traditional homemade spice powders for daily use",
   },
   {
-    id: 'pickles',
-    name: 'Pickles',
-    icon: '🥒',
-    description: 'Wide range of homemade veg and non-veg pickles',
+    id: "rice-mix",
+    name: "Rice Mix",
+    icon: "🍛",
+    description: "Ready-to-cook mixes for popular South Indian rice dishes",
   },
   {
-    id: 'cakes',
-    name: 'Cakes',
-    icon: '🍰',
-    description: 'Plum cakes and festive bakes with and without rum',
+    id: "traditional-snacks",
+    name: "Traditional Snacks",
+    icon: "🍘",
+    description: "Authentic Andhra sweets and savories made at home",
   },
+  {
+    id: "pickles",
+    name: "Pickles",
+    icon: "🥒",
+    description: "Wide range of homemade veg and non-veg pickles",
+  },
+  {
+    id: "cakes",
+    name: "Cakes",
+    icon: "🍰",
+    description: "Plum cakes and festive bakes with and without rum",
+  },
+
+ 
 ];
 
 
+
 export const foodItems: FoodItem[] = [
+
+  // ===== BREAKFAST =====
+  {
+    id: "breakfast-box-veg",
+    name: "Breakfast Box (Idly | Upma | Dosa)",
+    description: "Healthy vegetarian breakfast",
+    ingredients: ["Idli", "Upma", "Chutney"],
+    price: { mini: 80 },
+    category: "breakfast-box",
+    type: "veg",
+    image: "https://i.pinimg.com/1200x/b2/ff/2d/b2ff2db26040e2c78de4b740a6449f6d.jpg",
+  },
+  {
+    id: "breakfast-box-nonveg",
+    name: "Breakfast Box (chapati |Egg Curry| Chicken)",
+    description: "Protein rich breakfast",
+    ingredients: ["Egg Curry", "Chapati"],
+    price: { mini: 120 },
+    category: "breakfast-box",
+    type: "non-veg",
+    image: "https://5.imimg.com/data5/ANDROID/Default/2021/11/LA/AF/YX/52821981/product-jpeg-1000x1000.jpg",
+  },
+
+  // ===== LUNCH =====
+  {
+    id: "lunch-box-veg",
+    name: "Lunch Box (Rice | Dal | Curry)",
+    description: "Traditional veg lunch",
+    ingredients: ["Rice", "Dal", "Veg Curry"],
+    price: { full: 145 },
+    category: "lunch-box",
+    type: "veg",
+    image: "https://i.pinimg.com/736x/3e/0b/a0/3e0ba0540b1cc809e84bbd9b762fd686.jpg",
+  },
+  {
+    id: "lunch-box-nonveg",
+    name: "Lunch Box (Rice | Chicken Curry)",
+    description: "Traditional non-veg lunch",
+    ingredients: ["Rice", "Chicken Curry"],
+    price: { full: 200 },
+    category: "lunch-box",
+    type: "non-veg",
+    image: "https://i.pinimg.com/736x/e7/7a/31/e77a319a64f36dd444256de4ac492fa1.jpg",
+  },
+
+  // ===== CURRY =====
+  {
+    id: "curry-box-veg",
+    name: "Curry Box (Dal | Rasam | Curry | Fry | Chutney)",
+    description: "Daily veg curries",
+    ingredients: ["Paneer Curry"],
+    price: { full: 125 },
+    category: "curry-box",
+    type: "veg",
+    image: "https://i.pinimg.com/1200x/51/10/5b/51105b5aa7c7efe1cc484543ab5b53be.jpg",
+  },
+  {
+    id: "curry-box-nonveg",
+    name: "Curry Box ( Rasam | Fish Curry | Chicken Curry)",
+    description: "Daily non-veg curries",
+    ingredients: ["Chicken Curry"],
+    price: { full: 180 },
+    category: "curry-box",
+    type: "non-veg",
+    image: "https://i.pinimg.com/736x/85/11/86/8511862ca150a0fd70967bbfccf1be24.jpg",
+  },
+
+  // ===== DINNER =====
+  {
+    id: "dinner-box-veg",
+    name: "Dinner Box (Chapati | Veg Curry)",
+    description: "Light veg dinner",
+    ingredients: ["Chapati", "Veg Curry"],
+    price: { mini: 100 },
+    category: "dinner-box",
+    type: "veg",
+    image: "https://i.pinimg.com/1200x/b4/9b/c6/b49bc689e953d83d8b858b2dfc98bab8.jpg",
+  },
+  {
+    id: "dinner-box-nonveg",
+    name: "Dinner Box (chapati | Chicken Curry)",
+    description: "Light non-veg dinner",
+    ingredients: ["Chapati", "Chicken Curry"],
+    price: { mini: 130 },
+    category: "dinner-box",
+    type: "non-veg",
+    image: "https://i.pinimg.com/736x/ce/63/da/ce63da4aa45332f012c051ab7e30b284.jpg",
+  },
+
+// ===============================
+// MONTHLY SUBSCRIPTION – VEG
+// ===============================
+
+{
+  id: 'monthly-breakfast-veg',
+   name: "Breakfast Box (Idly | Upma | Dosa)",
+  description: 'Daily vegetarian breakfast delivered to your doorstep.',
+  ingredients: ['Idli', 'Dosa', 'Upma', 'Chutney'],
+  price: { full: 2000 },
+  category: 'breakfast-subscription',
+  type: 'veg',
+  image: "https://i.pinimg.com/1200x/b2/ff/2d/b2ff2db26040e2c78de4b740a6449f6d.jpg",
+  popular: true,
+},
+
+{
+  id: 'monthly-lunch-veg',
+  name: "Lunch Box (Rice | Dal | Curry)",
+  description: 'Healthy homemade vegetarian lunch.',
+  ingredients: ['Rice', 'Dal', 'Curry', 'Fry'],
+  price: { full: 4000 },
+  category: 'lunch-subscription',
+  type: 'veg',
+ image: "https://i.pinimg.com/736x/3e/0b/a0/3e0ba0540b1cc809e84bbd9b762fd686.jpg",
+},
+
+{
+  id: 'monthly-curry-veg',
+  name: "Curry Box (Dal | Rasam | Curry | Fry | Chutney)",
+  description: 'Daily veg curries prepared at home.',
+  ingredients: ['Paneer Curry', 'Vegetable Curry'],
+  price: { full: 3500 },
+  category: 'curry-subscription',
+  type: 'veg',
+  image: "https://i.pinimg.com/1200x/51/10/5b/51105b5aa7c7efe1cc484543ab5b53be.jpg",
+
+},
+
+{
+  id: 'monthly-dinner-veg',
+   name: "Dinner Box (Chapati | Veg Curry)",
+  description: 'Light and healthy veg dinner.',
+  ingredients: ['Chapati', 'Vegetable Curry'],
+  price: { full: 3000 },
+  category: 'dinner-subscription',
+  type: 'veg',
+  image: "https://i.pinimg.com/1200x/b4/9b/c6/b49bc689e953d83d8b858b2dfc98bab8.jpg",
+},
+
+//non -veg 
+
+{
+  id: 'monthly-breakfast-nonveg',
+  name: "Breakfast Box (chapati |Egg Curry| Chicken)",
+  description: 'Daily non-veg breakfast plan (4 days Non-Veg, 3 days Veg).',
+  ingredients: [
+    'Egg Dishes',
+    'Chicken Breakfast Items',
+    'Idli / Dosa',
+    'Chutney'
+  ],
+  price: { full: 2000 }, // ₹2,000
+  category: 'breakfast-subscription',
+  type: 'non-veg',
+  image: "https://5.imimg.com/data5/ANDROID/Default/2021/11/LA/AF/YX/52821981/product-jpeg-1000x1000.jpg",
+  popular: false,
+},
+{
+  id: 'monthly-lunch-nonveg',
+  name: "Lunch Box (Rice | Chicken Curry)",
+  description: '4 days Non-Veg & 3 days Veg lunch every week.',
+  ingredients: ['Rice', 'Chicken Curry', 'Veg Curry'],
+  price: { full: 5200 },
+  category: 'lunch-subscription',
+  type: 'non-veg',
+ image: "https://i.pinimg.com/736x/e7/7a/31/e77a319a64f36dd444256de4ac492fa1.jpg",
+  popular: true,
+},
+
+{
+  id: 'monthly-curry-nonveg',
+  name: "Curry Box ( Rasam | Fish Curry | Chicken Curry)",
+  description: 'Non-veg curries with veg alternates.',
+  ingredients: ['Chicken Curry', 'Egg Curry'],
+  price: { full: 4500 },
+  category: 'curry-subscription',
+  type: 'non-veg',
+  image: "https://i.pinimg.com/736x/85/11/86/8511862ca150a0fd70967bbfccf1be24.jpg",
+
+},
+
+{
+  id: 'monthly-dinner-nonveg',
+  name: "Dinner Box (chapati | Chicken Curry)",
+  description: 'Nutritious homemade non-veg dinner.',
+  ingredients: ['Chapati', 'Chicken Curry'],
+  price: { full: 3900 },
+  category: 'dinner-subscription',
+  type: 'non-veg',
+  image: "https://i.pinimg.com/736x/ce/63/da/ce63da4aa45332f012c051ab7e30b284.jpg",
+
+},
+
+
+// ===============================
+// Monthly Subscription – COMBOS
+// ===============================
+
+{
+  id: 'monthly-full-day-veg',
+  name: 'Monthly Full Day Meals (Break Fast + Lunch + Dinner )',
+  description: 'Breakfast + Lunch + Dinner (Pure Vegetarian).',
+  ingredients: ['Breakfast', 'Lunch', 'Dinner'],
+  price: { full: 9000 }, // ₹9,000
+  category: 'combo-meals',
+  type: 'veg',
+  image: 'https://i.pinimg.com/1200x/d3/7b/33/d37b33f74e75849f620c576593e84089.jpg',
+  popular: true,
+},
+
+{
+  id: 'monthly-full-day-nonveg',
+  name: 'Monthly Full Day Meals (Break Fast + Lunch + Dinner )',
+  description: 'Breakfast + Lunch + Dinner (4 days Non-Veg, 3 days Veg).',
+  ingredients: ['Breakfast', 'Lunch', 'Dinner'],
+  price: { full: 11500 }, // ₹11,500
+  category: 'combo-meals',
+  type: 'non-veg',
+  image: 'https://i.pinimg.com/736x/07/56/3a/07563a0eca62243d1b8a88255e150d7f.jpg',
+  popular: true,
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // Bhojanam Box
   {
     id: 'breakfast-box-veg',
@@ -812,7 +1098,7 @@ export const foodItems: FoodItem[] = [
     category: 'traditional-snacks',
     type: 'veg',
     popular: false,
-    image: '/food-images/TraditionalSnacks/chegodi.jpg',
+    image: 'https://i.pinimg.com/736x/ec/30/d7/ec30d71d3509d50e9ec6b2c1ff5b8687.jpg',
   },
   {
     id: 'chota-bheem-laddu',
@@ -834,7 +1120,7 @@ export const foodItems: FoodItem[] = [
     category: 'traditional-snacks',
     type: 'veg',
     popular: false,
-    image: '/food-images/TraditionalSnacks/laddu.jpg',
+    image: 'https://i.pinimg.com/736x/19/87/e6/1987e6ed32e54949f0417226544a5e15.jpg',
   },
   {
     id: 'gavvalu',
@@ -896,7 +1182,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 250, half: 500, full: 950 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: '/food-images/TraditionalSnacks/kovakajjikaya.jpg',
+    image: 'https://i.pinimg.com/736x/91/09/3a/91093ae972b8153d796a761be68d358b.jpg',
   },
   {
     id: 'mango-jelly-thandri',
@@ -906,7 +1192,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 250, half: 400, full: 580 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: '/food-images/TraditionalSnacks/mangojelly.jpg',
+    image: 'https://i.pinimg.com/736x/8e/06/dd/8e06dd824552b290507bb5f2969a9d61.jpg',
   },
   {
     id: 'mixture',
