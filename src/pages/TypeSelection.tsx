@@ -31,7 +31,17 @@ const TypeSelection = () => {
       
       <div className="flex flex-col space-y-4 mt-10">
         <div className="text-center mb-6">
-          <div className="text-6xl mb-4">{category.icon}</div>
+          <div className="mb-4 flex justify-center">
+  {category.icon.startsWith("http") ? (
+    <img
+      src={category.icon}
+      alt={category.name}
+      className="w-24 h-24 object-contain"
+    />
+  ) : (
+    <span className="text-6xl">{category.icon}</span>
+  )}</div>
+
           <h1 className="text-2xl font-bold mb-2">{category.name}</h1>
           <p className="text-muted-foreground">{category.description}</p>
         </div>

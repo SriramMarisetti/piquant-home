@@ -4,94 +4,93 @@ export const categories: CategoryInfo[] = [
   {
     id: "breakfast-box",
     name: "Breakfast Box",
-    icon: "🍳",
+    icon: "https://b.zmtcdn.com/data/o2_assets/8dc39742916ddc369ebeb91928391b931632716660.png",
     description: "Wholesome breakfast meal boxes",
   },
   {
     id: "lunch-box",
     name: "Lunch Box",
-    icon: "🍱",
+    icon: "https://b.zmtcdn.com/data/dish_photos/bda/9cdab6d5f275b8d2532e3878134ddbda.jpg",
     description: "Homemade lunch meal boxes",
   },
   {
     id: "curry-box",
     name: "Curry Box",
-    icon: "🍛",
+    icon: "https://b.zmtcdn.com/data/dish_images/e44c42ff4b60b025225c8691ef9735b11635781903.png",
     description: "Veg and non-veg curry boxes",
   },
   {
     id: "dinner-box",
     name: "Dinner Box",
-    icon: "🍽️",
+    icon: "https://b.zmtcdn.com/data/o2_assets/019409fe8f838312214d9211be010ef31678798444.jpeg",
     description: "Healthy dinner meal boxes",
   },
- /* ---------- Monthly Subscriptions ---------- */
 
+  // Monthly Subscriptions
   {
     id: "breakfast-subscription",
     name: "Breakfast Subscription",
-    icon: "🍳",
-    description: "Monthly breakfast meal plans delivered fresh every day",
+    icon: "https://b.zmtcdn.com/data/pictures/6/19143826/918c4b4801d7e50e6a6842673aa98cad_featured_v2.jpg",
+    description: "Monthly breakfast plans",
   },
   {
     id: "lunch-subscription",
     name: "Lunch Subscription",
-    icon: "🍱",
-    description: "Monthly lunch meal plans with homely taste",
+    icon: "https://b.zmtcdn.com/data/pictures/2/20724192/be4e964450e967ffa75ff7a88cce8184_featured_v2.jpg",
+    description: "Monthly lunch plans",
   },
   {
     id: "curry-subscription",
     name: "Curry Subscription",
-    icon: "🍛",
-    description: "Monthly curry-based meal subscriptions",
+    icon: "https://b.zmtcdn.com/data/dish_photos/5cc/a8434787ba0218fa701186bd91f1a5cc.jpg?output-format=webp",
+    description: "Monthly curry plans",
   },
   {
     id: "dinner-subscription",
     name: "Dinner Subscription",
-    icon: "🌙",
-    description: "Monthly dinner meal plans for a healthy lifestyle",
+    icon: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Parotta.png",
+    description: "Monthly dinner plans",
   },
-  /* ---------- Regular Items ---------- */
-{
-  id: 'combo-meals',
-  name: 'Combos',
-  icon: '🍱',
-  description: 'Full day meal combo subscriptions (Breakfast + Lunch + Dinner)',
-},
+  {
+    id: "combo-meals",
+    name: "Combos",
+    icon: "https://i.pinimg.com/1200x/af/d8/07/afd807824d45137038eaf01e0efcf75e.jpg",
+    description: "Breakfast + Lunch + Dinner combos",
+  },
 
+  // Homemade Foods
   {
     id: "podulu",
-    name: "Podulu (Spice Powders)",
-    icon: "🌶️",
-    description: "Traditional homemade spice powders for daily use",
+    name: "Podulu",
+    icon: "/category-images/podulu.jpg",
+    description: "Traditional spice powders",
   },
   {
     id: "rice-mix",
     name: "Rice Mix",
-    icon: "🍛",
-    description: "Ready-to-cook mixes for popular South Indian rice dishes",
+    icon: "https://i.pinimg.com/1200x/ef/9b/ba/ef9bba676ac73c9f727db77d40d07ddf.jpg",
+    description: "Ready-to-cook rice mixes",
   },
   {
     id: "traditional-snacks",
     name: "Traditional Snacks",
-    icon: "🍘",
-    description: "Authentic Andhra sweets and savories made at home",
+    icon: "https://i.pinimg.com/736x/b7/06/61/b706616fa3c1081329f957828539114c.jpg",
+    description: "Authentic homemade snacks",
   },
   {
     id: "pickles",
     name: "Pickles",
-    icon: "🥒",
-    description: "Wide range of homemade veg and non-veg pickles",
+    icon: "https://i.pinimg.com/1200x/4b/e1/b2/4be1b20c89af1ad59a6b3a2f538d45f9.jpg",
+    description: "Traditional homemade pickles",
   },
   {
     id: "cakes",
     name: "Cakes",
-    icon: "🍰",
-    description: "Plum cakes and festive bakes with and without rum",
+    icon: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Cake.png",
+    description: "Freshly baked cakes",
   },
-
- 
 ];
+
 
 
 
