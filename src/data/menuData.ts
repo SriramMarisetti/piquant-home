@@ -62,7 +62,7 @@ export const categories: CategoryInfo[] = [
   {
     id: "podulu",
     name: "Podulu",
-    icon: "/category-images/podulu.jpg",
+    icon: "https://i.pinimg.com/736x/e2/89/b7/e289b74dd06218687066d2ecccb648aa.jpg",
     description: "Traditional spice powders",
   },
   {
