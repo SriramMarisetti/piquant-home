@@ -17,6 +17,23 @@ const Index = () => {
     "dinner-subscription",
     "combo-meals",
   ];
+  const dietFoods = [
+  'diet-breakfast',
+  'diet-lunch',
+  'diet-dinner',
+  'diet-fruit-bowl',
+  'diet-juice',
+  'diet-combos',
+];
+const healthyDietSubscriptions = [
+  'diet-breakfast-subscription',
+  'diet-lunch-subscription',
+  'diet-dinner-subscription',
+  'diet-fruit-bowl-subscription',
+  'diet-juice-subscription',
+  'diet-combo-1-subscription',
+  'diet-combo-2-subscription',
+];
 
   const homemadeFoods = [
     "podulu",
@@ -34,6 +51,13 @@ const Index = () => {
   const monthlyCategories = categories.filter(cat =>
     monthlySubscriptions.includes(cat.id)
   );
+
+  const dietCategories = categories.filter(cat =>
+  dietFoods.includes(cat.id)
+);
+const healthyDietCategories = categories.filter(cat =>
+  healthyDietSubscriptions.includes(cat.id)
+);
 
   const homemadeCategories = categories.filter(cat =>
     homemadeFoods.includes(cat.id)
@@ -58,7 +82,7 @@ const Index = () => {
 
       {/* ================= DAILY BOXES ================= */}
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-        Daily Meal Boxes
+        Bhojanam Box <span className="text-orange-500">(Daily Meal Boxes)</span>
       </h2>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
@@ -74,12 +98,38 @@ const Index = () => {
       <p className="text-muted-foreground text-center mb-8">
         Choose from our flexible monthly meal plans
       </p>
-
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
         {monthlyCategories.map(category => (
           <CategoryCard key={category.id} category={category} />
         ))}
       </div>
+       {/* ================= diet foods ================= */}
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-3">
+  Healthy Diet Foods
+</h2>
+<p className="text-muted-foreground text-center mb-8">
+  Clean eating for a healthy lifestyle
+</p>
+
+<div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+  {dietCategories.map(category => (
+    <CategoryCard key={category.id} category={category} />
+  ))}
+  </div>
+
+   {/* ================= MONTHLY diet food ================= */}
+   <h2 className="text-2xl md:text-3xl font-bold text-center text-primary mt-16 mb-2">
+  Healthy Diet Food Subscription Meal Plan
+</h2>
+<p className="text-muted-foreground text-center mb-8">
+  Balanced meals designed for a healthy lifestyle
+</p>
+
+<div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+  {healthyDietCategories.map(category => (
+    <CategoryCard key={category.id} category={category} />
+  ))}
+</div>
 
       {/* ================= HOMEMADE FOODS ================= */}
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
@@ -91,7 +141,7 @@ const Index = () => {
           <CategoryCard key={category.id} category={category} />
         ))}
       </div>
-    </div>
+</div>
   );
 };
 

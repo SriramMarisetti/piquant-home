@@ -23,10 +23,12 @@ const FoodList = () => {
     foodItems = getFoodItemsByCategory(category.id, validType);
   }
 
-  const isSingleItem = foodItems.length === 1;
+  // ✅ Count AFTER foodItems is created
+  const itemCount = foodItems.length;
+  const isSingleItem = itemCount === 1;
 
-  // 👉 Categories where Veg / Non-Veg text should NOT appear
-  const hideTypeInTitle = ["podulu", "traditional-snacks"];
+  // 👉 Categories where Veg / Non-Veg should NOT appear in title
+  const hideTypeInTitle = ["podulu", "traditional-snacks", "rice-mix", "cakes"];
 
   return (
     <div className="page-container relative">
@@ -48,13 +50,15 @@ const FoodList = () => {
       />
 
       {/* Food Items */}
-      {foodItems.length > 0 ? (
+      {itemCount > 0 ? (
         <div
-          className={`grid gap-4 animate-fade-in
+          className={`grid gap-6 animate-fade-in justify-center
             ${
-              isSingleItem
+              itemCount === 1
                 ? "grid-cols-1 place-items-center"
-                : "grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
+                : itemCount === 2
+                ? "grid-cols-1 sm:grid-cols-2 place-content-center"
+                : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
             }
           `}
         >

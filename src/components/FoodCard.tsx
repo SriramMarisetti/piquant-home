@@ -43,7 +43,7 @@ const FoodCard = ({ food, category, type }: FoodCardProps) => {
         
         <div className="flex-1">
           <h3 className="font-semibold">{food.name}</h3>
-          <p className="text-sm font-medium mt-1">From ₹{basePrice}</p>
+          <p className="text-sm font-medium mt-1"> ₹{basePrice}</p>
           
           {food.popular && (
             <span className="inline-block bg-food-amber/20 text-food-orange text-xs font-medium px-2 py-0.5 rounded-full mt-1">

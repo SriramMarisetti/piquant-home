@@ -7,6 +7,11 @@ const IMAGE_ONLY_CATEGORIES = [
   "traditional-snacks",
   "rice-mix",
   "podulu",
+  "breakfast-subscription",
+  "breakfast-box",
+  "diet-fruit-bowl",
+  "diet-fruit-bowl-subscription",
+  "diet-juice-subscription",
 ];
 
 const TypeSelection = () => {

@@ -15,6 +15,22 @@ export type FoodCategory =
   | 'diet-food'
   | 'diet-subscription'
 
+    // 🔹 Diet Food (NEW)
+  | 'diet-breakfast'
+  | 'diet-lunch'
+  | 'diet-dinner'
+  | 'diet-fruit-bowl'
+
+
+// 🔹 Healthy Diet Monthly Subscription Plans
+| 'diet-breakfast-subscription'
+| 'diet-lunch-subscription'
+| 'diet-dinner-subscription'
+| 'diet-fruit-bowl-subscription'
+| 'diet-juice-subscription'
+| 'diet-combo-1-subscription'
+| 'diet-combo-2-subscription'
+
   // 🔹 Homemade Items
   | 'podulu'
   | 'rice-mix'

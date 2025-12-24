@@ -57,7 +57,75 @@ export const categories: CategoryInfo[] = [
     icon: "https://i.pinimg.com/1200x/af/d8/07/afd807824d45137038eaf01e0efcf75e.jpg",
     description: "Breakfast + Lunch + Dinner combos",
   },
+  // diet foods
+   {
+    id: 'diet-breakfast',
+    name: 'Breakfast Box',
+    icon: 'https://www.awesomecuisine.com/wp-content/uploads/2025/07/Millet-Sprouts-Stir-Fry-500x387.jpg',
+    description: 'Healthy low-calorie breakfast meals',
+  },
+  {
+    id: 'diet-lunch',
+    name: 'Lunch Box',
+    icon: 'https://i.pinimg.com/736x/2b/3a/e2/2b3ae2af759e0c48383d079b0a2231d5.jpg',
+    description: 'Balanced diet lunch boxes',
+  },
+  {
+    id: 'diet-dinner',
+    name: 'Dinner Box',
+    icon: 'https://i.pinimg.com/1200x/62/90/ec/6290ecab8bd50fc66c8dc7a14b466c33.jpg',
+    description: 'Light & healthy dinner meals',
+  },
+  {
+    id: 'diet-fruit-bowl',
+    name: 'Fruit Bowl',
+    icon: 'https://i.pinimg.com/1200x/0f/38/cc/0f38cc32b95ccc643d247dc8db97548f.jpg',
+    description: 'Fresh seasonal fruit bowls',
+  },
 
+  // ================= HEALTHY DIET SUBSCRIPTION =================
+  {
+    id: 'diet-breakfast-subscription',
+    name: 'Breakfast Box',
+    icon: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/sprouts-salad-recipe.jpg',
+    description: 'Healthy breakfast meals for weight balance',
+  },
+  {
+    id: 'diet-lunch-subscription',
+    name: 'Lunch Box',
+    icon: 'https://i.pinimg.com/736x/2b/3a/e2/2b3ae2af759e0c48383d079b0a2231d5.jpg',
+    description: 'Low-oil, high-protein lunch meals',
+  },
+  {
+    id: 'diet-dinner-subscription',
+    name: 'Dinner Box',
+    icon: 'https://i.pinimg.com/1200x/62/90/ec/6290ecab8bd50fc66c8dc7a14b466c33.jpg',
+    description: 'Light and nutritious dinner meals',
+  },
+  {
+    id: 'diet-fruit-bowl-subscription',
+    name: 'Fruit Bowl',
+    icon: 'https://i.pinimg.com/1200x/0f/38/cc/0f38cc32b95ccc643d247dc8db97548f.jpg',
+    description: 'Fresh seasonal fruit bowls',
+  },
+  {
+    id: 'diet-juice-subscription',
+    name: 'Healthy Juice',
+    icon: 'https://images.openai.com/thumbnails/url/5HjbKHicu5mZUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw720jXOjHQN9fD3Ds0NjDeuSA8pLy_LyLHMNCzPCHLJN4gKy8kw8CzwMDAtrQoMNzJRKwYAVVYlzw',
+    description: 'Cold-pressed healthy juices',
+  },
+  {
+    id: 'diet-combo-1-subscription',
+    name: 'Combo 1',
+    icon: 'https://cosori.com/cdn/shop/articles/Steamed_Veggies.jpg?v=1687895356',
+    description: 'Breakfast + Lunch combo',
+  },
+  {
+    id: 'diet-combo-2-subscription',
+    name: 'Combo 2',
+    icon: 'https://dieteticdirections.com/wp-content/uploads/2019/05/food-guide-2019.png',
+    description: 'Full day diet meal plan',
+  },
   // Homemade Foods
   {
     id: "podulu",
@@ -88,7 +156,7 @@ export const categories: CategoryInfo[] = [
     name: "Cakes",
     icon: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Cake.png",
     description: "Freshly baked cakes",
-  },
+  }
 ];
 
 
@@ -99,7 +167,7 @@ export const foodItems: FoodItem[] = [
   // ===== BREAKFAST =====
   {
     id: "breakfast-box-veg",
-    name: "Breakfast Box (Idly | Upma | Dosa)",
+    name: "Breakfast Box (Idly | Upma | Dosa | with 2 chutney)",
     description: "Healthy vegetarian breakfast",
     ingredients: ["Idli", "Upma", "Chutney"],
     price: { mini: 80 },
@@ -121,7 +189,7 @@ export const foodItems: FoodItem[] = [
   // ===== LUNCH =====
   {
     id: "lunch-box-veg",
-    name: "Lunch Box (Rice | Dal | Curry)",
+    name: "Lunch Box (Rice | Dal | Rasam | Curry | Fry | Chutney)",
     description: "Traditional veg lunch",
     ingredients: ["Rice", "Dal", "Veg Curry"],
     price: { full: 145 },
@@ -131,7 +199,17 @@ export const foodItems: FoodItem[] = [
   },
   {
     id: "lunch-box-nonveg",
-    name: "Lunch Box (Rice | Chicken Curry)",
+    name: "Lunch Box (Rice | Dal | Rasam | (Curry/Fry)-Non Veg) | Chutney )",
+    description: "Traditional non-veg lunch",
+    ingredients: ["Rice", "Chicken Curry"],
+    price: { full: 175 },
+    category: "lunch-box",
+    type: "non-veg",
+    image: "https://i.pinimg.com/736x/e7/7a/31/e77a319a64f36dd444256de4ac492fa1.jpg",
+  },
+    {
+    id: "lunch-box-nonveg",
+    name: "Lunch Box (Rice | Dal | Rasam | (Curry and Fry)-Non Veg) | Chutney )",
     description: "Traditional non-veg lunch",
     ingredients: ["Rice", "Chicken Curry"],
     price: { full: 200 },
@@ -153,7 +231,17 @@ export const foodItems: FoodItem[] = [
   },
   {
     id: "curry-box-nonveg",
-    name: "Curry Box ( Rasam | Fish Curry | Chicken Curry)",
+    name: "Curry Box (Dal | Rasam | Curry | Fry | Chutney | (Curry/Fry)-Non Veg)",
+    description: "Daily non-veg curries",
+    ingredients: ["Chicken Curry"],
+    price: { full: 155 },
+    category: "curry-box",
+    type: "non-veg",
+    image: "https://i.pinimg.com/736x/85/11/86/8511862ca150a0fd70967bbfccf1be24.jpg",
+  },
+    {
+    id: "curry-box-nonveg",
+    name: "Curry Box (Dal | Rasam | Curry | Fry | Chutney | (Curry and Fry)-Non Veg)",
     description: "Daily non-veg curries",
     ingredients: ["Chicken Curry"],
     price: { full: 180 },
@@ -165,7 +253,7 @@ export const foodItems: FoodItem[] = [
   // ===== DINNER =====
   {
     id: "dinner-box-veg",
-    name: "Dinner Box (Chapati | Veg Curry)",
+    name: "Dinner Box ((Idly / Dosa) With 2 Chutney)",
     description: "Light veg dinner",
     ingredients: ["Chapati", "Veg Curry"],
     price: { mini: 100 },
@@ -175,7 +263,7 @@ export const foodItems: FoodItem[] = [
   },
   {
     id: "dinner-box-nonveg",
-    name: "Dinner Box (chapati | Chicken Curry)",
+    name: "Dinner Box (3 Pulkas | Dal | Curry(Non Veg))",
     description: "Light non-veg dinner",
     ingredients: ["Chapati", "Chicken Curry"],
     price: { mini: 130 },
@@ -190,7 +278,7 @@ export const foodItems: FoodItem[] = [
 
 {
   id: 'monthly-breakfast-veg',
-   name: "Breakfast Box (Idly | Upma | Dosa)",
+   name: "Breakfast Box (Idly | Upma | Dosa | with 2 chutney)",
   description: 'Daily vegetarian breakfast delivered to your doorstep.',
   ingredients: ['Idli', 'Dosa', 'Upma', 'Chutney'],
   price: { full: 2000 },
@@ -202,7 +290,7 @@ export const foodItems: FoodItem[] = [
 
 {
   id: 'monthly-lunch-veg',
-  name: "Lunch Box (Rice | Dal | Curry)",
+  name: "Lunch Box (Rice | Dal | Rasam | Curry | Fry | Chutney)",
   description: 'Healthy homemade vegetarian lunch.',
   ingredients: ['Rice', 'Dal', 'Curry', 'Fry'],
   price: { full: 4000 },
@@ -225,7 +313,7 @@ export const foodItems: FoodItem[] = [
 
 {
   id: 'monthly-dinner-veg',
-   name: "Dinner Box (Chapati | Veg Curry)",
+   name: "Dinner Box ((Idly / Dosa) With 2 Chutney)",
   description: 'Light and healthy veg dinner.',
   ingredients: ['Chapati', 'Vegetable Curry'],
   price: { full: 3000 },
@@ -254,7 +342,7 @@ export const foodItems: FoodItem[] = [
 },
 {
   id: 'monthly-lunch-nonveg',
-  name: "Lunch Box (Rice | Chicken Curry)",
+  name: "Lunch Box (Rice | Dal | Rasam | (Curry/Fry)-Non Veg) | Chutney )",
   description: '4 days Non-Veg & 3 days Veg lunch every week.',
   ingredients: ['Rice', 'Chicken Curry', 'Veg Curry'],
   price: { full: 5200 },
@@ -266,7 +354,7 @@ export const foodItems: FoodItem[] = [
 
 {
   id: 'monthly-curry-nonveg',
-  name: "Curry Box ( Rasam | Fish Curry | Chicken Curry)",
+  name: "Curry Box (Dal | Rasam | Curry | Fry | Chutney | (Curry/Fry)-Non Veg)",
   description: 'Non-veg curries with veg alternates.',
   ingredients: ['Chicken Curry', 'Egg Curry'],
   price: { full: 4500 },
@@ -278,7 +366,7 @@ export const foodItems: FoodItem[] = [
 
 {
   id: 'monthly-dinner-nonveg',
-  name: "Dinner Box (chapati | Chicken Curry)",
+  name: "Dinner Box (3 Pulkas | Dal | Curry(Non Veg))",
   description: 'Nutritious homemade non-veg dinner.',
   ingredients: ['Chapati', 'Chicken Curry'],
   price: { full: 3900 },
@@ -295,7 +383,7 @@ export const foodItems: FoodItem[] = [
 
 {
   id: 'monthly-full-day-veg',
-  name: 'Monthly Full Day Meals (Break Fast + Lunch + Dinner )',
+  name: 'Monthly Full Day Meals (Break Fast(Idly | Upma | Dosa | etc with 2 chutney) + Lunch(Rice | Dal | Rasam | Curry | Fry | Chutney) + Dinner((Idly / Dosa) With 2 Chutney) )',
   description: 'Breakfast + Lunch + Dinner (Pure Vegetarian).',
   ingredients: ['Breakfast', 'Lunch', 'Dinner'],
   price: { full: 9000 }, // ₹9,000
@@ -307,7 +395,7 @@ export const foodItems: FoodItem[] = [
 
 {
   id: 'monthly-full-day-nonveg',
-  name: 'Monthly Full Day Meals (Break Fast + Lunch + Dinner )',
+  name: 'Monthly Full Day Meals (Break Fast(Idly | Upma | Dosa | etc with 2 chutney) + Lunch(Rice | Dal | Rasam | (Curry/Fry)-Non Veg) | Chutney ) + Dinner(3 Pulkas | Dal | Curry(Non Veg)) )',
   description: 'Breakfast + Lunch + Dinner (4 days Non-Veg, 3 days Veg).',
   ingredients: ['Breakfast', 'Lunch', 'Dinner'],
   price: { full: 11500 }, // ₹11,500
@@ -316,6 +404,241 @@ export const foodItems: FoodItem[] = [
   image: 'https://i.pinimg.com/736x/07/56/3a/07563a0eca62243d1b8a88255e150d7f.jpg',
   popular: true,
 },
+
+
+
+// ================= HEALTHY DIET (DAILY) =================
+
+{
+  id: "diet-breakfast-veg",
+  name: "Breakfast Box (Millet | Sprouts | Oats)",
+  description: "Low-calorie nutritious breakfast",
+  ingredients: ["Oats", "Boiled Vegetables", "Sprouts"],
+  price: { mini: 120 },
+  category: "diet-breakfast",
+  type: "veg",
+  image: "https://gratefulgrazer.com/wp-content/uploads/2025/02/shaved-brussels-sprouts-salad-square.jpg",
+},
+
+{
+  id: "diet-lunch-veg",
+  name: "Lunch Box (Millet Rice | Paneer | Brown Rice | Steamed veggies)",
+  description: "Balanced protein-rich lunch",
+  ingredients: ["Brown Rice", "Dal", "Vegetable Curry"],
+  price: { full: 220 },
+  category: "diet-lunch",
+  type: "veg",
+  image: "https://mykitchendiaries.com/wp-content/uploads/2025/08/41f0407d-175d-46e8-a87f-6c14892027da.webp",
+},
+
+{
+  id: "diet-dinner-veg",
+  name: "Dinner Box (Millet Roti | Paneer Mixed Veg curry)",
+  description: "Light dinner for easy digestion",
+  ingredients: ["Chapati", "Dry Veg Curry"],
+  price: { mini: 150 },
+  category: "diet-dinner",
+  type: "veg",
+  image: "/Gemini_Generated_Image_lvcqhslvcqhslvcq.png",
+},
+
+{
+  id: "diet-fruit-bowl",
+  name: "Fresh Fruit Bowl",
+  description: "Seasonal fruits bowl",
+  ingredients: ["Apple", "Papaya", "Banana"],
+  price: { mini: 100 },
+  category: "diet-fruit-bowl",
+  type: "veg",
+  image: "https://i.pinimg.com/1200x/9b/cf/e7/9bcfe7a919ad52fc496cc664354a1822.jpg",
+},
+// ================= HEALTHY DIET (DAILY) – NON VEG =================
+
+{
+  id: "diet-breakfast-nonveg",
+  name: "Breakfast Box (Millet | Sprouts | Oats | egg)",
+  description: "High-protein non-veg breakfast for energy",
+  ingredients: ["Boiled Eggs", "Egg White Omelette", "Sprouts"],
+  price: { mini: 150 },
+  category: "diet-breakfast",
+  type: "non-veg",
+  image: "https://thekitchenpaper.com/wp-content/uploads/2017/07/sprouted-lentil-breakfast-bowl-recipe-3.jpg",
+},
+
+{
+  id: "diet-lunch-nonveg",
+  name: "Lunch Box (Millet Rice | Tuna fish | Paneer | Brown Rice | Steamed veggies)",
+  description: "Protein-rich lunch with lean meat",
+  ingredients: ["Brown Rice", "Grilled Chicken", "Steamed Vegetables"],
+  price: { full: 280 },
+  category: "diet-lunch",
+  type: "non-veg",
+  image: "https://www.honeywhatscooking.com/wp-content/uploads/2025/06/Paneer-Tikka-Rice-Bowls-featured.jpg",
+},
+
+{
+  id: "diet-dinner-nonveg",
+  name: "Dinner Box (MMillet Roti | Chicken curry | Paneer Mixed Veg curry)",
+  description: "Light non-veg dinner for easy digestion",
+  ingredients: ["Grilled Chicken", "Sauteed Vegetables"],
+  price: { mini: 200 },
+  category: "diet-dinner",
+  type: "non-veg",
+  image: "https://i.pinimg.com/1200x/a1/25/3b/a1253b3442d4432d8ce0f191fd0ca0ce.jpg",
+},
+
+
+
+
+
+
+
+
+//HEALTHY DIET – MONTHLY SUBSCRIPTION (VEG)
+
+{
+  id: "diet-breakfast-subscription-veg",
+  name: "Breakfast Box (Millet | Sprouts | Oats)",
+  description: "Healthy vegetarian breakfast for a full month",
+  ingredients: ["Idli", "Oats", "Upma", "Chutney", "Fruit"],
+  price: { full: 3000 },
+  category: "diet-breakfast-subscription",
+  type: "veg",
+  image: "https://gratefulgrazer.com/wp-content/uploads/2025/02/shaved-brussels-sprouts-salad-square.jpg",
+  popular: true,
+},
+{
+  id: "diet-lunch-subscription-veg",
+  name: "Lunch Box (Millet Rice | Paneer | Brown Rice | Steamed veggies)",
+  description: "Balanced low-oil vegetarian lunch meals",
+  ingredients: ["Brown Rice", "Dal", "Vegetable Curry", "Salad"],
+  price: { full: 6000 },
+  category: "diet-lunch-subscription",
+  type: "veg",
+  image: "https://mykitchendiaries.com/wp-content/uploads/2025/08/41f0407d-175d-46e8-a87f-6c14892027da.webp",
+  popular: true,
+},
+{
+  id: "diet-dinner-subscription-veg",
+  name: "Dinner Box (Millet Roti | Paneer Mixed Veg curry)",
+  description: "Light and nutritious vegetarian dinners",
+  ingredients: ["Chapati", "Dry Curry", "Soup"],
+  price: { full: 4000 },
+  category: "diet-dinner-subscription",
+  type: "veg",
+  image: "/Gemini_Generated_Image_lvcqhslvcqhslvcq.png",
+},
+{
+  id: "diet-fruit-bowl-subscription",
+  name: "Fruit Bowl (Monthly)",
+  description: "Fresh seasonal fruit bowls every day",
+  ingredients: ["Apple", "Banana", "Papaya", "Seasonal Fruits"],
+  price: { full: 2500 },
+  category: "diet-fruit-bowl-subscription",
+  type: "veg",
+  image: "https://i.pinimg.com/1200x/9b/cf/e7/9bcfe7a919ad52fc496cc664354a1822.jpg",
+   popular: true,
+},
+{
+  id: "diet-juice-subscription",
+  name: "Healthy Juice (Monthly)",
+  description: "Cold-pressed juices for detox & immunity",
+  ingredients: ["Carrot", "Beetroot", "Apple", "Ginger"],
+  price: { full: 3500 },
+  category: "diet-juice-subscription",
+  type: "veg",
+  image: "https://i.pinimg.com/1200x/f1/f5/6f/f1f56f05f605aeed2757cf3d8f30eb3b.jpg",
+   popular: true,
+},
+{
+  id: "diet-combo-1-subscription",
+  name: "Diet Combo 1 (Breakfast + Lunch + Dinner)",
+  description: "Healthy breakfast and lunch combo plan",
+  ingredients: ["Breakfast Box", "Lunch Box"],
+  price: { full: 13000 },
+  category: "diet-combo-1-subscription",
+  type: "veg",
+  image: "/diet-combo-1-subscription.png",
+  popular: true,
+},
+{
+  id: "diet-combo-2-subscription",
+  name: "Diet Combo 2 (Lunch + Fruit Bowl + Dinner )",
+  description: "Complete diet plan: Breakfast, Lunch & Dinner",
+  ingredients: ["Breakfast", "Lunch", "Dinner", "Juice"],
+  price: { full: 12500 },
+  category: "diet-combo-2-subscription",
+  type: "veg",
+  image: "/diet-combo-3-subscription.png",
+  popular: true,
+},
+
+//HEALTHY DIET – MONTHLY SUBSCRIPTION (NON-VEG)
+{
+  id: "diet-breakfast-subscription-nonveg",
+  name: "Breakfast Box (Millet | Sprouts | Oats | egg)",
+  description: "High-protein non-veg breakfast plan for a full month",
+  ingredients: ["Boiled Eggs", "Egg Bhurji", "Oats", "Fruit"],
+  price: { full: 4000 },
+  category: "diet-breakfast-subscription",
+  type: "non-veg",
+  image: "https://thekitchenpaper.com/wp-content/uploads/2017/07/sprouted-lentil-breakfast-bowl-recipe-3.jpg",
+  popular: true,
+},
+
+{
+  id: "diet-lunch-subscription-nonveg",
+  name: "Lunch Box (Millet Rice | Tuna fish | Paneer | Brown Rice | Steamed veggies)",
+  description: "Protein-rich non-veg lunches with minimal oil",
+  ingredients: ["Brown Rice", "Grilled Chicken", "Dal", "Salad"],
+  price: { full: 7500 },
+  category: "diet-lunch-subscription",
+  type: "non-veg",
+  image: "https://www.honeywhatscooking.com/wp-content/uploads/2025/06/Paneer-Tikka-Rice-Bowls-featured.jpg",
+  popular: true,
+},
+
+{
+  id: "diet-dinner-subscription-nonveg",
+  name: "Dinner Box (MMillet Roti | Chicken curry | Paneer Mixed Veg curry)",
+  description: "Light non-veg dinners for healthy digestion",
+  ingredients: ["Chapati", "Chicken Curry", "Soup"],
+  price: { full: 5000 },
+  category: "diet-dinner-subscription",
+  type: "non-veg",
+  image: "https://i.pinimg.com/1200x/a1/25/3b/a1253b3442d4432d8ce0f191fd0ca0ce.jpg",
+  popular: true,},
+
+{
+  id: "diet-combo-1-subscription-nonveg",
+  name: "Diet Combo 1 (Break Fast + Lunch + Dinner)",
+  description: "Healthy non-veg breakfast and lunch combo plan",
+  ingredients: ["Non-Veg Breakfast", "Non-Veg Lunch"],
+  price: { full: 16500 },
+  category: "diet-combo-1-subscription",
+  type: "non-veg",
+  image: "/diet-combo-1-subscription-nonveg.png",
+  popular: true,
+},
+
+{
+  id: "diet-combo-2-subscription-nonveg",
+  name: "Diet Combo 2 (Lunch + Fruit Bowl + Dinner )",
+  description: "Complete non-veg diet plan: Breakfast, Lunch & Dinner",
+  ingredients: ["Breakfast", "Lunch", "Dinner"],
+  price: { full: 15000 },
+  category: "diet-combo-2-subscription",
+  type: "non-veg",
+  image: "/diet-combo-3-subscription.png",
+  popular: true,
+},
+
+
+
+
+
+
+
 
 
 
