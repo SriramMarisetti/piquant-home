@@ -50,7 +50,7 @@
 
 @layer components {
   .container-custom {
-    @apply w-full max-w-4xl mx-auto px-4;
+    @apply w-full max-w-none px-4;
   }
   
   .page-container {
