@@ -6,7 +6,6 @@ const IMAGE_ONLY_CATEGORIES = [
   "cakes",
   "traditional-snacks",
   "rice-mix",
-  "podulu",
   "breakfast-subscription",
   "breakfast-box",
   "diet-fruit-bowl",

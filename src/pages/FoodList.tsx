@@ -5,14 +5,9 @@ import { FoodItem, FoodType } from "../types/menu";
 import FoodCard from "../components/FoodCard";
 
 const FoodList = () => {
-  const { categoryId, type } = useParams<{
-    categoryId: string;
-    type: string;
-  }>();
+  const { categoryId, type } = useParams<{ categoryId: string; type: string }>();
 
-  const category = categoryId
-    ? getCategoryById(categoryId as any)
-    : undefined;
+  const category = categoryId ? getCategoryById(categoryId as any) : undefined;
 
   const validType: FoodType | undefined =
     type === "veg" || type === "non-veg" ? type : undefined;
@@ -23,22 +18,45 @@ const FoodList = () => {
     foodItems = getFoodItemsByCategory(category.id, validType);
   }
 
-  // ✅ Count AFTER foodItems is created
   const itemCount = foodItems.length;
-  const isSingleItem = itemCount === 1;
 
-  // 👉 Categories where Veg / Non-Veg should NOT appear in title
+  // Categories that need centered layout
+  const centerAlignedCategories = [
+    "bhojanam-box",
+    "breakfast-box",
+    "lunch-box",
+    "dinner-box",
+
+    "diet-breakfast",
+    "diet-lunch",
+    "diet-dinner",
+    "diet-fruit-bowl",
+
+    "diet-breakfast-subscription",
+    "diet-lunch-subscription",
+    "diet-dinner-subscription",
+    "diet-fruit-bowl-subscription",
+    "diet-combo-1-subscription",
+    "diet-combo-2-subscription",
+
+    "breakfast-subscription",
+    "lunch-subscription",
+    "curry-subscription",
+    "dinner-subscription",
+  ];
+
+  const shouldCenter = categoryId && centerAlignedCategories.includes(categoryId);
+
+  // Title rule
   const hideTypeInTitle = ["podulu", "traditional-snacks", "rice-mix", "cakes"];
 
   return (
     <div className="page-container relative">
-      {/* Background */}
       <div
         className="fixed inset-0 bg-cover bg-center opacity-20 -z-10"
         style={{ backgroundImage: "url('/food-bg.png')" }}
       />
 
-      {/* Page Header */}
       <PageHeader
         title={
           hideTypeInTitle.includes(categoryId ?? "")
@@ -49,31 +67,42 @@ const FoodList = () => {
         }
       />
 
-      {/* Food Items */}
       {itemCount > 0 ? (
         <div
-          className={`grid gap-6 animate-fade-in justify-center
-            ${
-              itemCount === 1
-                ? "grid-cols-1 place-items-center"
-                : itemCount === 2
-                ? "grid-cols-1 sm:grid-cols-2 place-content-center"
-                : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-            }
+          className={`
+            mx-auto
+            ${shouldCenter ? "max-w-5xl" : "max-w-7xl"}
           `}
         >
-          {foodItems.map((food) => (
-            <div
-              key={food.id}
-              className={isSingleItem ? "w-full max-w-sm" : ""}
-            >
-              <FoodCard
-                food={food}
-                category={categoryId || ""}
-                type={validType}
-              />
-            </div>
-          ))}
+          <div
+            className={`
+              grid gap-6
+              ${
+                itemCount === 1
+                  ? "grid-cols-1 place-items-center"
+                  : itemCount === 2
+                  ? "grid-cols-1 sm:grid-cols-2 justify-center"
+                  : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+              }
+            `}
+          >
+            {foodItems.map((food) => (
+              <div
+                key={food.id}
+                className={
+                  itemCount <= 2
+                    ? "w-full max-w-sm mx-auto"
+                    : "w-full"
+                }
+              >
+                <FoodCard
+                  food={food}
+                  category={categoryId || ""}
+                  type={validType}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       ) : (
         <div className="text-center mt-8">

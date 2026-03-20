@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { getFoodItemById } from "../data/menuData";
 import PageHeader from "../components/PageHeader";
@@ -5,6 +6,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useCart } from "../context/CartContext";
 import { ShoppingCart } from "lucide-react";
 import { useCartDialog } from "@/context/CartDialogContext";
+import { FoodSize } from "../types/menu";
 
 const FoodDetails = () => {
   const { foodId } = useParams<{ foodId: string }>();
@@ -22,31 +24,44 @@ const FoodDetails = () => {
     );
   }
 
-  // ✅ Pick ONE price only
-  const price =
-    foodItem.price.full ??
-    foodItem.price.half ??
-    foodItem.price.mini ??
-    0;
+  /* -------------------------
+     AVAILABLE SIZES
+  -------------------------- */
+  const availableSizes: FoodSize[] = [];
 
-  const typeColor =
-    foodItem.type === "veg" ? "bg-food-veg" : "bg-food-nonveg";
+  if (foodItem.price.mini != null) availableSizes.push("mini");
+  if (foodItem.price.half != null) availableSizes.push("half");
+  if (foodItem.price.full != null) availableSizes.push("full");
+
+  const [selectedSize, setSelectedSize] = useState<FoodSize>(
+    availableSizes[0]
+  );
+
+  const getPrice = (size: FoodSize) => {
+    if (size === "mini") return foodItem.price.mini ?? 0;
+    if (size === "half") return foodItem.price.half ?? 0;
+    return foodItem.price.full ?? 0;
+  };
+
+  const price = getPrice(selectedSize);
 
   const handleAddToCart = () => {
     addToCart({
       id: foodItem.id,
       name: foodItem.name,
-      size: "full", // fixed internally
-      price: price,
+      size: selectedSize,
+      price,
       quantity: 1,
     });
 
     setOpen(true);
   };
 
+  const typeColor =
+    foodItem.type === "veg" ? "bg-food-veg" : "bg-food-nonveg";
+
   return (
     <div className="page-container pb-10 relative">
-      {/* Background */}
       <div
         className="fixed inset-0 bg-cover bg-center opacity-20 -z-10"
         style={{ backgroundImage: "url('/food-bg.png')" }}
@@ -54,9 +69,9 @@ const FoodDetails = () => {
 
       <PageHeader title={foodItem.name} />
 
-      <div className="bg-white rounded-xl shadow-md p-6 mb-6">
+      <div className="bg-white rounded-xl shadow-md p-6">
         <div className="md:flex gap-6">
-          
+
           {/* LEFT */}
           <div className="md:w-1/2">
             <div className="flex items-center mb-4">
@@ -77,16 +92,40 @@ const FoodDetails = () => {
               )}
             </div>
 
-            {/* PRICE ONLY */}
-            <p className="text-xl font-semibold mb-6">
+            {/* SIZE SELECTION */}
+            {availableSizes.length > 1 && (
+              <div className="mb-4">
+                <p className="font-semibold mb-2">Select Quantity:</p>
+                <div className="flex gap-3 flex-wrap">
+                  {availableSizes.map(size => (
+                    <button
+                      key={size}
+                      onClick={() => setSelectedSize(size)}
+                      className={`px-4 py-2 rounded-md border font-medium transition
+                        ${
+                          selectedSize === size
+                            ? "bg-primary text-white"
+                            : "bg-muted hover:bg-muted/80"
+                        }`}
+                    >
+                      {size.toUpperCase()} – ₹{getPrice(size)}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* PRICE */}
+            <p className="text-xl font-semibold mb-4">
               Price: ₹{price}
             </p>
 
             <button
               onClick={handleAddToCart}
-              className="mt-4 w-full bg-primary text-white py-3 px-5 rounded-md font-semibold flex items-center justify-center gap-2"
+              className="w-full bg-primary text-white py-3 rounded-md font-semibold flex items-center justify-center gap-2"
             >
-              <ShoppingCart size={20} /> Add to Cart
+              <ShoppingCart size={20} />
+              Add to Cart
             </button>
           </div>
 
@@ -103,7 +142,7 @@ const FoodDetails = () => {
             </div>
 
             <p className="text-center text-sm text-muted-foreground mt-2">
-              ₹{price}
+              {selectedSize.toUpperCase()} – ₹{price}
             </p>
           </div>
         </div>

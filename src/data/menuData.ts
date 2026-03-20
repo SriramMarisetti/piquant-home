@@ -1424,7 +1424,7 @@ export const foodItems: FoodItem[] = [
   },
   {
     id: 'chota-bheem-laddu',
-    name: 'Chota Bheem Laddu',
+    name: 'Chota Besan Laddu',
     description: 'Large-sized nutritious laddus, loved by kids and adults.',
     ingredients: ['Wheat Flour', 'Jaggery', 'Dry Fruits', 'Ghee'],
     price: { mini: 400, half: 770, full: 1540 },
@@ -1444,9 +1444,61 @@ export const foodItems: FoodItem[] = [
     popular: false,
     image: 'https://i.pinimg.com/736x/19/87/e6/1987e6ed32e54949f0417226544a5e15.jpg',
   },
+
+  
+{
+  id: "dry-fruit-laddu",
+  name: "Dry Fruit Laddu",
+  description: "Nutritious laddus made with mixed dry fruits and natural sweeteners.",
+  ingredients: ["Almonds", "Cashews", "Dates", "Raisins", "Ghee"],
+  price: { mini: 220, half: 380, full: 700 },
+  category: "traditional-snacks",
+  type: "veg",
+  popular: true,
+  image: "https://i.pinimg.com/1200x/d7/a3/b9/d7a3b9bf901a1a4ff97ee695f1ed1028.jpg",
+},
+{
+  id: "bellam-laddu",
+  name: "Bellam Laddu (Jaggery)",
+  description: "Traditional Andhra-style laddus made with jaggery and roasted flour.",
+  ingredients: ["Jaggery", "Wheat Flour", "Ghee", "Cardamom"],
+  price: { mini: 160, half: 280, full: 520 },
+  category: "traditional-snacks",
+  type: "veg",
+  popular: false,
+  image: "https://i.pinimg.com/1200x/f0/35/27/f035277ed1038b681aedb8960d008d8c.jpg",
+},
+{
+  id: "masala-gavvalu",
+  name: "Masala Gavvalu",
+  description: "Crunchy deep-fried shell snacks tossed with spicy masala.",
+  ingredients: ["Maida", "Chilli Powder", "Salt", "Cumin", "Oil"],
+  price: { mini: 130, half: 260, full: 480 },
+  category: "traditional-snacks",
+  type: "veg",
+  popular: true,
+  image: "https://i.pinimg.com/1200x/9d/79/c4/9d79c4d53cb8a3d771f859c8fa6eb0e9.jpg",
+},
+{
+  id: "karapu-pusa",
+  name: "Karapu Pusa",
+  description: "Crispy and spicy Andhra-style sev made with gram flour.",
+  ingredients: ["Besan", "Red Chilli Powder", "Salt", "Ajwain", "Oil"],
+  price: { mini: 140, half: 250, full: 450 },
+  category: "traditional-snacks",
+  type: "veg",
+  popular: false,
+  image: "https://i.pinimg.com/1200x/4d/a9/d8/4da9d87f17994fe78905dee604af9c94.jpg",
+}
+,
+
+
+
+
+
   {
     id: 'gavvalu',
-    name: 'Gavvalu (Masala or Bellam)',
+    name: 'Bellam Gavvalu',
     description: 'Shell-shaped traditional snack available in sweet and spicy variants.',
     ingredients: ['Maida', 'Sugar or Masala Spices', 'Ghee'],
     price: { mini: 150, half: 300, full: 600 },
@@ -1494,7 +1546,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 240, full: 480 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: '/food-images/TraditionalSnacks/karabondhi.jpg',
+    image: 'https://i.pinimg.com/736x/7f/c3/f4/7fc3f426c7266a1dea25633cd152c964.jpg',
   },
   {
     id: 'kova-kajjikayalu',
