@@ -11,7 +11,8 @@ import NotFound from "./pages/NotFound";
 import { CartProvider } from "./context/CartContext";
 import CartIcon from "./components/CartIcon";
 import { CartDialogProvider } from "@/context/CartDialogContext";
-
+import Navbar from "./components/Navbar";
+import WhatsAppFloat from "./components/WhatsAppFloat";
 
 const queryClient = new QueryClient();
 
@@ -24,9 +25,9 @@ const App = () => (
         <CartDialogProvider>
           <BrowserRouter>
             <div className="min-h-screen relative">
-              {/* ✅ Single Cart Icon */}
+              <Navbar />
               <CartIcon />
-              <div className="container-custom">
+              <div className="pt-16">
                 <Routes>
                   <Route path="/" element={<Index />} />
                   <Route path="/type-selection/:categoryId" element={<TypeSelection />} />
@@ -35,6 +36,7 @@ const App = () => (
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </div>
+              <WhatsAppFloat />
             </div>
           </BrowserRouter>
         </CartDialogProvider>
@@ -42,6 +44,5 @@ const App = () => (
     </TooltipProvider>
   </QueryClientProvider>
 );
-
 
 export default App;
