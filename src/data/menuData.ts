@@ -165,16 +165,16 @@ export const categories: CategoryInfo[] = [
 export const foodItems: FoodItem[] = [
 
   // ===== BREAKFAST =====
-  {
-    id: "breakfast-box-veg",
-    name: "Breakfast Box (Idly | Upma | Dosa | with 2 chutney)",
-    description: "Healthy vegetarian breakfast",
-    ingredients: ["Idli", "Upma", "Chutney"],
-    price: { mini: 80 },
-    category: "breakfast-box",
-    type: "veg",
-    image: "https://i.pinimg.com/1200x/b2/ff/2d/b2ff2db26040e2c78de4b740a6449f6d.jpg",
-  },
+{
+  id: "breakfast-box-veg",
+  name: "Breakfast Box (Idly | Upma | Dosa | with 2 chutney)",
+  description: "Healthy vegetarian breakfast",
+  ingredients: ["Idli", "Upma", "Chutney"],
+  price: { mini: 80 },
+  category: "breakfast-box",
+  type: "veg",
+  image: "https://i.pinimg.com/1200x/b2/ff/2d/b2ff2db26040e2c78de4b740a6449f6d.jpg",
+},
   {
     id: "breakfast-box-nonveg",
     name: "Breakfast Box (chapati |Egg Curry| Chicken)",
@@ -198,7 +198,7 @@ export const foodItems: FoodItem[] = [
     image: "https://i.pinimg.com/736x/3e/0b/a0/3e0ba0540b1cc809e84bbd9b762fd686.jpg",
   },
   {
-    id: "lunch-box-nonveg",
+    id: "lunch-box-nonveg-1",
     name: "Lunch Box (Rice | Dal | Rasam | (Curry/Fry)-Non Veg) | Chutney )",
     description: "Traditional non-veg lunch",
     ingredients: ["Rice", "Chicken Curry"],
@@ -208,7 +208,7 @@ export const foodItems: FoodItem[] = [
     image: "https://i.pinimg.com/736x/e7/7a/31/e77a319a64f36dd444256de4ac492fa1.jpg",
   },
     {
-    id: "lunch-box-nonveg",
+    id: "lunch-box-nonveg-2",
     name: "Lunch Box (Rice | Dal | Rasam | (Curry and Fry)-Non Veg) | Chutney )",
     description: "Traditional non-veg lunch",
     ingredients: ["Rice", "Chicken Curry"],
@@ -230,7 +230,7 @@ export const foodItems: FoodItem[] = [
     image: "https://i.pinimg.com/1200x/51/10/5b/51105b5aa7c7efe1cc484543ab5b53be.jpg",
   },
   {
-    id: "curry-box-nonveg",
+    id: "curry-box-nonveg-1",
     name: "Curry Box (Dal | Rasam | Curry | Fry | Chutney | (Curry/Fry)-Non Veg)",
     description: "Daily non-veg curries",
     ingredients: ["Chicken Curry"],
@@ -240,7 +240,7 @@ export const foodItems: FoodItem[] = [
     image: "https://i.pinimg.com/736x/85/11/86/8511862ca150a0fd70967bbfccf1be24.jpg",
   },
     {
-    id: "curry-box-nonveg",
+    id: "curry-box-nonveg-2",
     name: "Curry Box (Dal | Rasam | Curry | Fry | Chutney | (Curry and Fry)-Non Veg)",
     description: "Daily non-veg curries",
     ingredients: ["Chicken Curry"],

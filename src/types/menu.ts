@@ -94,6 +94,7 @@ export interface FoodPrice {
   mini?: number | null;
   half?: number | null;
   full?: number | null;
+  single?: number | null;
 }
 
 

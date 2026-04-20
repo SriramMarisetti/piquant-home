@@ -6,6 +6,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useCart } from "../context/CartContext";
 import { ShoppingCart } from "lucide-react";
 import { useCartDialog } from "@/context/CartDialogContext";
+import { FoodSize } from "../types/menu";
 
 const FoodDetails = () => {
   const { foodId } = useParams<{ foodId: string }>();
@@ -25,23 +26,67 @@ const FoodDetails = () => {
     );
   }
 
-  const availableSizes = [
-    foodItem.price.mini != null
-      ? { key: "mini", label: "250gms", price: foodItem.price.mini }
-      : null,
+  const singlePriceCategories = [
+    "breakfast-box",
+    "lunch-box",
+    "curry-box",
+    "dinner-box",
+    "diet-food",
+    "diet-breakfast",
+    "diet-lunch",
+    "diet-dinner",
+    "diet-fruit-bowl",
+    "beverages",
+    "breakfast-subscription",
+    "lunch-subscription",
+    "dinner-subscription",
+    "diet-breakfast-subscription",
+    "diet-lunch-subscription",
+    "diet-dinner-subscription",
+    "diet-fruit-bowl-subscription",
+    "diet-juice-subscription",
+    "diet-combo-1-subscription",
+    "diet-combo-2-subscription",
+    "curry-subscription",
+    "diet-combo-1-subscription",
+    "diet-combo-2-subscription",
+    "combo-meals"
+  ];
 
-    foodItem.price.half != null
-      ? { key: "half", label: "500gms", price: foodItem.price.half }
-      : null,
+  const isSinglePrice = singlePriceCategories.includes(foodItem.category);
 
-    foodItem.price.full != null
-      ? { key: "full", label: "1kg", price: foodItem.price.full }
-      : null,
-  ].filter(Boolean) as {
-    key: "mini" | "half" | "full";
+  const availableSizes: {
+    key: FoodSize;
     label: string;
     price: number;
-  }[];
+  }[] = isSinglePrice
+    ? [
+        {
+          key: "mini",
+          label: "price",
+         price:
+  Object.values(foodItem.price).find(
+    (value) => value != null
+  ) ?? 0
+        },
+      ]
+    : [
+        foodItem.price.mini != null
+          ? { key: "mini", label: "250gms", price: foodItem.price.mini }
+          : null,
+
+        foodItem.price.half != null
+          ? { key: "half", label: "500gms", price: foodItem.price.half }
+          : null,
+
+        foodItem.price.full != null
+          ? { key: "full", label: "1kg", price: foodItem.price.full }
+          : null,
+      ].filter(Boolean) as {
+        key: FoodSize;
+        label: string;
+        price: number;
+      }[];
 
   const [selectedSize, setSelectedSize] = useState(availableSizes[0]);
 
@@ -62,7 +107,6 @@ const FoodDetails = () => {
 
   return (
     <div className="page-container pb-10 relative">
-      {/* Background */}
       <div
         className="fixed inset-0 bg-cover bg-center opacity-20 -z-10"
         style={{ backgroundImage: "url('/food-bg.png')" }}
@@ -73,7 +117,6 @@ const FoodDetails = () => {
       <div className="bg-white rounded-xl shadow-md p-6 mb-6">
         <div className="md:flex gap-6">
 
-          {/* LEFT */}
           <div className="md:w-1/2">
             <div className="flex items-center mb-4">
               <div
@@ -95,31 +138,32 @@ const FoodDetails = () => {
               )}
             </div>
 
-            {/* Size Selection */}
-            <p className="font-medium mb-2">Select Size:</p>
+            {!isSinglePrice && (
+              <>
+                <p className="font-medium mb-2">Select Size:</p>
 
-            <div className="flex gap-3 flex-wrap mb-5">
-              {availableSizes.map((size) => (
-                <button
-                  key={size.key}
-                  onClick={() => setSelectedSize(size)}
-                  className={`px-4 py-2 rounded-lg border font-medium ${
-                    selectedSize.key === size.key
-                      ? "bg-primary text-white border-primary"
-                      : "bg-white"
-                  }`}
-                >
-                  {size.label}
-                </button>
-              ))}
-            </div>
+                <div className="flex gap-3 flex-wrap mb-5">
+                  {availableSizes.map((size) => (
+                    <button
+                      key={size.key}
+                      onClick={() => setSelectedSize(size)}
+                      className={`px-4 py-2 rounded-lg border font-medium ${
+                        selectedSize.key === size.key
+                          ? "bg-primary text-white border-primary"
+                          : "bg-white"
+                      }`}
+                    >
+                      {size.label}
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
 
-            {/* Price */}
             <p className="text-2xl font-bold text-green-600 mb-6">
               ₹{selectedSize.price}
             </p>
 
-            {/* Add to Cart */}
             <button
               onClick={handleAddToCart}
               className="w-full bg-primary text-white py-3 px-5 rounded-md font-semibold flex items-center justify-center gap-2"
@@ -129,7 +173,6 @@ const FoodDetails = () => {
             </button>
           </div>
 
-          {/* RIGHT */}
           <div className="md:w-1/2 mt-6 md:mt-0">
             <div className="rounded-xl overflow-hidden shadow-md">
               <AspectRatio ratio={4 / 3}>
@@ -141,9 +184,11 @@ const FoodDetails = () => {
               </AspectRatio>
             </div>
 
-            <p className="text-center text-sm text-muted-foreground mt-2">
-              {selectedSize.label} • ₹{selectedSize.price}
-            </p>
+            {!isSinglePrice && (
+              <p className="text-center text-sm text-muted-foreground mt-2">
+                {selectedSize.label} • ₹{selectedSize.price}
+              </p>
+            )}
           </div>
 
         </div>

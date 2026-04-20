@@ -71,18 +71,26 @@ const FoodList = () => {
                 isSingleItem ? "max-w-sm" : "max-w-md"
               }`}
             >
-              <FoodCard
-                food={{
-                  ...food,
-                  sizes: [
-                    { label: "250gms", price: 150 },
-                    { label: "500gms", price: 280 },
-                    { label: "1kg", price: 520 },
-                  ],
-                }}
-                category={categoryId || ""}
-                type={validType}
-              />
+ <FoodCard
+  food={{
+    ...food,
+    sizes:
+      food.category === "breakfast-box"
+        ? [
+            {
+              label: "Box",
+              price: food.price.mini ?? 80,
+            },
+          ]
+        : [
+            { label: "250gms", price: food.price.mini ?? 0 },
+            { label: "500gms", price: food.price.half ?? 0 },
+            { label: "1kg", price: food.price.full ?? 0 },
+          ].filter((item) => item.price > 0),
+  }}
+  category={categoryId || ""}
+  type={validType}
+/>
             </div>
           ))}
         </div>
