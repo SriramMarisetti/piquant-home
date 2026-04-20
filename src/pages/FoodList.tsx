@@ -23,22 +23,25 @@ const FoodList = () => {
     foodItems = getFoodItemsByCategory(category.id, validType);
   }
 
-  // ✅ Count AFTER foodItems is created
   const itemCount = foodItems.length;
   const isSingleItem = itemCount === 1;
 
-  // 👉 Categories where Veg / Non-Veg should NOT appear in title
-  const hideTypeInTitle = ["podulu", "traditional-snacks", "rice-mix", "cakes"];
+  const hideTypeInTitle = [
+    "podulu",
+    "traditional-snacks",
+    "rice-mix",
+    "cakes",
+  ];
 
   return (
-    <div className="page-container relative">
+    <div className="page-container relative min-h-screen">
       {/* Background */}
       <div
         className="fixed inset-0 bg-cover bg-center opacity-20 -z-10"
         style={{ backgroundImage: "url('/food-bg.png')" }}
       />
 
-      {/* Page Header */}
+      {/* Header */}
       <PageHeader
         title={
           hideTypeInTitle.includes(categoryId ?? "")
@@ -49,26 +52,34 @@ const FoodList = () => {
         }
       />
 
-      {/* Food Items */}
+      {/* Products */}
       {itemCount > 0 ? (
         <div
-          className={`grid gap-6 animate-fade-in justify-center
+          className={`grid gap-6 mt-6 animate-fade-in
             ${
               itemCount === 1
                 ? "grid-cols-1 place-items-center"
                 : itemCount === 2
-                ? "grid-cols-1 sm:grid-cols-2 place-content-center"
+                ? "grid-cols-1 sm:grid-cols-2 place-items-center"
                 : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-            }
-          `}
+            }`}
         >
           {foodItems.map((food) => (
             <div
               key={food.id}
-              className={isSingleItem ? "w-full max-w-sm" : ""}
+              className={`w-full ${
+                isSingleItem ? "max-w-sm" : "max-w-md"
+              }`}
             >
               <FoodCard
-                food={food}
+                food={{
+                  ...food,
+                  sizes: [
+                    { label: "250gms", price: 150 },
+                    { label: "500gms", price: 280 },
+                    { label: "1kg", price: 520 },
+                  ],
+                }}
                 category={categoryId || ""}
                 type={validType}
               />
@@ -76,7 +87,7 @@ const FoodList = () => {
           ))}
         </div>
       ) : (
-        <div className="text-center mt-8">
+        <div className="text-center mt-10">
           <p className="text-xl text-muted-foreground">
             No items found in this category.
           </p>

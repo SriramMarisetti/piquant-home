@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { getFoodItemById } from "../data/menuData";
 import PageHeader from "../components/PageHeader";
@@ -17,27 +18,42 @@ const FoodDetails = () => {
     return (
       <div className="page-container">
         <PageHeader title="Food Not Found" />
-        <p className="text-center">The food item you're looking for does not exist.</p>
+        <p className="text-center">
+          The food item you're looking for does not exist.
+        </p>
       </div>
     );
   }
 
-  // ✅ Pick ONE price only
-  const price =
-    foodItem.price.full ??
-    foodItem.price.half ??
-    foodItem.price.mini ??
-    0;
+  const availableSizes = [
+    foodItem.price.mini != null
+      ? { key: "mini", label: "250gms", price: foodItem.price.mini }
+      : null,
+
+    foodItem.price.half != null
+      ? { key: "half", label: "500gms", price: foodItem.price.half }
+      : null,
+
+    foodItem.price.full != null
+      ? { key: "full", label: "1kg", price: foodItem.price.full }
+      : null,
+  ].filter(Boolean) as {
+    key: "mini" | "half" | "full";
+    label: string;
+    price: number;
+  }[];
+
+  const [selectedSize, setSelectedSize] = useState(availableSizes[0]);
 
   const typeColor =
     foodItem.type === "veg" ? "bg-food-veg" : "bg-food-nonveg";
 
   const handleAddToCart = () => {
     addToCart({
-      id: foodItem.id,
+      id: `${foodItem.id}-${selectedSize.key}`,
       name: foodItem.name,
-      size: "full", // fixed internally
-      price: price,
+      size: selectedSize.key,
+      price: selectedSize.price,
       quantity: 1,
     });
 
@@ -56,7 +72,7 @@ const FoodDetails = () => {
 
       <div className="bg-white rounded-xl shadow-md p-6 mb-6">
         <div className="md:flex gap-6">
-          
+
           {/* LEFT */}
           <div className="md:w-1/2">
             <div className="flex items-center mb-4">
@@ -67,7 +83,9 @@ const FoodDetails = () => {
               </div>
 
               <span className="font-medium">
-                {foodItem.type === "veg" ? "Vegetarian" : "Non-Vegetarian"}
+                {foodItem.type === "veg"
+                  ? "Vegetarian"
+                  : "Non-Vegetarian"}
               </span>
 
               {foodItem.popular && (
@@ -77,16 +95,37 @@ const FoodDetails = () => {
               )}
             </div>
 
-            {/* PRICE ONLY */}
-            <p className="text-xl font-semibold mb-6">
-              Price: ₹{price}
+            {/* Size Selection */}
+            <p className="font-medium mb-2">Select Size:</p>
+
+            <div className="flex gap-3 flex-wrap mb-5">
+              {availableSizes.map((size) => (
+                <button
+                  key={size.key}
+                  onClick={() => setSelectedSize(size)}
+                  className={`px-4 py-2 rounded-lg border font-medium ${
+                    selectedSize.key === size.key
+                      ? "bg-primary text-white border-primary"
+                      : "bg-white"
+                  }`}
+                >
+                  {size.label}
+                </button>
+              ))}
+            </div>
+
+            {/* Price */}
+            <p className="text-2xl font-bold text-green-600 mb-6">
+              ₹{selectedSize.price}
             </p>
 
+            {/* Add to Cart */}
             <button
               onClick={handleAddToCart}
-              className="mt-4 w-full bg-primary text-white py-3 px-5 rounded-md font-semibold flex items-center justify-center gap-2"
+              className="w-full bg-primary text-white py-3 px-5 rounded-md font-semibold flex items-center justify-center gap-2"
             >
-              <ShoppingCart size={20} /> Add to Cart
+              <ShoppingCart size={20} />
+              Add to Cart
             </button>
           </div>
 
@@ -103,9 +142,10 @@ const FoodDetails = () => {
             </div>
 
             <p className="text-center text-sm text-muted-foreground mt-2">
-              ₹{price}
+              {selectedSize.label} • ₹{selectedSize.price}
             </p>
           </div>
+
         </div>
       </div>
     </div>
