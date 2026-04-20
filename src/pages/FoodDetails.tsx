@@ -72,8 +72,15 @@ const FoodDetails = () => {
       ]
     : [
         foodItem.price.mini != null
-          ? { key: "mini", label: "250gms", price: foodItem.price.mini }
-          : null,
+  ? {
+      key: "mini",
+      label:
+        foodItem.category === "podulu"
+          ? "200g"
+          : "250gms",
+      price: foodItem.price.mini,
+    }
+  : null,
 
         foodItem.price.half != null
           ? { key: "half", label: "500gms", price: foodItem.price.half }

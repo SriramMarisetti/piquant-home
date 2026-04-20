@@ -71,7 +71,7 @@ const FoodList = () => {
                 isSingleItem ? "max-w-sm" : "max-w-md"
               }`}
             >
- <FoodCard
+<FoodCard
   food={{
     ...food,
     sizes:
@@ -82,6 +82,12 @@ const FoodList = () => {
               price: food.price.mini ?? 80,
             },
           ]
+        : food.category === "podulu"
+        ? [
+            { label: "200g", price: food.price.mini ?? 0 },
+            { label: "500g", price: food.price.half ?? 0 },
+            { label: "1kg", price: food.price.full ?? 0 },
+          ].filter((item) => item.price > 0)
         : [
             { label: "250gms", price: food.price.mini ?? 0 },
             { label: "500gms", price: food.price.half ?? 0 },

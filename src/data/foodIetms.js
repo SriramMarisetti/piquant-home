@@ -417,6 +417,9 @@ export const foodItems = [
     popular: false,
     image: '/food-images/BojanamBox/56fb3f0a81ab2a5fef185f774365ef82.jpg',
   },
+
+
+  
   {
     id: 'avisa-ginjela-podi',
     name: 'Avisa Ginjela Podi',
