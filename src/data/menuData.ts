@@ -73,7 +73,7 @@ export const categories: CategoryInfo[] = [
   {
     id: 'diet-dinner',
     name: 'Dinner Box',
-    icon: 'https://i.pinimg.com/1200x/62/90/ec/6290ecab8bd50fc66c8dc7a14b466c33.jpg',
+    icon: 'https://i.pinimg.com/736x/7b/53/bc/7b53bc1dcaf6df36c1f72fcdbcda6bea.jpg',
     description: 'Light & healthy dinner meals',
   },
   {
@@ -99,7 +99,7 @@ export const categories: CategoryInfo[] = [
   {
     id: 'diet-dinner-subscription',
     name: 'Dinner Box',
-    icon: 'https://i.pinimg.com/1200x/62/90/ec/6290ecab8bd50fc66c8dc7a14b466c33.jpg',
+    icon: 'https://i.pinimg.com/736x/7b/53/bc/7b53bc1dcaf6df36c1f72fcdbcda6bea.jpg',
     description: 'Light and nutritious dinner meals',
   },
   {
@@ -237,7 +237,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 155 },
     category: "curry-box",
     type: "non-veg",
-    image: "https://i.pinimg.com/736x/85/11/86/8511862ca150a0fd70967bbfccf1be24.jpg",
+    image: "/food-images/BojanamBox/curryboxveg.jpeg",
   },
     {
     id: "curry-box-nonveg-2",
@@ -247,29 +247,29 @@ export const foodItems: FoodItem[] = [
     price: { full: 180 },
     category: "curry-box",
     type: "non-veg",
-    image: "https://i.pinimg.com/736x/85/11/86/8511862ca150a0fd70967bbfccf1be24.jpg",
+    image: "/food-images/BojanamBox/curryboxnonveg.jpeg",
   },
 
   // ===== DINNER =====
   {
     id: "dinner-box-veg",
-    name: "Dinner Box ((Idly / Dosa) With 2 Chutney)",
+    name: "Dinner Box (3 Pulkas | Curry | Salad)",
     description: "Light veg dinner",
     ingredients: ["Chapati", "Veg Curry"],
     price: { mini: 100 },
     category: "dinner-box",
     type: "veg",
-    image: "https://i.pinimg.com/1200x/b4/9b/c6/b49bc689e953d83d8b858b2dfc98bab8.jpg",
+    image: "/food-images/BojanamBox/dinnerboxveg.png",
   },
   {
     id: "dinner-box-nonveg",
-    name: "Dinner Box (3 Pulkas | Dal | Curry(Non Veg))",
+    name: "Dinner Box (3 Pulkas | Curry(Non Veg) | Salad)",
     description: "Light non-veg dinner",
     ingredients: ["Chapati", "Chicken Curry"],
     price: { mini: 130 },
     category: "dinner-box",
     type: "non-veg",
-    image: "https://i.pinimg.com/736x/ce/63/da/ce63da4aa45332f012c051ab7e30b284.jpg",
+    image: "/food-images/BojanamBox/dinnerboxnonveg.png",
   },
 
 // ===============================
@@ -313,13 +313,13 @@ export const foodItems: FoodItem[] = [
 
 {
   id: 'monthly-dinner-veg',
-   name: "Dinner Box ((Idly / Dosa) With 2 Chutney)",
+   name: "Dinner Box (3 Pulkas | Curry | Salad)",
   description: 'Light and healthy veg dinner.',
   ingredients: ['Chapati', 'Vegetable Curry'],
   price: { full: 3000 },
   category: 'dinner-subscription',
   type: 'veg',
-  image: "https://i.pinimg.com/1200x/b4/9b/c6/b49bc689e953d83d8b858b2dfc98bab8.jpg",
+  image: "/food-images/BojanamBox/dinnerboxveg.png",
 },
 
 //non -veg 
@@ -355,24 +355,24 @@ export const foodItems: FoodItem[] = [
 {
   id: 'monthly-curry-nonveg',
   name: "Curry Box (Dal | Rasam | Curry | Fry | Chutney | (Curry/Fry)-Non Veg)",
-  description: 'Non-veg curries with veg alternates.',
+  description: '4 days Non-Veg & 3 days Veg curries every week.',
   ingredients: ['Chicken Curry', 'Egg Curry'],
   price: { full: 4500 },
   category: 'curry-subscription',
   type: 'non-veg',
-  image: "https://i.pinimg.com/736x/85/11/86/8511862ca150a0fd70967bbfccf1be24.jpg",
+  image: "/food-images/BojanamBox/curryboxveg.jpeg",
 
 },
 
 {
   id: 'monthly-dinner-nonveg',
-  name: "Dinner Box (3 Pulkas | Dal | Curry(Non Veg))",
-  description: 'Nutritious homemade non-veg dinner.',
+  name: "Dinner Box (3 Pulkas | Curry(Non Veg) | Salad)",
+  description: '4 days Non-Veg & 3 days Veg dinner every week..',
   ingredients: ['Chapati', 'Chicken Curry'],
   price: { full: 3900 },
   category: 'dinner-subscription',
   type: 'non-veg',
-  image: "https://i.pinimg.com/736x/ce/63/da/ce63da4aa45332f012c051ab7e30b284.jpg",
+  image: "/food-images/BojanamBox/dinnerboxnonveg.png",
 
 },
 
@@ -433,13 +433,13 @@ export const foodItems: FoodItem[] = [
 
 {
   id: "diet-dinner-veg",
-  name: "Dinner Box (Millet Roti | Paneer Mixed Veg curry)",
+  name: "Dinner Box (veg)",
   description: "Light dinner for easy digestion",
   ingredients: ["Chapati", "Dry Veg Curry"],
   price: { mini: 150 },
   category: "diet-dinner",
   type: "veg",
-  image: "/Gemini_Generated_Image_lvcqhslvcqhslvcq.png",
+  image: "/food-images/BojanamBox/dietdinnerbox.png",
 },
 
 {
@@ -478,13 +478,13 @@ export const foodItems: FoodItem[] = [
 
 {
   id: "diet-dinner-nonveg",
-  name: "Dinner Box (MMillet Roti | Chicken curry | Paneer Mixed Veg curry)",
+  name: "Dinner Box (NON-Veg)",
   description: "Light non-veg dinner for easy digestion",
   ingredients: ["Grilled Chicken", "Sauteed Vegetables"],
   price: { mini: 200 },
   category: "diet-dinner",
   type: "non-veg",
-  image: "https://i.pinimg.com/1200x/a1/25/3b/a1253b3442d4432d8ce0f191fd0ca0ce.jpg",
+  image: "/food-images/BojanamBox/dietnonvegdinnerbox.png",
 },
 
 
@@ -520,13 +520,13 @@ export const foodItems: FoodItem[] = [
 },
 {
   id: "diet-dinner-subscription-veg",
-  name: "Dinner Box (Millet Roti | Paneer Mixed Veg curry)",
+  name: "Dinner Box (veg)",
   description: "Light and nutritious vegetarian dinners",
   ingredients: ["Chapati", "Dry Curry", "Soup"],
   price: { full: 4000 },
   category: "diet-dinner-subscription",
   type: "veg",
-  image: "/Gemini_Generated_Image_lvcqhslvcqhslvcq.png",
+  image: "/food-images/BojanamBox/dietdinnerbox.png",
 },
 {
   id: "diet-fruit-bowl-subscription",
@@ -577,7 +577,7 @@ export const foodItems: FoodItem[] = [
 {
   id: "diet-breakfast-subscription-nonveg",
   name: "Breakfast Box (Millet | Sprouts | Oats | egg)",
-  description: "High-protein non-veg breakfast plan for a full month",
+  description: "4 days Non-Veg & 3 days Veg dinner every week..",
   ingredients: ["Boiled Eggs", "Egg Bhurji", "Oats", "Fruit"],
   price: { full: 4000 },
   category: "diet-breakfast-subscription",
@@ -589,7 +589,7 @@ export const foodItems: FoodItem[] = [
 {
   id: "diet-lunch-subscription-nonveg",
   name: "Lunch Box (Millet Rice | Tuna fish | Paneer | Brown Rice | Steamed veggies)",
-  description: "Protein-rich non-veg lunches with minimal oil",
+  description: "4 days Non-Veg & 3 days Veg dinner every week..",
   ingredients: ["Brown Rice", "Grilled Chicken", "Dal", "Salad"],
   price: { full: 7500 },
   category: "diet-lunch-subscription",
@@ -600,19 +600,19 @@ export const foodItems: FoodItem[] = [
 
 {
   id: "diet-dinner-subscription-nonveg",
-  name: "Dinner Box (MMillet Roti | Chicken curry | Paneer Mixed Veg curry)",
-  description: "Light non-veg dinners for healthy digestion",
+  name: "Dinner Box (NON-Veg)",
+  description: "4 days Non-Veg & 3 days Veg dinner every week..",
   ingredients: ["Chapati", "Chicken Curry", "Soup"],
   price: { full: 5000 },
   category: "diet-dinner-subscription",
   type: "non-veg",
-  image: "https://i.pinimg.com/1200x/a1/25/3b/a1253b3442d4432d8ce0f191fd0ca0ce.jpg",
+  image: "/food-images/BojanamBox/dietnonvegdinnerbox.png",
   popular: true,},
 
 {
   id: "diet-combo-1-subscription-nonveg",
   name: "Diet Combo 1 (Break Fast + Lunch + Dinner)",
-  description: "Healthy non-veg breakfast and lunch combo plan",
+  description: "4 days Non-Veg & 3 days Veg dinner every week..",
   ingredients: ["Non-Veg Breakfast", "Non-Veg Lunch"],
   price: { full: 16500 },
   category: "diet-combo-1-subscription",
@@ -624,7 +624,7 @@ export const foodItems: FoodItem[] = [
 {
   id: "diet-combo-2-subscription-nonveg",
   name: "Diet Combo 2 (Lunch + Fruit Bowl + Dinner )",
-  description: "Complete non-veg diet plan: Breakfast, Lunch & Dinner",
+  description: "4 days Non-Veg & 3 days Veg dinner every week..",
   ingredients: ["Breakfast", "Lunch", "Dinner"],
   price: { full: 15000 },
   category: "diet-combo-2-subscription",
@@ -748,7 +748,7 @@ export const foodItems: FoodItem[] = [
   {
     id: 'dinner-box-veg',
     name: 'Dinner Box (Veg)',
-    description: '3 Pulkas | Dal | Curry',
+    description: '3 Pulkas | Curry | Salad',
     ingredients: ['Chapati', 'Vegetable Curry', 'Curd Rice'],
     price: { mini: 100, half: null, full: null },
     category: 'bhojanam-box',
@@ -1431,7 +1431,7 @@ export const foodItems: FoodItem[] = [
     category: 'traditional-snacks',
     type: 'veg',
     popular: true,
-    image: '/food-images/TraditionalSnacks/chotaladdu.jpg',
+    image: '/food-images/TraditionalSnacks/dryfruitladdu.jpeg',
   },
   {
     id: 'coconut-laddu-bellam',
@@ -1442,7 +1442,7 @@ export const foodItems: FoodItem[] = [
     category: 'traditional-snacks',
     type: 'veg',
     popular: false,
-    image: 'https://i.pinimg.com/736x/19/87/e6/1987e6ed32e54949f0417226544a5e15.jpg',
+    image: '/food-images/TraditionalSnacks/coconutladdubellam.jpeg',
   },
   {
     id: 'gavvalu',
@@ -1494,7 +1494,17 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 240, full: 480 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: '/food-images/TraditionalSnacks/karabondhi.jpg',
+    image:'/food-images/TraditionalSnacks/karaboondi.jpeg',
+  },
+    {
+    id: 'karapusa',
+    name: 'Karapusa',
+    description: 'Spicy and crunchy fried gram flour balls.',
+    ingredients: ['Gram Flour', 'Chili Powder', 'Curry Leaves'],
+    price: { mini: 150, half: 240, full: 480 },
+    category: 'traditional-snacks',
+    type: 'veg',
+    image:'/food-images/TraditionalSnacks/karapoosa.jpg',
   },
   {
     id: 'kova-kajjikayalu',
@@ -1554,7 +1564,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 300, full: 560 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: '/food-images/TraditionalSnacks/ravvaladdu.jpg',
+    image: '/food-images/TraditionalSnacks/ravvaladdu.jpeg',
   },
   {
     id: 'sweet-boondi',
@@ -1733,7 +1743,7 @@ export const foodItems: FoodItem[] = [
     name: 'Natukodi Pickle (with Cashew)',
     description: 'Country chicken pickle flavored with cashews and homemade masala.',
     ingredients: ['Country Chicken', 'Cashew', 'Spices', 'Garlic'],
-    price: { mini: 780, full: 1560 },
+    price: { half: 780, full: 1560 },
     category: 'pickles',
     type: 'non-veg',
     image: '/food-images/Pickles/natukodicashew.jpg',
@@ -1743,7 +1753,7 @@ export const foodItems: FoodItem[] = [
     name: 'Natukodi Pickle (Cashew Boneless)',
     description: 'Boneless country chicken pickle with cashew blend and rich masala.',
     ingredients: ['Boneless Country Chicken', 'Cashew', 'Spices', 'Oil'],
-    price: { mini: 1500, full: 3000 },
+    price: { half: 1500, full: 3000 },
     category: 'pickles',
     type: 'non-veg',
     image: '/food-images/Pickles/natukodi.jpg',
@@ -1753,7 +1763,7 @@ export const foodItems: FoodItem[] = [
     name: 'Nethalu Pickle (Big)',
     description: 'Spicy pickle made with big anchovies (Nethalu).',
     ingredients: ['Big Anchovies', 'Spices', 'Oil'],
-    price: { mini: 1050, full: 2035 },
+    price: { half: 1050, full: 2035 },
     category: 'pickles',
     type: 'non-veg',
     image: '/food-images/Pickles/nethulu.jpg',
@@ -1763,7 +1773,7 @@ export const foodItems: FoodItem[] = [
     name: 'Nethalu Pickle (Small)',
     description: 'Tangy and spicy pickle made from small anchovies.',
     ingredients: ['Small Anchovies', 'Chili Powder', 'Garlic'],
-    price: { mini: 800, full: 1500 },
+    price: { half: 800, full: 1500 },
     category: 'pickles',
     type: 'non-veg',
     image: '/food-images/Pickles/nethulu.jpg',
@@ -1793,7 +1803,7 @@ export const foodItems: FoodItem[] = [
     name: 'Squid Pickle',
     description: 'Traditional spicy squid pickle for seafood lovers.',
     ingredients: ['Squid', 'Garlic', 'Red Chili', 'Oil'],
-    price: { mini: 850, full: 1600 },
+    price: { half: 850, full: 1600 },
     category: 'pickles',
     type: 'non-veg',
     image: '/food-images/Pickles/squid.jpg',
@@ -1908,7 +1918,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 60 },
     category: 'cakes',
     type: 'veg',
-    image: '/food-images/Cakes/cupcakewithrum.jpg',
+    image: '/food-images/Cakes/pulmcakerum.jpeg',
   },
   {
     id: 'plum-cupcake-no-rum',
@@ -1918,7 +1928,7 @@ export const foodItems: FoodItem[] = [
     price: { full: 40 },
     category: 'cakes',
     type: 'veg',
-    image: '/food-images/Cakes/cupcakewithoutrum.jpg',
+    image: '/food-images/Cakes/plumcakewithoutrum.jpeg',
   },
   {
     id: 'premium-cake-rum-1kg',
@@ -1982,7 +1992,7 @@ export const foodItems: FoodItem[] = [
   },
   {
     id: 'loaf-cake-rum-300g',
-    name: 'Loaf Cake 300g (With Rum)',
+    name: 'Loaf Plum Cake 300g (With Rum)',
     description: 'Rum-infused loaf cake in a compact size.',
     ingredients: ['Plum', 'Rum', 'Egg', 'Butter'],
     price: { full: 350 },
@@ -1992,7 +2002,7 @@ export const foodItems: FoodItem[] = [
   },
   {
     id: 'loaf-cake-no-rum-300g',
-    name: 'Loaf Cake 300g (Without Rum)',
+    name: 'Loaf Plum Cake 300g (Without Rum)',
     description: 'Simple loaf cake without alcohol.',
     ingredients: ['Flour', 'Butter', 'Plum'],
     price: { full: 280 },

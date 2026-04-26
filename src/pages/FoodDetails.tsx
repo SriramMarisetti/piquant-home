@@ -4,7 +4,7 @@ import { getFoodItemById } from "../data/menuData";
 import PageHeader from "../components/PageHeader";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useCart } from "../context/CartContext";
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart, CalendarDays } from "lucide-react";
 import { useCartDialog } from "@/context/CartDialogContext";
 import { FoodSize } from "../types/menu";
 
@@ -48,9 +48,7 @@ const FoodDetails = () => {
     "diet-combo-1-subscription",
     "diet-combo-2-subscription",
     "curry-subscription",
-    "diet-combo-1-subscription",
-    "diet-combo-2-subscription",
-    "combo-meals"
+    "combo-meals",
   ];
 
   const isSinglePrice = singlePriceCategories.includes(foodItem.category);
@@ -64,30 +62,38 @@ const FoodDetails = () => {
         {
           key: "mini",
           label: "price",
-         price:
-  Object.values(foodItem.price).find(
-    (value) => value != null
-  ) ?? 0
+          price:
+            Object.values(foodItem.price).find(
+              (value) => value != null
+            ) ?? 0,
         },
       ]
     : [
         foodItem.price.mini != null
-  ? {
-      key: "mini",
-      label:
-        foodItem.category === "podulu"
-          ? "200g"
-          : "250gms",
-      price: foodItem.price.mini,
-    }
-  : null,
+          ? {
+              key: "mini",
+              label:
+                foodItem.category === "podulu"
+                  ? "200g"
+                  : "250gms",
+              price: foodItem.price.mini,
+            }
+          : null,
 
         foodItem.price.half != null
-          ? { key: "half", label: "500gms", price: foodItem.price.half }
+          ? {
+              key: "half",
+              label: "500gms",
+              price: foodItem.price.half,
+            }
           : null,
 
         foodItem.price.full != null
-          ? { key: "full", label: "1kg", price: foodItem.price.full }
+          ? {
+              key: "full",
+              label: "1kg",
+              price: foodItem.price.full,
+            }
           : null,
       ].filter(Boolean) as {
         key: FoodSize;
@@ -98,7 +104,9 @@ const FoodDetails = () => {
   const [selectedSize, setSelectedSize] = useState(availableSizes[0]);
 
   const typeColor =
-    foodItem.type === "veg" ? "bg-food-veg" : "bg-food-nonveg";
+    foodItem.type === "veg"
+      ? "bg-food-veg"
+      : "bg-food-nonveg";
 
   const handleAddToCart = () => {
     addToCart({
@@ -116,14 +124,15 @@ const FoodDetails = () => {
     <div className="page-container pb-10 relative">
       <div
         className="fixed inset-0 bg-cover bg-center opacity-20 -z-10"
-        style={{ backgroundImage: "url('/food-bg.png')" }}
+        style={{
+          backgroundImage: "url('/food-bg.png')",
+        }}
       />
 
       <PageHeader title={foodItem.name} />
 
       <div className="bg-white rounded-xl shadow-md p-6 mb-6">
         <div className="md:flex gap-6">
-
           <div className="md:w-1/2">
             <div className="flex items-center mb-4">
               <div
@@ -147,13 +156,17 @@ const FoodDetails = () => {
 
             {!isSinglePrice && (
               <>
-                <p className="font-medium mb-2">Select Size:</p>
+                <p className="font-medium mb-2">
+                  Select Size:
+                </p>
 
                 <div className="flex gap-3 flex-wrap mb-5">
                   {availableSizes.map((size) => (
                     <button
                       key={size.key}
-                      onClick={() => setSelectedSize(size)}
+                      onClick={() =>
+                        setSelectedSize(size)
+                      }
                       className={`px-4 py-2 rounded-lg border font-medium ${
                         selectedSize.key === size.key
                           ? "bg-primary text-white border-primary"
@@ -167,9 +180,27 @@ const FoodDetails = () => {
               </>
             )}
 
-            <p className="text-2xl font-bold text-green-600 mb-6">
+            <p className="text-2xl font-bold text-green-600 mb-4">
               ₹{selectedSize.price}
             </p>
+
+            {foodItem.category.includes(
+              "subscription"
+            ) &&
+              foodItem.description && (
+                <div className="mb-6 bg-red-50 border border-red-100 rounded-xl p-4 flex gap-3">
+                  <CalendarDays
+                    className="text-red-500 mt-1 shrink-0"
+                    size={20}
+                  />
+
+                  <div>
+                    <p className="font-semibold text-gray-900 leading-snug">
+                      {foodItem.description}
+                    </p>
+                  </div>
+                </div>
+              )}
 
             <button
               onClick={handleAddToCart}
@@ -184,7 +215,10 @@ const FoodDetails = () => {
             <div className="rounded-xl overflow-hidden shadow-md">
               <AspectRatio ratio={4 / 3}>
                 <img
-                  src={foodItem.image || "/placeholder-food.jpg"}
+                  src={
+                    foodItem.image ||
+                    "/placeholder-food.jpg"
+                  }
                   alt={foodItem.name}
                   className="w-full h-full object-cover"
                 />
@@ -193,11 +227,11 @@ const FoodDetails = () => {
 
             {!isSinglePrice && (
               <p className="text-center text-sm text-muted-foreground mt-2">
-                {selectedSize.label} • ₹{selectedSize.price}
+                {selectedSize.label} • ₹
+                {selectedSize.price}
               </p>
             )}
           </div>
-
         </div>
       </div>
     </div>
