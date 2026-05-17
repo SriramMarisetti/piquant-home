@@ -577,7 +577,7 @@ export const foodItems: FoodItem[] = [
 {
   id: "diet-breakfast-subscription-nonveg",
   name: "Breakfast Box (Millet | Sprouts | Oats | egg)",
-  description: "4 days Non-Veg & 3 days Veg dinner every week..",
+  description: "4 days Non-Veg & 3 days Veg BreakFast every week..",
   ingredients: ["Boiled Eggs", "Egg Bhurji", "Oats", "Fruit"],
   price: { full: 4000 },
   category: "diet-breakfast-subscription",
@@ -589,7 +589,7 @@ export const foodItems: FoodItem[] = [
 {
   id: "diet-lunch-subscription-nonveg",
   name: "Lunch Box (Millet Rice | Tuna fish | Paneer | Brown Rice | Steamed veggies)",
-  description: "4 days Non-Veg & 3 days Veg dinner every week..",
+  description: "4 days Non-Veg & 3 days Veg Lunch every week..",
   ingredients: ["Brown Rice", "Grilled Chicken", "Dal", "Salad"],
   price: { full: 7500 },
   category: "diet-lunch-subscription",
@@ -612,7 +612,7 @@ export const foodItems: FoodItem[] = [
 {
   id: "diet-combo-1-subscription-nonveg",
   name: "Diet Combo 1 (Break Fast + Lunch + Dinner)",
-  description: "4 days Non-Veg & 3 days Veg dinner every week..",
+  description: "4 days Non-Veg & 3 days Veg  Combo Every week..",
   ingredients: ["Non-Veg Breakfast", "Non-Veg Lunch"],
   price: { full: 16500 },
   category: "diet-combo-1-subscription",
@@ -624,7 +624,7 @@ export const foodItems: FoodItem[] = [
 {
   id: "diet-combo-2-subscription-nonveg",
   name: "Diet Combo 2 (Lunch + Fruit Bowl + Dinner )",
-  description: "4 days Non-Veg & 3 days Veg dinner every week..",
+  description: "4 days Non-Veg & 3 days Veg  Combo Every week..",
   ingredients: ["Breakfast", "Lunch", "Dinner"],
   price: { full: 15000 },
   category: "diet-combo-2-subscription",
