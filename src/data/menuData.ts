@@ -558,7 +558,7 @@ export const foodItems: FoodItem[] = [
   price: { full: 13000 },
   category: "diet-combo-1-subscription",
   type: "veg",
-  image: "/diet-combo-1-subscription.png",
+  image: "/diet-combo-subscription-veg.png",
   popular: true,
 },
 {
@@ -569,7 +569,7 @@ export const foodItems: FoodItem[] = [
   price: { full: 12500 },
   category: "diet-combo-2-subscription",
   type: "veg",
-  image: "/diet-combo-3-subscription.png",
+  image: "/diet-combo-1-veg-subscription.png",
   popular: true,
 },
 
@@ -629,7 +629,7 @@ export const foodItems: FoodItem[] = [
   price: { full: 15000 },
   category: "diet-combo-2-subscription",
   type: "non-veg",
-  image: "/diet-combo-3-subscription.png",
+  image: "/diet-combo-1-veg-subscription.png",
   popular: true,
 },
 
@@ -1326,7 +1326,7 @@ export const foodItems: FoodItem[] = [
     ingredients: ['Pepper', 'Coriander Seeds', 'Cloves', 'Onion Powder'],
     price: { mini: 400, half: 800, full: 1450 },
     category: 'podulu',
-    type: 'non-veg',
+    type: 'veg',
     popular: true,
     image: '/food-images/Podulu/mutton.jpg',
   },
@@ -1544,7 +1544,7 @@ export const foodItems: FoodItem[] = [
     price: { mini: 150, half: 230, full: 460 },
     category: 'traditional-snacks',
     type: 'veg',
-    image: '/food-images/TraditionalSnacks/nimki.jpg',
+    image: 'https://i1-e.pinimg.com/1200x/ac/d9/6f/acd96fd4dcfbe83124a9b1c66ba903f2.jpg',
   },
   {
     id: 'nuvulu-laddu-bellam',
