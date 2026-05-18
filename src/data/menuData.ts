@@ -383,7 +383,7 @@ export const foodItems: FoodItem[] = [
 
 {
   id: 'monthly-full-day-veg',
-  name: 'Monthly Full Day Meals (Break Fast(Idly | Upma | Dosa | etc with 2 chutney) + Lunch(Rice | Dal | Rasam | Curry | Fry | Chutney) + Dinner((Idly / Dosa) With 2 Chutney) )',
+  name: 'Monthly Full Day Meals (Break Fast(Idly | Upma | Dosa | etc with 2 chutney) + Lunch(Rice | Dal | Rasam | Curry | Fry | Chutney) + Dinner(3 Pulkas With Curry(Veg))',
   description: 'Breakfast + Lunch + Dinner (Pure Vegetarian).',
   ingredients: ['Breakfast', 'Lunch', 'Dinner'],
   price: { full: 9000 }, // ₹9,000
@@ -433,7 +433,7 @@ export const foodItems: FoodItem[] = [
 
 {
   id: "diet-dinner-veg",
-  name: "Dinner Box (veg)",
+  name: "Dinner Box (Veg - Salad)",
   description: "Light dinner for easy digestion",
   ingredients: ["Chapati", "Dry Veg Curry"],
   price: { mini: 150 },
@@ -478,7 +478,7 @@ export const foodItems: FoodItem[] = [
 
 {
   id: "diet-dinner-nonveg",
-  name: "Dinner Box (NON-Veg)",
+  name: "Dinner Box (NON-Veg-Salad)",
   description: "Light non-veg dinner for easy digestion",
   ingredients: ["Grilled Chicken", "Sauteed Vegetables"],
   price: { mini: 200 },
@@ -558,7 +558,7 @@ export const foodItems: FoodItem[] = [
   price: { full: 13000 },
   category: "diet-combo-1-subscription",
   type: "veg",
-  image: "/diet-combo-subscription-veg.png",
+  image: "/diet-combo-1-veg-subscription.png",
   popular: true,
 },
 {
@@ -617,7 +617,7 @@ export const foodItems: FoodItem[] = [
   price: { full: 16500 },
   category: "diet-combo-1-subscription",
   type: "non-veg",
-  image: "/diet-combo-1-subscription-nonveg.png",
+  image: "/diet-combo-subscription-nonveg.png",
   popular: true,
 },
 
