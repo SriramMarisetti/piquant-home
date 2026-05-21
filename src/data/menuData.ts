@@ -118,25 +118,25 @@ export const categories: CategoryInfo[] = [
     id: 'diet-combo-1-subscription',
     name: 'Combo 1',
     icon: 'https://cosori.com/cdn/shop/articles/Steamed_Veggies.jpg?v=1687895356',
-    description: 'Breakfast + Lunch combo',
+    description: 'Breakfast + Lunch + Dinner combo plan',
   },
   {
     id: 'diet-combo-2-subscription',
     name: 'Combo 2',
     icon: 'https://dieteticdirections.com/wp-content/uploads/2019/05/food-guide-2019.png',
-    description: 'Full day diet meal plan',
+    description: 'Lunch + Fruit Bowl + Dinner combo plan',
   },
   // Homemade Foods
   {
     id: "podulu",
     name: "Podulu",
-    icon: "https://i.pinimg.com/736x/e2/89/b7/e289b74dd06218687066d2ecccb648aa.jpg",
+    icon: "https://i1-e.pinimg.com/736x/6e/b4/4b/6eb44b910adc414ed4c7a336b044aeca.jpg",
     description: "Traditional spice powders",
   },
   {
     id: "rice-mix",
     name: "Rice Mix",
-    icon: "https://i.pinimg.com/1200x/ef/9b/ba/ef9bba676ac73c9f727db77d40d07ddf.jpg",
+    icon: "https://i1-e.pinimg.com/1200x/f9/c1/46/f9c1468a1748954111f8e81bb7decf96.jpg",
     description: "Ready-to-cook rice mixes",
   },
   {
@@ -520,7 +520,7 @@ export const foodItems: FoodItem[] = [
 },
 {
   id: "diet-dinner-subscription-veg",
-  name: "Dinner Box (veg)",
+  name: "Dinner Box (veg-salad)",
   description: "Light and nutritious vegetarian dinners",
   ingredients: ["Chapati", "Dry Curry", "Soup"],
   price: { full: 4000 },
@@ -553,7 +553,7 @@ export const foodItems: FoodItem[] = [
 {
   id: "diet-combo-1-subscription",
   name: "Diet Combo 1 (Breakfast + Lunch + Dinner)",
-  description: "Healthy breakfast and lunch combo plan",
+  description: "Healthy breakfast, lunch and dinner combo plan",
   ingredients: ["Breakfast Box", "Lunch Box"],
   price: { full: 13000 },
   category: "diet-combo-1-subscription",
@@ -564,7 +564,7 @@ export const foodItems: FoodItem[] = [
 {
   id: "diet-combo-2-subscription",
   name: "Diet Combo 2 (Lunch + Fruit Bowl + Dinner )",
-  description: "Complete diet plan: Breakfast, Lunch & Dinner",
+  description: "Complete diet plan: Lunch, Dinner and Fruit Bowl",
   ingredients: ["Breakfast", "Lunch", "Dinner", "Juice"],
   price: { full: 12500 },
   category: "diet-combo-2-subscription",
@@ -600,7 +600,7 @@ export const foodItems: FoodItem[] = [
 
 {
   id: "diet-dinner-subscription-nonveg",
-  name: "Dinner Box (NON-Veg)",
+  name: "Dinner Box (NON-Veg-Salad)",
   description: "4 days Non-Veg & 3 days Veg dinner every week..",
   ingredients: ["Chapati", "Chicken Curry", "Soup"],
   price: { full: 5000 },
