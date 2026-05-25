@@ -136,7 +136,7 @@ export const categories: CategoryInfo[] = [
   {
     id: "rice-mix",
     name: "Rice Mix",
-    icon: "https://i1-e.pinimg.com/1200x/f9/c1/46/f9c1468a1748954111f8e81bb7decf96.jpg",
+    icon: "https://i1-e.pinimg.com/1200x/f9/c1/46/f9c1468a1748954111f8e81bb7decf96.jpgf",
     description: "Ready-to-cook rice mixes",
   },
   {
@@ -564,7 +564,7 @@ export const foodItems: FoodItem[] = [
 {
   id: "diet-combo-2-subscription",
   name: "Diet Combo 2 (Lunch + Fruit Bowl + Dinner )",
-  description: "Complete diet plan: Lunch, Dinner and Fruit Bowl",
+  description: "Complete diet plan: Lunch, Fruit Bowl and Dinner",
   ingredients: ["Breakfast", "Lunch", "Dinner", "Juice"],
   price: { full: 12500 },
   category: "diet-combo-2-subscription",
