@@ -558,7 +558,7 @@ export const foodItems: FoodItem[] = [
   price: { full: 13000 },
   category: "diet-combo-1-subscription",
   type: "veg",
-  image: "/diet-combo-1-veg-subscription.png",
+  image: "/diet-combo-2-veg-subscriptions.png",
   popular: true,
 },
 {
