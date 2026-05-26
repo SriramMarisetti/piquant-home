@@ -450,7 +450,7 @@ export const foodItems: FoodItem[] = [
   price: { mini: 100 },
   category: "diet-fruit-bowl",
   type: "veg",
-  image: "https://i.pinimg.com/1200x/9b/cf/e7/9bcfe7a919ad52fc496cc664354a1822.jpg",
+  image: "https://i.pinimg.com/1200x/c0/1a/e5/c01ae5216ce467d744d3a6be31b2c63f.jpg",
 },
 // ================= HEALTHY DIET (DAILY) – NON VEG =================
 
@@ -536,7 +536,7 @@ export const foodItems: FoodItem[] = [
   price: { full: 2500 },
   category: "diet-fruit-bowl-subscription",
   type: "veg",
-  image: "https://i.pinimg.com/1200x/9b/cf/e7/9bcfe7a919ad52fc496cc664354a1822.jpg",
+  image: "https://i.pinimg.com/1200x/c0/1a/e5/c01ae5216ce467d744d3a6be31b2c63f.jpg",
    popular: true,
 },
 {
@@ -569,7 +569,7 @@ export const foodItems: FoodItem[] = [
   price: { full: 12500 },
   category: "diet-combo-2-subscription",
   type: "veg",
-  image: "/diet-combo-1-veg-subscription.png",
+  image: "/lunch-fruitbowl-dinner-veg1-image.png",
   popular: true,
 },
 
@@ -629,7 +629,7 @@ export const foodItems: FoodItem[] = [
   price: { full: 15000 },
   category: "diet-combo-2-subscription",
   type: "non-veg",
-  image: "/diet-combo-1-veg-subscription.png",
+  image: "/lunch-fruitbowl-dinner-non-veg-image.png",
   popular: true,
 },
 
